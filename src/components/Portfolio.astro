@@ -1,36 +1,23 @@
 ---
+// Import domains from external JSON file
+import domainsData from '../data/domains.json';
+
 interface Domain {
   name: string;
   category: string;
-  highlight: boolean;
+  premium: boolean;
   description: string;
 }
 
-const domains: Domain[] = [
-  { name: 'aurae.fr', category: 'Luxe & Lifestyle', highlight: true, description: "Évocation poétique de l'aura et de la lumière, idéal pour une marque de parfumerie, joaillerie ou bien-être haut de gamme." },
-  { name: 'hotelroyal.fr', category: 'Hôtellerie', highlight: false, description: "Le nom ultime pour un établissement hôtelier d'exception ou une chaîne visant le segment luxe en France." },
-  { name: 'flandres.com', category: 'Géographique', highlight: false, description: "Domaine géographique premium couvrant la région des Flandres, parfait pour le tourisme, l'immobilier ou les produits régionaux." },
-  { name: 'synergetic.fr', category: 'Business & Tech', highlight: false, description: "Nom moderne et dynamique pour une entreprise de conseil, un cabinet de fusion-acquisition ou une agence d'innovation." },
-  { name: 'infracloud.fr', category: 'Tech & Cloud', highlight: true, description: "Combinaison puissante infrastructure + cloud, taillé pour un hébergeur, un MSP ou une société d'infogérance." },
-  { name: 'velobox.fr', category: 'Sport & Mobilité', highlight: false, description: "Nom accrocheur pour une startup de livraison à vélo, un service de vélos en libre-service ou une box mensuelle cyclisme." },
-  { name: 'francemed.fr', category: 'Santé', highlight: true, description: "Association France + médecine, idéal pour une plateforme de télémédecine, un réseau de cliniques ou un portail santé national." },
-  { name: 'omnify.fr', category: 'Tech & SaaS', highlight: false, description: "Nom court et moderne évoquant l'unification et la puissance, parfait pour une solution SaaS ou une plateforme omnicanale." },
-  { name: 'superaliments.fr', category: 'Santé & Nutrition', highlight: true, description: "Exact match domain à fort trafic SEO pour une boutique e-commerce, un blog nutrition ou une marque de compléments." },
-  { name: 'occultation.fr', category: 'Industrie', highlight: false, description: "Terme technique recherché par les professionnels du store, du volet roulant et de la protection solaire." },
-  { name: 'lemillion.com', category: 'Finance & Luxe', highlight: false, description: "Nom évocateur et mémorable pour une fintech, un club d'investisseurs ou une marque lifestyle premium." },
-  { name: 'mytherapy.fr', category: 'Santé & Bien-être', highlight: false, description: "Nom personnel et rassurant pour une application de suivi thérapeutique, un cabinet de psychologie ou une plateforme bien-être." },
-  { name: 'intelligencephysique.com', category: 'Sport & Coaching', highlight: false, description: "Concept unique alliant corps et esprit, idéal pour un coach sportif, une méthode de préparation physique ou un centre d'entraînement." },
-  { name: 'nextchat.fr', category: 'Tech & Communication', highlight: false, description: "Nom futuriste et accessible pour une application de messagerie, un outil de support client ou une startup IA conversationnelle." },
-  { name: 'mysticker.fr', category: 'E-commerce & Créatif', highlight: false, description: "Nom friendly et personnalisable pour une boutique de stickers personnalisés, une imprimerie créative ou une marque lifestyle." }
-];
+const domains: Domain[] = domainsData.domains;
 
+// Auto-generate unique categories from the data
+const uniqueCategories = [...new Set(domains.map(d => d.category))].sort();
+
+// Create filter buttons: "Tous" + all unique categories
 const filters = [
   { label: 'Tous', value: 'all' },
-  { label: 'Luxe & Lifestyle', value: 'Luxe & Lifestyle' },
-  { label: 'Tech & Cloud', value: 'Tech & Cloud' },
-  { label: 'Santé', value: 'Santé' },
-  { label: 'Business & Tech', value: 'Business & Tech' },
-  { label: 'E-commerce', value: 'E-commerce & Créatif' }
+  ...uniqueCategories.map(cat => ({ label: cat, value: cat }))
 ];
 ---
 
@@ -40,6 +27,7 @@ const filters = [
       <div>
         <p class="section-label">Portfolio</p>
         <h2>Domaines disponibles</h2>
+        <p class="portfolio-count">{domains.length} domaines disponibles</p>
       </div>
       <div class="filters">
         {filters.map((filter, index) => (
@@ -56,11 +44,11 @@ const filters = [
     <div class="domains-grid" id="domainsGrid">
       {domains.map((domain, index) => (
         <div
-          class:list={["domain-card", { highlight: domain.highlight }]}
+          class:list={["domain-card", { highlight: domain.premium }]}
           data-category={domain.category}
           style={`animation-delay: ${index * 0.03}s`}
         >
-          {domain.highlight && <div class="premium-badge">Premium</div>}
+          {domain.premium && <div class="premium-badge">Premium</div>}
           <p class="domain-category">{domain.category}</p>
           <h3 class="domain-name">{domain.name}</h3>
           <p class="domain-description">{domain.description}</p>
@@ -94,9 +82,7 @@ const filters = [
 
       domainCards.forEach(card => {
         const category = card.getAttribute('data-category') || '';
-        const matches = filter === 'all' ||
-                       category === filter ||
-                       category.includes(filter?.replace('E-commerce & Créatif', 'E-commerce') || '');
+        const matches = filter === 'all' || category === filter;
         card.classList.toggle('hidden', !matches);
       });
     });
@@ -121,6 +107,12 @@ const filters = [
     font-size: clamp(28px, 4vw, 40px);
     font-weight: 700;
     color: var(--color-text);
+  }
+
+  .portfolio-count {
+    font-size: 14px;
+    color: var(--color-text-light);
+    margin-top: 8px;
   }
 
   .filters {

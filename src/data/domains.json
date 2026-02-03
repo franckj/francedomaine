@@ -1,0 +1,94 @@
+{
+  "domains": [
+    {
+      "name": "aurae.fr",
+      "category": "Luxe & Lifestyle",
+      "premium": true,
+      "description": "Évocation poétique de l'aura et de la lumière, idéal pour une marque de parfumerie, joaillerie ou bien-être haut de gamme."
+    },
+    {
+      "name": "hotelroyal.fr",
+      "category": "Hôtellerie",
+      "premium": false,
+      "description": "Le nom ultime pour un établissement hôtelier d'exception ou une chaîne visant le segment luxe en France."
+    },
+    {
+      "name": "flandres.com",
+      "category": "Géographique",
+      "premium": false,
+      "description": "Domaine géographique premium couvrant la région des Flandres, parfait pour le tourisme, l'immobilier ou les produits régionaux."
+    },
+    {
+      "name": "synergetic.fr",
+      "category": "Business & Tech",
+      "premium": false,
+      "description": "Nom moderne et dynamique pour une entreprise de conseil, un cabinet de fusion-acquisition ou une agence d'innovation."
+    },
+    {
+      "name": "infracloud.fr",
+      "category": "Tech & Cloud",
+      "premium": true,
+      "description": "Combinaison puissante infrastructure + cloud, taillé pour un hébergeur, un MSP ou une société d'infogérance."
+    },
+    {
+      "name": "velobox.fr",
+      "category": "Sport & Mobilité",
+      "premium": false,
+      "description": "Nom accrocheur pour une startup de livraison à vélo, un service de vélos en libre-service ou une box mensuelle cyclisme."
+    },
+    {
+      "name": "francemed.fr",
+      "category": "Santé",
+      "premium": true,
+      "description": "Association France + médecine, idéal pour une plateforme de télémédecine, un réseau de cliniques ou un portail santé national."
+    },
+    {
+      "name": "omnify.fr",
+      "category": "Tech & SaaS",
+      "premium": false,
+      "description": "Nom court et moderne évoquant l'unification et la puissance, parfait pour une solution SaaS ou une plateforme omnicanale."
+    },
+    {
+      "name": "superaliments.fr",
+      "category": "Santé & Nutrition",
+      "premium": true,
+      "description": "Exact match domain à fort trafic SEO pour une boutique e-commerce, un blog nutrition ou une marque de compléments."
+    },
+    {
+      "name": "occultation.fr",
+      "category": "Industrie",
+      "premium": false,
+      "description": "Terme technique recherché par les professionnels du store, du volet roulant et de la protection solaire."
+    },
+    {
+      "name": "lemillion.com",
+      "category": "Finance & Luxe",
+      "premium": false,
+      "description": "Nom évocateur et mémorable pour une fintech, un club d'investisseurs ou une marque lifestyle premium."
+    },
+    {
+      "name": "mytherapy.fr",
+      "category": "Santé & Bien-être",
+      "premium": false,
+      "description": "Nom personnel et rassurant pour une application de suivi thérapeutique, un cabinet de psychologie ou une plateforme bien-être."
+    },
+    {
+      "name": "intelligencephysique.com",
+      "category": "Sport & Coaching",
+      "premium": false,
+      "description": "Concept unique alliant corps et esprit, idéal pour un coach sportif, une méthode de préparation physique ou un centre d'entraînement."
+    },
+    {
+      "name": "nextchat.fr",
+      "category": "Tech & Communication",
+      "premium": false,
+      "description": "Nom futuriste et accessible pour une application de messagerie, un outil de support client ou une startup IA conversationnelle."
+    },
+    {
+      "name": "mysticker.fr",
+      "category": "E-commerce & Créatif",
+      "premium": false,
+      "description": "Nom friendly et personnalisable pour une boutique de stickers personnalisés, une imprimerie créative ou une marque lifestyle."
+    }
+  ]
+}
