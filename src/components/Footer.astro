@@ -1,0 +1,210 @@
+---
+import FrenchFlag from './FrenchFlag.astro';
+---
+
+<footer>
+  <div class="footer-logo">
+    <div class="logo">
+      <div class="logo-icon">FD</div>
+      <div class="logo-text">
+        <span>France</span>
+        <span>Domaine</span>
+      </div>
+      <FrenchFlag />
+    </div>
+  </div>
+  <div class="footer-content">
+    <p>© 2025 FranceDomaine.fr — 25 ans d'expertise en noms de domaine premium</p>
+    <div class="footer-right">
+      <div class="theme-toggle">
+        <span>Light</span>
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Changer de thème"></button>
+      </div>
+      <a href="mailto:contact@francedomaine.fr" target="_blank" rel="noopener">contact@francedomaine.fr</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const themeToggle = document.getElementById('themeToggle');
+
+  themeToggle?.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    try {
+      localStorage.setItem('fdTheme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+    } catch(e) {}
+  });
+
+  // Check saved theme preference on load
+  try {
+    if (localStorage.getItem('fdTheme') === 'light') {
+      document.body.classList.add('light-mode');
+    }
+  } catch(e) {}
+</script>
+
+<style>
+  footer {
+    padding: 60px;
+    border-top: 1px solid rgba(201, 162, 39, 0.1);
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transform: scale(0.9);
+  }
+
+  .logo-icon {
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(201, 162, 39, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: #c9a227;
+  }
+
+  .logo-text {
+    font-family: "Outfit", sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .logo-text span:first-child {
+    color: #c9a227;
+    font-weight: 400;
+  }
+
+  .logo-text span:last-child {
+    color: #888;
+    font-weight: 300;
+    display: block;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .footer-content p {
+    font-family: "Outfit", sans-serif;
+    font-size: 13px;
+    color: #666;
+    letter-spacing: 0.5px;
+  }
+
+  .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .footer-content a {
+    font-family: "Outfit", sans-serif;
+    font-size: 13px;
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-content a:hover {
+    color: #c9a227;
+  }
+
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Outfit", sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #666;
+    text-transform: uppercase;
+  }
+
+  .theme-toggle-btn {
+    width: 48px;
+    height: 26px;
+    background: rgba(201, 162, 39, 0.2);
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    border-radius: 13px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .theme-toggle-btn::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    background: #c9a227;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  :global(body.light-mode) .theme-toggle-btn::after {
+    left: 25px;
+    background: #a68520;
+  }
+
+  :global(body.light-mode) .theme-toggle-btn {
+    background: rgba(201, 162, 39, 0.15);
+  }
+
+  :global(body.light-mode) .logo-text span:last-child {
+    color: #666;
+  }
+
+  :global(body.light-mode) footer {
+    border-top-color: rgba(201, 162, 39, 0.15);
+  }
+
+  :global(body.light-mode) .footer-content p {
+    color: #888;
+  }
+
+  :global(body.light-mode) .footer-content a {
+    color: #666;
+  }
+
+  :global(body.light-mode) .footer-content a:hover {
+    color: #a68520;
+  }
+
+  @media (max-width: 768px) {
+    footer {
+      padding: 40px 24px;
+    }
+
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .footer-right {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .theme-toggle span {
+      display: none;
+    }
+  }
+</style>

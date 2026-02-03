@@ -1,0 +1,137 @@
+---
+---
+
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-label animate-in delay-1">Branding & Naming Premium</p>
+    <h1 class="animate-in delay-2">
+      Votre marque mérite un <span class="gold-text">domaine d'exception</span>
+    </h1>
+    <p class="hero-desc animate-in delay-3">
+      Une sélection exclusive de noms de domaine premium en .fr et .com,
+      soigneusement choisis pour les entreprises qui visent l'excellence.
+    </p>
+    <div class="hero-cta animate-in delay-4">
+      <button class="cta-button" id="discoverBtn">
+        Découvrir le portfolio
+      </button>
+      <span>25 ans d'expertise</span>
+    </div>
+  </div>
+  <div class="decorative-dots">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</section>
+
+<script>
+  document.getElementById('discoverBtn')?.addEventListener('click', () => {
+    document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+<style>
+  .hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    position: relative;
+  }
+
+  .hero-content {
+    max-width: 900px;
+  }
+
+  .hero-label {
+    font-family: "Outfit", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: #c9a227;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  .hero h1 {
+    font-size: clamp(48px, 8vw, 96px);
+    font-weight: 300;
+    line-height: 1.05;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+  }
+
+  .hero-desc {
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #a0a0a0;
+    max-width: 600px;
+    margin-bottom: 48px;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .hero-cta > span {
+    font-family: "Outfit", sans-serif;
+    font-size: 13px;
+    color: #666;
+    letter-spacing: 1px;
+  }
+
+  .decorative-dots {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    opacity: 0.4;
+  }
+
+  .decorative-dots div {
+    width: 4px;
+    height: 4px;
+    background: #c9a227;
+  }
+
+  .decorative-dots div:nth-child(1) { animation: pulse 2s ease-in-out 0s infinite; }
+  .decorative-dots div:nth-child(2) { animation: pulse 2s ease-in-out 0.2s infinite; }
+  .decorative-dots div:nth-child(3) { animation: pulse 2s ease-in-out 0.4s infinite; }
+  .decorative-dots div:nth-child(4) { animation: pulse 2s ease-in-out 0.6s infinite; }
+  .decorative-dots div:nth-child(5) { animation: pulse 2s ease-in-out 0.8s infinite; }
+
+  :global(body.light-mode) .hero-desc {
+    color: #555;
+  }
+
+  :global(body.light-mode) .hero-cta > span {
+    color: #888;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 0 24px;
+      min-height: 60vh;
+    }
+
+    .hero-cta {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .decorative-dots {
+      display: none;
+    }
+  }
+</style>

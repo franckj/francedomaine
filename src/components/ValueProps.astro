@@ -1,0 +1,85 @@
+---
+const values = [
+  {
+    number: '01',
+    title: 'Mémorabilité',
+    description: 'Un domaine premium se retient dès la première lecture. Il devient un actif marketing qui travaille pour vous 24h/24.'
+  },
+  {
+    number: '02',
+    title: 'Crédibilité',
+    description: "Les entreprises établies possèdent des domaines premium. C'est un signal de confiance immédiat pour vos clients."
+  },
+  {
+    number: '03',
+    title: 'Valorisation',
+    description: "Les noms de domaine premium s'apprécient avec le temps. C'est un actif digital qui prend de la valeur."
+  }
+];
+---
+
+<section class="value-props">
+  <div class="value-grid">
+    {values.map(value => (
+      <div class="value-item">
+        <span class="value-number">{value.number}</span>
+        <h3>{value.title}</h3>
+        <p>{value.description}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .value-props {
+    padding: 120px 60px;
+    background: linear-gradient(180deg, transparent 0%, rgba(201, 162, 39, 0.02) 50%, transparent 100%);
+  }
+
+  .value-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .value-item {
+    position: relative;
+  }
+
+  .value-number {
+    font-family: "Outfit", sans-serif;
+    font-size: 64px;
+    font-weight: 200;
+    color: rgba(201, 162, 39, 0.15);
+    position: absolute;
+    top: -20px;
+    left: -10px;
+  }
+
+  .value-item h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-top: 40px;
+  }
+
+  .value-item p {
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #888;
+  }
+
+  :global(body.light-mode) .value-item p {
+    color: #666;
+  }
+
+  @media (max-width: 768px) {
+    .value-props {
+      padding: 80px 24px;
+    }
+  }
+</style>

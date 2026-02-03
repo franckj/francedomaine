@@ -1,0 +1,79 @@
+---
+import FrenchFlag from './FrenchFlag.astro';
+---
+
+<section id="contact" class="cta-section">
+  <div class="cta-glow"></div>
+  <h2>Prêt à acquérir votre domaine ?</h2>
+  <p>Contactez notre équipe pour discuter de votre projet et obtenir une proposition personnalisée.</p>
+  <a class="cta-button" href="mailto:contact@francedomaine.fr" target="_blank" rel="noopener">
+    Nous contacter
+  </a>
+  <div class="cta-flag">
+    <FrenchFlag large />
+  </div>
+</section>
+
+<style>
+  .cta-section {
+    padding: 120px 60px;
+    text-align: center;
+    position: relative;
+  }
+
+  .cta-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(201, 162, 39, 0.05) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .cta-section h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 300;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-section > p {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #888;
+    max-width: 500px;
+    margin: 0 auto 48px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-section .cta-button {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-flag {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  :global(body.light-mode) .cta-section p {
+    color: #666;
+  }
+
+  :global(body.light-mode) .cta-glow {
+    background: radial-gradient(ellipse at center, rgba(201, 162, 39, 0.08) 0%, transparent 60%);
+  }
+
+  @media (max-width: 768px) {
+    .cta-section {
+      padding: 80px 24px;
+    }
+  }
+</style>
