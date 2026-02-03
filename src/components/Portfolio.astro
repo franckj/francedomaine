@@ -35,46 +35,49 @@ const filters = [
 ---
 
 <section id="portfolio" class="portfolio">
-  <div class="portfolio-header">
-    <div>
-      <p class="section-label">Portfolio</p>
-      <h2>Domaines disponibles</h2>
+  <div class="container">
+    <div class="portfolio-header">
+      <div>
+        <p class="section-label">Portfolio</p>
+        <h2>Domaines disponibles</h2>
+      </div>
+      <div class="filters">
+        {filters.map((filter, index) => (
+          <button
+            class:list={["filter-btn", { active: index === 0 }]}
+            data-filter={filter.value}
+          >
+            {filter.label}
+          </button>
+        ))}
+      </div>
     </div>
-    <div class="filters">
-      {filters.map((filter, index) => (
-        <button
-          class:list={["filter-btn", { active: index === 0 }]}
-          data-filter={filter.value}
+
+    <div class="domains-grid" id="domainsGrid">
+      {domains.map((domain, index) => (
+        <div
+          class:list={["domain-card", { highlight: domain.highlight }]}
+          data-category={domain.category}
+          style={`animation-delay: ${index * 0.03}s`}
         >
-          {filter.label}
-        </button>
+          {domain.highlight && <div class="premium-badge">Premium</div>}
+          <p class="domain-category">{domain.category}</p>
+          <h3 class="domain-name">{domain.name}</h3>
+          <p class="domain-description">{domain.description}</p>
+          <div class="domain-footer">
+            <span class="status">Disponible</span>
+            <a
+              href={`mailto:contact@francedomaine.fr?subject=${encodeURIComponent('Intérêt pour le domaine ' + domain.name)}&body=${encodeURIComponent('Bonjour,\n\nJe suis intéressé(e) par le nom de domaine ' + domain.name + '.\n\nPouvez-vous me communiquer plus d\'informations ?\n\nCordialement')}`}
+              target="_blank"
+              rel="noopener"
+              class="domain-link"
+            >
+              En savoir plus
+            </a>
+          </div>
+        </div>
       ))}
     </div>
-  </div>
-
-  <div class="domains-grid" id="domainsGrid">
-    {domains.map((domain, index) => (
-      <div
-        class:list={["domain-card", { highlight: domain.highlight }]}
-        data-category={domain.category}
-        style={`animation-delay: ${index * 0.05}s`}
-      >
-        {domain.highlight && <div class="premium-badge">Premium</div>}
-        <p class="domain-category">{domain.category}</p>
-        <h3 class="domain-name">{domain.name}</h3>
-        <p class="domain-description">{domain.description}</p>
-        <div class="domain-footer">
-          <span>Disponible</span>
-          <a
-            href={`mailto:contact@francedomaine.fr?subject=${encodeURIComponent('Intérêt pour le domaine ' + domain.name)}&body=${encodeURIComponent('Bonjour,\n\nJe suis intéressé(e) par le nom de domaine ' + domain.name + '.\n\nPouvez-vous me communiquer plus d\'informations ?\n\nCordialement')}`}
-            target="_blank"
-            rel="noopener"
-          >
-            En savoir plus →
-          </a>
-        </div>
-      </div>
-    ))}
   </div>
 </section>
 
@@ -102,94 +105,81 @@ const filters = [
 
 <style>
   .portfolio {
-    padding: 120px 60px;
+    padding: 100px 0;
   }
 
   .portfolio-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 24px;
   }
 
   .portfolio h2 {
-    font-size: clamp(36px, 5vw, 56px);
-    font-weight: 300;
-    letter-spacing: -0.5px;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 700;
+    color: var(--color-text);
   }
 
   .filters {
     display: flex;
-    gap: 12px;
+    gap: 8px;
     flex-wrap: wrap;
   }
 
   .filter-btn {
     background: transparent;
-    border: 1px solid rgba(201, 162, 39, 0.2);
-    color: #a0a0a0;
-    padding: 8px 20px;
-    font-family: "Outfit", sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-light);
+    padding: 8px 16px;
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     white-space: nowrap;
   }
 
   .filter-btn:hover {
-    border-color: rgba(201, 162, 39, 0.5);
-    color: #f5f5f0;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
   }
 
   .filter-btn.active {
-    background: linear-gradient(135deg, #c9a227 0%, #a68520 100%);
-    border-color: #c9a227;
-    color: #0a0a0a;
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
   }
 
   .domains-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
   }
 
   .domain-card {
-    background: linear-gradient(145deg, rgba(30,30,30,0.9) 0%, rgba(20,20,20,0.95) 100%);
-    border: 1px solid rgba(201, 162, 39, 0.15);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 24px;
     position: relative;
-    overflow: hidden;
-    padding: 40px 32px;
+    transition: all 0.2s ease;
     opacity: 0;
-    animation: fadeInUp 0.6s ease-out forwards;
-  }
-
-  .domain-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, transparent 0%, rgba(201, 162, 39, 0.05) 100%);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    pointer-events: none;
+    animation: fadeIn 0.4s ease-out forwards;
   }
 
   .domain-card:hover {
-    border-color: rgba(201, 162, 39, 0.5);
-    transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 60px rgba(201, 162, 39, 0.1);
-  }
-
-  .domain-card:hover::before {
-    opacity: 1;
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 20px rgba(0, 102, 255, 0.1);
+    transform: translateY(-2px);
   }
 
   .domain-card.highlight {
-    border-color: rgba(201, 162, 39, 0.3);
+    border-color: var(--color-primary);
+    background: var(--color-primary-light);
   }
 
   .domain-card.hidden {
@@ -200,136 +190,87 @@ const filters = [
     position: absolute;
     top: 16px;
     right: 16px;
-    font-family: "Outfit", sans-serif;
-    font-size: 10px;
-    letter-spacing: 2px;
-    color: #c9a227;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--color-primary);
     text-transform: uppercase;
-    padding: 4px 10px;
-    border: 1px solid rgba(201, 162, 39, 0.3);
-    background: rgba(201, 162, 39, 0.05);
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: white;
   }
 
   .domain-category {
-    font-family: "Outfit", sans-serif;
-    font-size: 11px;
-    letter-spacing: 2px;
-    color: #666;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: var(--color-text-light);
     text-transform: uppercase;
-    margin-bottom: 16px;
-    position: relative;
+    margin-bottom: 8px;
   }
 
   .domain-name {
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    margin-bottom: 12px;
-    color: #f5f5f0;
-    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--color-text);
   }
 
   .domain-card.highlight .domain-name {
-    color: #c9a227;
+    color: var(--color-primary);
   }
 
   .domain-description {
-    font-family: "Outfit", sans-serif;
-    font-size: 13px;
-    font-weight: 300;
+    font-size: 14px;
     line-height: 1.6;
-    color: #777;
-    margin-bottom: 24px;
-    min-height: 60px;
-    position: relative;
+    color: var(--color-text-light);
+    margin-bottom: 20px;
   }
 
   .domain-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    padding-top: 16px;
+    border-top: 1px solid var(--color-border);
   }
 
-  .domain-footer span {
-    font-family: "Outfit", sans-serif;
-    font-size: 12px;
-    color: #888;
-    letter-spacing: 1px;
+  .status {
+    font-size: 13px;
+    font-weight: 500;
+    color: #10b981;
+    display: flex;
+    align-items: center;
+    gap: 6px;
   }
 
-  .domain-footer a {
-    font-family: "Outfit", sans-serif;
-    font-size: 12px;
-    color: #c9a227;
+  .status::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #10b981;
+    border-radius: 50%;
+  }
+
+  .domain-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-primary);
     text-decoration: none;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    position: relative;
-    z-index: 10;
+    transition: opacity 0.2s ease;
   }
 
-  .domain-footer a:hover {
+  .domain-link:hover {
     opacity: 0.8;
-  }
-
-  /* Light mode */
-  :global(body.light-mode) .filter-btn {
-    border-color: rgba(201, 162, 39, 0.3);
-    color: #555;
-  }
-
-  :global(body.light-mode) .filter-btn:hover {
-    color: #1a1a1a;
-  }
-
-  :global(body.light-mode) .domain-card {
-    background: linear-gradient(145deg, rgba(255,255,255,0.95) 0%, rgba(248,247,244,0.98) 100%);
-    border-color: rgba(201, 162, 39, 0.2);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  }
-
-  :global(body.light-mode) .domain-card:hover {
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 0 60px rgba(201, 162, 39, 0.1);
-  }
-
-  :global(body.light-mode) .domain-card::before {
-    background: linear-gradient(135deg, transparent 0%, rgba(201, 162, 39, 0.08) 100%);
-  }
-
-  :global(body.light-mode) .domain-category {
-    color: #888;
-  }
-
-  :global(body.light-mode) .domain-name {
-    color: #1a1a1a;
-  }
-
-  :global(body.light-mode) .domain-card.highlight .domain-name {
-    color: #a68520;
-  }
-
-  :global(body.light-mode) .domain-description {
-    color: #666;
-  }
-
-  :global(body.light-mode) .domain-footer span {
-    color: #888;
-  }
-
-  :global(body.light-mode) .domain-footer a {
-    color: #a68520;
-  }
-
-  :global(body.light-mode) .premium-badge {
-    color: #a68520;
-    border-color: rgba(201, 162, 39, 0.4);
-    background: rgba(201, 162, 39, 0.1);
   }
 
   @media (max-width: 768px) {
     .portfolio {
-      padding: 80px 24px;
+      padding: 60px 0;
+    }
+
+    .domains-grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>

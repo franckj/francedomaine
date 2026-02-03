@@ -2,45 +2,45 @@
 const faqs = [
   {
     question: "Pourquoi investir dans un nom de domaine premium ?",
-    answer: "Un nom de domaine premium est votre premier actif digital. Il confère instantanément crédibilité et professionnalisme à votre marque. Les domaines courts, mémorables ou parfaitement alignés avec votre activité génèrent un meilleur taux de mémorisation, facilitent le bouche-à-oreille et renforcent votre positionnement dans les moteurs de recherche. C'est un investissement qui s'apprécie avec le temps."
+    answer: "Un nom de domaine premium est votre premier actif digital. Il confère instantanément crédibilité et professionnalisme à votre marque. Les domaines courts, mémorables ou parfaitement alignés avec votre activité génèrent un meilleur taux de mémorisation, facilitent le bouche-à-oreille et renforcent votre positionnement dans les moteurs de recherche."
   },
   {
     question: "Quels sont les avantages d'un domaine en .fr ?",
-    answer: "L'extension .fr est le signal de confiance par excellence pour le marché français. Elle indique aux consommateurs que vous êtes établi en France, renforce votre référencement local sur Google.fr, et bénéficie de la protection juridique de l'AFNIC. Pour toute entreprise ciblant le marché hexagonal, le .fr est un atout stratégique incontournable."
+    answer: "L'extension .fr est le signal de confiance par excellence pour le marché français. Elle indique aux consommateurs que vous êtes établi en France, renforce votre référencement local sur Google.fr, et bénéficie de la protection juridique de l'AFNIC."
   },
   {
     question: "Un domaine court fait-il vraiment la différence ?",
-    answer: "Absolument. Chaque caractère compte. Un domaine court (moins de 10 caractères) se mémorise en une lecture, s'écrit sans faute, et projette une image de marque forte et établie. Les géants du web l'ont compris : Google, Apple, Meta... La concision est synonyme de puissance."
+    answer: "Absolument. Chaque caractère compte. Un domaine court (moins de 10 caractères) se mémorise en une lecture, s'écrit sans faute, et projette une image de marque forte et établie. Les géants du web l'ont compris : Google, Apple, Meta..."
   },
   {
     question: "Comment se déroule l'acquisition d'un domaine ?",
-    answer: "Le processus est simple et sécurisé. Après nous avoir contactés pour le domaine souhaité, nous établissons une proposition. Une fois l'accord conclu, le transfert s'effectue via un service d'escrow (séquestre) qui protège les deux parties. Vous recevez le domaine dans votre compte registrar sous 24 à 72 heures."
-  },
-  {
-    question: "Quelle est l'expertise de l'équipe FranceDomaine ?",
-    answer: "Notre équipe cumule plus de 25 années d'expérience dans l'industrie des noms de domaine. Nous avons accompagné des centaines d'entreprises françaises — startups, PME et grands groupes — dans l'acquisition de leur identité digitale. Cette expertise nous permet d'évaluer justement chaque domaine et de conseiller nos clients avec précision."
+    answer: "Le processus est simple et sécurisé. Après nous avoir contactés pour le domaine souhaité, nous établissons une proposition. Une fois l'accord conclu, le transfert s'effectue via un service d'escrow qui protège les deux parties. Vous recevez le domaine sous 24 à 72 heures."
   },
   {
     question: "Un domaine premium améliore-t-il le SEO ?",
-    answer: "Un nom de domaine contenant des mots-clés pertinents (exact match domain) peut renforcer votre positionnement pour ces requêtes. Plus important encore, un domaine mémorable génère davantage de recherches directes de marque, un signal de qualité majeur pour Google. L'autorité se construit plus vite sur un domaine qui inspire confiance."
+    answer: "Un nom de domaine contenant des mots-clés pertinents peut renforcer votre positionnement pour ces requêtes. Plus important encore, un domaine mémorable génère davantage de recherches directes de marque, un signal de qualité majeur pour Google."
   }
 ];
 ---
 
 <section id="expertise" class="faq">
-  <div class="faq-container">
+  <div class="container">
     <div class="faq-header">
-      <p class="section-label">Questions fréquentes</p>
-      <h2>Notre expertise à votre service</h2>
+      <p class="section-label">FAQ</p>
+      <h2>Questions fréquentes</h2>
     </div>
 
     <div class="faq-list">
       {faqs.map(faq => (
         <div class="faq-item">
-          <div class="faq-question">
+          <button class="faq-question" type="button">
             <h3>{faq.question}</h3>
-            <span class="faq-toggle">+</span>
-          </div>
+            <span class="faq-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
           <div class="faq-answer">
             <p>{faq.answer}</p>
           </div>
@@ -54,116 +54,100 @@ const faqs = [
   document.querySelectorAll('.faq-question').forEach(question => {
     question.addEventListener('click', () => {
       const item = question.parentElement;
-      item?.classList.toggle('open');
+      const isOpen = item?.classList.contains('open');
+
+      // Close all other items
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+
+      // Toggle current item
+      if (!isOpen) {
+        item?.classList.add('open');
+      }
     });
   });
 </script>
 
 <style>
   .faq {
-    padding: 120px 60px;
-  }
-
-  .faq-container {
-    max-width: 900px;
-    margin: 0 auto;
+    padding: 100px 0;
   }
 
   .faq-header {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   .faq h2 {
-    font-size: clamp(36px, 5vw, 56px);
-    font-weight: 300;
-    letter-spacing: -0.5px;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 700;
+    color: var(--color-text);
+  }
+
+  .faq-list {
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .faq-item {
-    border-bottom: 1px solid rgba(201, 162, 39, 0.1);
-    transition: all 0.3s ease;
-  }
-
-  .faq-item:hover {
-    background: rgba(201, 162, 39, 0.03);
+    border-bottom: 1px solid var(--color-border);
   }
 
   .faq-question {
-    padding: 32px 0;
+    width: 100%;
+    padding: 24px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
     cursor: pointer;
-    transition: color 0.3s ease;
-  }
-
-  .faq-question:hover {
-    color: #c9a227;
+    background: none;
+    border: none;
+    text-align: left;
+    font-family: inherit;
   }
 
   .faq-question h3 {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 17px;
+    font-weight: 600;
     line-height: 1.4;
+    color: var(--color-text);
+    transition: color 0.2s ease;
   }
 
-  .faq-toggle {
-    font-size: 24px;
-    font-weight: 200;
-    color: #c9a227;
-    transition: transform 0.3s ease;
+  .faq-question:hover h3 {
+    color: var(--color-primary);
+  }
+
+  .faq-icon {
     flex-shrink: 0;
+    color: var(--color-text-light);
+    transition: transform 0.3s ease;
   }
 
-  .faq-item.open .faq-toggle {
-    transform: rotate(45deg);
+  .faq-item.open .faq-icon {
+    transform: rotate(180deg);
   }
 
   .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.5s ease;
+    transition: max-height 0.3s ease;
   }
 
   .faq-item.open .faq-answer {
-    max-height: 300px;
-    padding-bottom: 32px;
+    max-height: 200px;
   }
 
   .faq-answer p {
-    font-family: "Outfit", sans-serif;
+    padding-bottom: 24px;
     font-size: 15px;
-    font-weight: 300;
-    line-height: 1.9;
-    color: #888;
-  }
-
-  /* Light mode */
-  :global(body.light-mode) .faq-item {
-    border-bottom-color: rgba(201, 162, 39, 0.15);
-  }
-
-  :global(body.light-mode) .faq-item:hover {
-    background: rgba(201, 162, 39, 0.05);
-  }
-
-  :global(body.light-mode) .faq-question:hover {
-    color: #a68520;
-  }
-
-  :global(body.light-mode) .faq-toggle {
-    color: #a68520;
-  }
-
-  :global(body.light-mode) .faq-answer p {
-    color: #666;
+    line-height: 1.7;
+    color: var(--color-text-light);
   }
 
   @media (max-width: 768px) {
     .faq {
-      padding: 80px 24px;
+      padding: 60px 0;
     }
   }
 </style>

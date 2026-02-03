@@ -2,28 +2,32 @@
 ---
 
 <section class="hero">
-  <div class="hero-content">
-    <p class="hero-label animate-in delay-1">Branding & Naming Premium</p>
-    <h1 class="animate-in delay-2">
-      Votre marque mérite un <span class="gold-text">domaine d'exception</span>
-    </h1>
-    <p class="hero-desc animate-in delay-3">
-      Une sélection exclusive de noms de domaine premium en .fr et .com,
-      soigneusement choisis pour les entreprises qui visent l'excellence.
-    </p>
-    <div class="hero-cta animate-in delay-4">
-      <button class="cta-button" id="discoverBtn">
-        Découvrir le portfolio
-      </button>
-      <span>25 ans d'expertise</span>
+  <div class="container">
+    <div class="hero-content">
+      <p class="section-label animate-in delay-1">Domaines Premium</p>
+      <h1 class="animate-in delay-2">
+        Trouvez le nom de domaine <span class="highlight">parfait</span> pour votre marque
+      </h1>
+      <p class="hero-desc animate-in delay-3">
+        Une sélection exclusive de noms de domaine premium en .fr et .com,
+        soigneusement choisis pour les entreprises ambitieuses.
+      </p>
+      <div class="hero-cta animate-in delay-3">
+        <button class="cta-button" id="discoverBtn">
+          Voir le portfolio
+        </button>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">25+</span>
+            <span class="stat-label">ans d'expertise</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">15</span>
+            <span class="stat-label">domaines disponibles</span>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="decorative-dots">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
   </div>
 </section>
 
@@ -35,103 +39,75 @@
 
 <style>
   .hero {
-    min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 60px;
-    position: relative;
+    padding: 80px 0 120px;
+    background: linear-gradient(180deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
   }
 
   .hero-content {
-    max-width: 900px;
-  }
-
-  .hero-label {
-    font-family: "Outfit", sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 4px;
-    color: #c9a227;
-    text-transform: uppercase;
-    margin-bottom: 32px;
+    max-width: 700px;
   }
 
   .hero h1 {
-    font-size: clamp(48px, 8vw, 96px);
-    font-weight: 300;
-    line-height: 1.05;
-    margin-bottom: 40px;
-    letter-spacing: -1px;
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    color: var(--color-text);
+  }
+
+  .hero h1 .highlight {
+    color: var(--color-primary);
   }
 
   .hero-desc {
-    font-family: "Outfit", sans-serif;
     font-size: 18px;
-    font-weight: 300;
-    line-height: 1.8;
-    color: #a0a0a0;
-    max-width: 600px;
-    margin-bottom: 48px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--color-text-light);
+    margin-bottom: 40px;
   }
 
   .hero-cta {
     display: flex;
-    gap: 24px;
     align-items: center;
+    gap: 48px;
+    flex-wrap: wrap;
   }
 
-  .hero-cta > span {
-    font-family: "Outfit", sans-serif;
-    font-size: 13px;
-    color: #666;
-    letter-spacing: 1px;
+  .hero-stats {
+    display: flex;
+    gap: 32px;
   }
 
-  .decorative-dots {
-    position: absolute;
-    right: 60px;
-    top: 50%;
-    transform: translateY(-50%);
+  .stat {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    opacity: 0.4;
   }
 
-  .decorative-dots div {
-    width: 4px;
-    height: 4px;
-    background: #c9a227;
+  .stat-number {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-text);
   }
 
-  .decorative-dots div:nth-child(1) { animation: pulse 2s ease-in-out 0s infinite; }
-  .decorative-dots div:nth-child(2) { animation: pulse 2s ease-in-out 0.2s infinite; }
-  .decorative-dots div:nth-child(3) { animation: pulse 2s ease-in-out 0.4s infinite; }
-  .decorative-dots div:nth-child(4) { animation: pulse 2s ease-in-out 0.6s infinite; }
-  .decorative-dots div:nth-child(5) { animation: pulse 2s ease-in-out 0.8s infinite; }
-
-  :global(body.light-mode) .hero-desc {
-    color: #555;
-  }
-
-  :global(body.light-mode) .hero-cta > span {
-    color: #888;
+  .stat-label {
+    font-size: 13px;
+    color: var(--color-text-light);
   }
 
   @media (max-width: 768px) {
     .hero {
-      padding: 0 24px;
-      min-height: 60vh;
+      padding: 60px 0 80px;
     }
 
     .hero-cta {
       flex-direction: column;
       align-items: flex-start;
+      gap: 32px;
     }
 
-    .decorative-dots {
-      display: none;
+    .hero-stats {
+      gap: 24px;
     }
   }
 </style>
