@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FranceDomaine.fr — Noms de Domaine Premium</title>
+  <meta name="description" content="Une sélection exclusive de noms de domaine premium en .fr et .com pour les entreprises qui visent l'excellence. 25 ans d'expertise.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    ::selection {
+      background: #c9a227;
+      color: #0a0a0a;
+    }
+    
+    body {
+      min-height: 100vh;
+      background: #0a0a0a;
+      color: #f5f5f0;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      overflow-x: hidden;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes shimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.8; }
+    }
+    
+    .animate-in {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+    
+    .delay-1 { animation-delay: 0.1s; opacity: 0; }
+    .delay-2 { animation-delay: 0.2s; opacity: 0; }
+    .delay-3 { animation-delay: 0.3s; opacity: 0; }
+    .delay-4 { animation-delay: 0.4s; opacity: 0; }
+    
+    .gold-text {
+      background: linear-gradient(135deg, #c9a227 0%, #f4e4a6 25%, #c9a227 50%, #f4e4a6 75%, #c9a227 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 4s linear infinite;
+    }
+    
+    .grain-overlay {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      z-index: 1000;
+    }
+    
+    .bg-glow {
+      position: fixed;
+      top: -50%;
+      right: -20%;
+      width: 80%;
+      height: 100%;
+      background: radial-gradient(ellipse at center, rgba(201, 162, 39, 0.03) 0%, transparent 70%);
+      pointer-events: none;
+      transition: background 0.4s ease;
+    }
+    
+    /* French flag accent - official colors */
+    .french-flag {
+      display: flex;
+      gap: 2px;
+      opacity: 0.8;
+    }
+    
+    .french-flag div {
+      width: 3px;
+      height: 16px;
+      border-radius: 1px;
+    }
+    
+    .french-flag .blue { background: #000091; }
+    .french-flag .white { background: #FFFFFF; }
+    .french-flag .red { background: #E1000F; }
+    
+    .french-flag.large div {
+      width: 4px;
+      height: 24px;
+      border-radius: 2px;
+    }
+    
+    /* Theme toggle */
+    .theme-toggle {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: "Outfit", sans-serif;
+      font-size: 11px;
+      letter-spacing: 1px;
+      color: #666;
+      text-transform: uppercase;
+    }
+    
+    .theme-toggle-btn {
+      width: 48px;
+      height: 26px;
+      background: rgba(201, 162, 39, 0.2);
+      border: 1px solid rgba(201, 162, 39, 0.3);
+      border-radius: 13px;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    
+    .theme-toggle-btn::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      background: #c9a227;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+    
+    /* Light mode styles */
+    body.light-mode {
+      background: #f8f7f4;
+      color: #1a1a1a;
+    }
+    
+    body.light-mode .grain-overlay {
+      opacity: 0.015;
+    }
+    
+    body.light-mode .bg-glow {
+      background: radial-gradient(ellipse at center, rgba(201, 162, 39, 0.08) 0%, transparent 70%);
+    }
+    
+    body.light-mode .theme-toggle-btn::after {
+      left: 25px;
+      background: #a68520;
+    }
+    
+    body.light-mode .theme-toggle-btn {
+      background: rgba(201, 162, 39, 0.15);
+    }
+    
+    body.light-mode .logo-text span:last-child {
+      color: #666;
+    }
+    
+    body.light-mode nav a {
+      color: #666;
+    }
+    
+    body.light-mode nav a:hover {
+      color: #a68520;
+    }
+    
+    body.light-mode .hero-desc {
+      color: #555;
+    }
+    
+    body.light-mode .hero-cta > span {
+      color: #888;
+    }
+    
+    body.light-mode .french-flag .white {
+      background: #FFFFFF;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+    }
+    
+    body.light-mode .filter-btn {
+      border-color: rgba(201, 162, 39, 0.3);
+      color: #555;
+    }
+    
+    body.light-mode .filter-btn:hover {
+      color: #1a1a1a;
+    }
+    
+    body.light-mode .domain-card {
+      background: linear-gradient(145deg, rgba(255,255,255,0.95) 0%, rgba(248,247,244,0.98) 100%);
+      border-color: rgba(201, 162, 39, 0.2);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    
+    body.light-mode .domain-card:hover {
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 0 60px rgba(201, 162, 39, 0.1);
+    }
+    
+    body.light-mode .domain-card::before {
+      background: linear-gradient(135deg, transparent 0%, rgba(201, 162, 39, 0.08) 100%);
+    }
+    
+    body.light-mode .domain-category {
+      color: #888;
+    }
+    
+    body.light-mode .domain-name {
+      color: #1a1a1a;
+    }
+    
+    body.light-mode .domain-card.highlight .domain-name {
+      color: #a68520;
+    }
+    
+    body.light-mode .domain-description {
+      color: #666;
+    }
+    
+    body.light-mode .domain-footer span {
+      color: #888;
+    }
+    
+    body.light-mode .domain-footer a {
+      color: #a68520;
+    }
+    
+    body.light-mode .premium-badge {
+      color: #a68520;
+      border-color: rgba(201, 162, 39, 0.4);
+      background: rgba(201, 162, 39, 0.1);
+    }
+    
+    body.light-mode .value-item p {
+      color: #666;
+    }
+    
+    body.light-mode .faq-item:hover {
+      background: rgba(201, 162, 39, 0.05);
+    }
+    
+    body.light-mode .faq-question:hover {
+      color: #a68520;
+    }
+    
+    body.light-mode .faq-toggle {
+      color: #a68520;
+    }
+    
+    body.light-mode .faq-answer p {
+      color: #666;
+    }
+    
+    body.light-mode .cta-section p {
+      color: #666;
+    }
+    
+    body.light-mode .cta-glow {
+      background: radial-gradient(ellipse at center, rgba(201, 162, 39, 0.08) 0%, transparent 60%);
+    }
+    
+    body.light-mode footer {
+      border-top-color: rgba(201, 162, 39, 0.15);
+    }
+    
+    body.light-mode .footer-content p {
+      color: #888;
+    }
+    
+    body.light-mode .footer-content a {
+      color: #666;
+    }
+    
+    body.light-mode .footer-content a:hover {
+      color: #a68520;
+    }
+    
+    body.light-mode .decorative-line {
+      background: linear-gradient(90deg, transparent 0%, rgba(201, 162, 39, 0.4) 50%, transparent 100%);
+    }
+    
+    body.light-mode .faq-item {
+      border-bottom-color: rgba(201, 162, 39, 0.15);
+    }
+    
+    /* Header */
+    header {
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      border: 1px solid rgba(201, 162, 39, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 300;
+      color: #c9a227;
+    }
+    
+    .logo-text {
+      font-family: "Outfit", sans-serif;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    
+    .logo-text span:first-child {
+      color: #c9a227;
+      font-weight: 400;
+    }
+    
+    .logo-text span:last-child {
+      color: #888;
+      font-weight: 300;
+      display: block;
+    }
+    
+    nav {
+      display: flex;
+      gap: 48px;
+      font-family: "Outfit", sans-serif;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+    
+    nav a {
+      color: #a0a0a0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    nav a:hover {
+      color: #c9a227;
+    }
+    
+    /* Hero */
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 60px;
+      position: relative;
+    }
+    
+    .hero-content {
+      max-width: 900px;
+    }
+    
+    .hero-label {
+      font-family: "Outfit", sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      color: #c9a227;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    
+    .hero h1 {
+      font-size: clamp(48px, 8vw, 96px);
+      font-weight: 300;
+      line-height: 1.05;
+      margin-bottom: 40px;
+      letter-spacing: -1px;
+    }
+    
+    .hero-desc {
+      font-family: "Outfit", sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #a0a0a0;
+      max-width: 600px;
+      margin-bottom: 48px;
+    }
+    
+    .hero-cta {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    
+    .hero-cta > span {
+      font-family: "Outfit", sans-serif;
+      font-size: 13px;
+      color: #666;
+      letter-spacing: 1px;
+    }
+    
+    .decorative-dots {
+      position: absolute;
+      right: 60px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      opacity: 0.4;
+    }
+    
+    .decorative-dots div {
+      width: 4px;
+      height: 4px;
+      background: #c9a227;
+    }
+    
+    .decorative-dots div:nth-child(1) { animation: pulse 2s ease-in-out 0s infinite; }
+    .decorative-dots div:nth-child(2) { animation: pulse 2s ease-in-out 0.2s infinite; }
+    .decorative-dots div:nth-child(3) { animation: pulse 2s ease-in-out 0.4s infinite; }
+    .decorative-dots div:nth-child(4) { animation: pulse 2s ease-in-out 0.6s infinite; }
+    .decorative-dots div:nth-child(5) { animation: pulse 2s ease-in-out 0.8s infinite; }
+    
+    /* Buttons */
+    .cta-button {
+      background: linear-gradient(135deg, #c9a227 0%, #a68520 100%);
+      color: #0a0a0a;
+      border: none;
+      padding: 18px 48px;
+      font-family: "Outfit", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(201, 162, 39, 0.3);
+    }
+    
+    .decorative-line {
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(201, 162, 39, 0.5) 50%, transparent 100%);
+      margin: 0 60px;
+    }
+    
+    /* Portfolio */
+    .portfolio {
+      padding: 120px 60px;
+    }
+    
+    .portfolio-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+    
+    .section-label {
+      font-family: "Outfit", sans-serif;
+      font-size: 13px;
+      letter-spacing: 4px;
+      color: #c9a227;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    
+    .portfolio h2, .faq h2 {
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 300;
+      letter-spacing: -0.5px;
+    }
+    
+    .filters {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+      background: transparent;
+      border: 1px solid rgba(201, 162, 39, 0.2);
+      color: #a0a0a0;
+      padding: 8px 20px;
+      font-family: "Outfit", sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+    
+    .filter-btn:hover {
+      border-color: rgba(201, 162, 39, 0.5);
+      color: #f5f5f0;
+    }
+    
+    .filter-btn.active {
+      background: linear-gradient(135deg, #c9a227 0%, #a68520 100%);
+      border-color: #c9a227;
+      color: #0a0a0a;
+    }
+    
+    .domains-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    
+    .domain-card {
+      background: linear-gradient(145deg, rgba(30,30,30,0.9) 0%, rgba(20,20,20,0.95) 100%);
+      border: 1px solid rgba(201, 162, 39, 0.15);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      padding: 40px 32px;
+      opacity: 0;
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+    
+    .domain-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, transparent 0%, rgba(201, 162, 39, 0.05) 100%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+    }
+    
+    .domain-card:hover {
+      border-color: rgba(201, 162, 39, 0.5);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 60px rgba(201, 162, 39, 0.1);
+    }
+    
+    .domain-card:hover::before {
+      opacity: 1;
+    }
+    
+    .domain-card.highlight {
+      border-color: rgba(201, 162, 39, 0.3);
+    }
+    
+    .domain-card.hidden {
+      display: none;
+    }
+    
+    .premium-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-family: "Outfit", sans-serif;
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #c9a227;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border: 1px solid rgba(201, 162, 39, 0.3);
+      background: rgba(201, 162, 39, 0.05);
+    }
+    
+    .domain-category {
+      font-family: "Outfit", sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #666;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      position: relative;
+    }
+    
+    .domain-name {
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      color: #f5f5f0;
+      position: relative;
+    }
+    
+    .domain-card.highlight .domain-name {
+      color: #c9a227;
+    }
+    
+    .domain-description {
+      font-family: "Outfit", sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.6;
+      color: #777;
+      margin-bottom: 24px;
+      min-height: 60px;
+      position: relative;
+    }
+    
+    .domain-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    
+    .domain-footer span {
+      font-family: "Outfit", sans-serif;
+      font-size: 12px;
+      color: #888;
+      letter-spacing: 1px;
+    }
+    
+    .domain-footer a {
+      font-family: "Outfit", sans-serif;
+      font-size: 12px;
+      color: #c9a227;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+      position: relative;
+      z-index: 10;
+    }
+    
+    .domain-footer a:hover {
+      opacity: 0.8;
+    }
+    
+    /* Value Props */
+    .value-props {
+      padding: 120px 60px;
+      background: linear-gradient(180deg, transparent 0%, rgba(201, 162, 39, 0.02) 50%, transparent 100%);
+    }
+    
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .value-item {
+      position: relative;
+    }
+    
+    .value-number {
+      font-family: "Outfit", sans-serif;
+      font-size: 64px;
+      font-weight: 200;
+      color: rgba(201, 162, 39, 0.15);
+      position: absolute;
+      top: -20px;
+      left: -10px;
+    }
+    
+    .value-item h3 {
+      font-size: 28px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      padding-top: 40px;
+    }
+    
+    .value-item p {
+      font-family: "Outfit", sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #888;
+    }
+    
+    /* FAQ */
+    .faq {
+      padding: 120px 60px;
+    }
+    
+    .faq-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .faq-header {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    
+    .faq-item {
+      border-bottom: 1px solid rgba(201, 162, 39, 0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .faq-item:hover {
+      background: rgba(201, 162, 39, 0.03);
+    }
+    
+    .faq-question {
+      padding: 32px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    
+    .faq-question:hover {
+      color: #c9a227;
+    }
+    
+    .faq-question h3 {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+    
+    .faq-toggle {
+      font-size: 24px;
+      font-weight: 200;
+      color: #c9a227;
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+    
+    .faq-item.open .faq-toggle {
+      transform: rotate(45deg);
+    }
+    
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.5s ease;
+    }
+    
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding-bottom: 32px;
+    }
+    
+    .faq-answer p {
+      font-family: "Outfit", sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.9;
+      color: #888;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+      padding: 120px 60px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .cta-glow {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(201, 162, 39, 0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    
+    .cta-section h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 300;
+      margin-bottom: 24px;
+      letter-spacing: -0.5px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .cta-section > p {
+      font-family: "Outfit", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      color: #888;
+      max-width: 500px;
+      margin: 0 auto 48px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .cta-section .cta-button {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .cta-flag {
+      margin-top: 48px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* Footer */
+    footer {
+      padding: 60px;
+      border-top: 1px solid rgba(201, 162, 39, 0.1);
+    }
+    
+    .footer-logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    
+    .footer-logo .logo {
+      transform: scale(0.9);
+    }
+    
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    
+    .footer-content p {
+      font-family: "Outfit", sans-serif;
+      font-size: 13px;
+      color: #666;
+      letter-spacing: 0.5px;
+    }
+    
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    
+    .footer-content a {
+      font-family: "Outfit", sans-serif;
+      font-size: 13px;
+      color: #888;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-content a:hover {
+      color: #c9a227;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        padding: 24px 24px;
+        flex-direction: column;
+        gap: 24px;
+      }
+      
+      nav {
+        gap: 24px;
+      }
+      
+      .hero {
+        padding: 0 24px;
+        min-height: 60vh;
+      }
+      
+      .hero-cta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .decorative-dots {
+        display: none;
+      }
+      
+      .portfolio, .value-props, .faq, .cta-section {
+        padding: 80px 24px;
+      }
+      
+      .decorative-line {
+        margin: 0 24px;
+      }
+      
+      footer {
+        padding: 40px 24px;
+      }
+      
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .footer-right {
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .theme-toggle span {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grain-overlay"></div>
+  <div class="bg-glow"></div>
+  
+  <!-- Header -->
+  <header class="animate-in">
+    <div class="logo">
+      <div class="logo-icon">FD</div>
+      <div class="logo-text">
+        <span>France</span>
+        <span>Domaine</span>
+      </div>
+      <div class="french-flag">
+        <div class="blue"></div>
+        <div class="white"></div>
+        <div class="red"></div>
+      </div>
+    </div>
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-label animate-in delay-1">Branding & Naming Premium</p>
+      <h1 class="animate-in delay-2">
+        Votre marque mérite un <span class="gold-text">domaine d'exception</span>
+      </h1>
+      <p class="hero-desc animate-in delay-3">
+        Une sélection exclusive de noms de domaine premium en .fr et .com, 
+        soigneusement choisis pour les entreprises qui visent l'excellence.
+      </p>
+      <div class="hero-cta animate-in delay-4">
+        <button class="cta-button" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})">
+          Découvrir le portfolio
+        </button>
+        <span>25 ans d'expertise</span>
+      </div>
+    </div>
+    <div class="decorative-dots">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </section>
+  
+  <div class="decorative-line"></div>
+  
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio">
+    <div class="portfolio-header">
+      <div>
+        <p class="section-label">Portfolio</p>
+        <h2>Domaines disponibles</h2>
+      </div>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="Luxe & Lifestyle">Luxe & Lifestyle</button>
+        <button class="filter-btn" data-filter="Tech & Cloud">Tech & Cloud</button>
+        <button class="filter-btn" data-filter="Santé">Santé</button>
+        <button class="filter-btn" data-filter="Business & Tech">Business & Tech</button>
+        <button class="filter-btn" data-filter="E-commerce & Créatif">E-commerce</button>
+      </div>
+    </div>
+    
+    <div class="domains-grid" id="domainsGrid">
+      <!-- Domains inserted by JS -->
+    </div>
+  </section>
+  
+  <!-- Value Props -->
+  <section class="value-props">
+    <div class="value-grid">
+      <div class="value-item">
+        <span class="value-number">01</span>
+        <h3>Mémorabilité</h3>
+        <p>Un domaine premium se retient dès la première lecture. Il devient un actif marketing qui travaille pour vous 24h/24.</p>
+      </div>
+      <div class="value-item">
+        <span class="value-number">02</span>
+        <h3>Crédibilité</h3>
+        <p>Les entreprises établies possèdent des domaines premium. C'est un signal de confiance immédiat pour vos clients.</p>
+      </div>
+      <div class="value-item">
+        <span class="value-number">03</span>
+        <h3>Valorisation</h3>
+        <p>Les noms de domaine premium s'apprécient avec le temps. C'est un actif digital qui prend de la valeur.</p>
+      </div>
+    </div>
+  </section>
+  
+  <div class="decorative-line"></div>
+  
+  <!-- FAQ -->
+  <section id="expertise" class="faq">
+    <div class="faq-container">
+      <div class="faq-header">
+        <p class="section-label">Questions fréquentes</p>
+        <h2>Notre expertise à votre service</h2>
+      </div>
+      
+      <div id="faqList">
+        <!-- FAQ items inserted by JS -->
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section id="contact" class="cta-section">
+    <div class="cta-glow"></div>
+    <h2>Prêt à acquérir votre domaine ?</h2>
+    <p>Contactez notre équipe pour discuter de votre projet et obtenir une proposition personnalisée.</p>
+    <a class="cta-button" href="mailto:contact@francedomaine.fr" target="_blank" rel="noopener" style="display: inline-block; text-decoration: none;">
+      Nous contacter
+    </a>
+    <div class="cta-flag">
+      <div class="french-flag large">
+        <div class="blue"></div>
+        <div class="white"></div>
+        <div class="red"></div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">
+      <div class="logo">
+        <div class="logo-icon">FD</div>
+        <div class="logo-text">
+          <span>France</span>
+          <span>Domaine</span>
+        </div>
+        <div class="french-flag">
+          <div class="blue"></div>
+          <div class="white"></div>
+          <div class="red"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content">
+      <p>© 2025 FranceDomaine.fr — 25 ans d'expertise en noms de domaine premium</p>
+      <div class="footer-right">
+        <div class="theme-toggle">
+          <span>Light</span>
+          <button class="theme-toggle-btn" id="themeToggle" aria-label="Changer de thème"></button>
+        </div>
+        <a href="mailto:contact@francedomaine.fr" target="_blank" rel="noopener">contact@francedomaine.fr</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Domain data
+    var domains = [
+      { name: 'aurae.fr', category: 'Luxe & Lifestyle', highlight: true, description: "Évocation poétique de l'aura et de la lumière, idéal pour une marque de parfumerie, joaillerie ou bien-être haut de gamme." },
+      { name: 'hotelroyal.fr', category: 'Hôtellerie', highlight: false, description: "Le nom ultime pour un établissement hôtelier d'exception ou une chaîne visant le segment luxe en France." },
+      { name: 'flandres.com', category: 'Géographique', highlight: false, description: "Domaine géographique premium couvrant la région des Flandres, parfait pour le tourisme, l'immobilier ou les produits régionaux." },
+      { name: 'synergetic.fr', category: 'Business & Tech', highlight: false, description: "Nom moderne et dynamique pour une entreprise de conseil, un cabinet de fusion-acquisition ou une agence d'innovation." },
+      { name: 'infracloud.fr', category: 'Tech & Cloud', highlight: true, description: "Combinaison puissante infrastructure + cloud, taillé pour un hébergeur, un MSP ou une société d'infogérance." },
+      { name: 'velobox.fr', category: 'Sport & Mobilité', highlight: false, description: "Nom accrocheur pour une startup de livraison à vélo, un service de vélos en libre-service ou une box mensuelle cyclisme." },
+      { name: 'francemed.fr', category: 'Santé', highlight: true, description: "Association France + médecine, idéal pour une plateforme de télémédecine, un réseau de cliniques ou un portail santé national." },
+      { name: 'omnify.fr', category: 'Tech & SaaS', highlight: false, description: "Nom court et moderne évoquant l'unification et la puissance, parfait pour une solution SaaS ou une plateforme omnicanale." },
+      { name: 'superaliments.fr', category: 'Santé & Nutrition', highlight: true, description: "Exact match domain à fort trafic SEO pour une boutique e-commerce, un blog nutrition ou une marque de compléments." },
+      { name: 'occultation.fr', category: 'Industrie', highlight: false, description: "Terme technique recherché par les professionnels du store, du volet roulant et de la protection solaire." },
+      { name: 'lemillion.com', category: 'Finance & Luxe', highlight: false, description: "Nom évocateur et mémorable pour une fintech, un club d'investisseurs ou une marque lifestyle premium." },
+      { name: 'mytherapy.fr', category: 'Santé & Bien-être', highlight: false, description: "Nom personnel et rassurant pour une application de suivi thérapeutique, un cabinet de psychologie ou une plateforme bien-être." },
+      { name: 'intelligencephysique.com', category: 'Sport & Coaching', highlight: false, description: "Concept unique alliant corps et esprit, idéal pour un coach sportif, une méthode de préparation physique ou un centre d'entraînement." },
+      { name: 'nextchat.fr', category: 'Tech & Communication', highlight: false, description: "Nom futuriste et accessible pour une application de messagerie, un outil de support client ou une startup IA conversationnelle." },
+      { name: 'mysticker.fr', category: 'E-commerce & Créatif', highlight: false, description: "Nom friendly et personnalisable pour une boutique de stickers personnalisés, une imprimerie créative ou une marque lifestyle." }
+    ];
+    
+    // FAQ data
+    var faqs = [
+      {
+        question: "Pourquoi investir dans un nom de domaine premium ?",
+        answer: "Un nom de domaine premium est votre premier actif digital. Il confère instantanément crédibilité et professionnalisme à votre marque. Les domaines courts, mémorables ou parfaitement alignés avec votre activité génèrent un meilleur taux de mémorisation, facilitent le bouche-à-oreille et renforcent votre positionnement dans les moteurs de recherche. C'est un investissement qui s'apprécie avec le temps."
+      },
+      {
+        question: "Quels sont les avantages d'un domaine en .fr ?",
+        answer: "L'extension .fr est le signal de confiance par excellence pour le marché français. Elle indique aux consommateurs que vous êtes établi en France, renforce votre référencement local sur Google.fr, et bénéficie de la protection juridique de l'AFNIC. Pour toute entreprise ciblant le marché hexagonal, le .fr est un atout stratégique incontournable."
+      },
+      {
+        question: "Un domaine court fait-il vraiment la différence ?",
+        answer: "Absolument. Chaque caractère compte. Un domaine court (moins de 10 caractères) se mémorise en une lecture, s'écrit sans faute, et projette une image de marque forte et établie. Les géants du web l'ont compris : Google, Apple, Meta... La concision est synonyme de puissance."
+      },
+      {
+        question: "Comment se déroule l'acquisition d'un domaine ?",
+        answer: "Le processus est simple et sécurisé. Après nous avoir contactés pour le domaine souhaité, nous établissons une proposition. Une fois l'accord conclu, le transfert s'effectue via un service d'escrow (séquestre) qui protège les deux parties. Vous recevez le domaine dans votre compte registrar sous 24 à 72 heures."
+      },
+      {
+        question: "Quelle est l'expertise de l'équipe FranceDomaine ?",
+        answer: "Notre équipe cumule plus de 25 années d'expérience dans l'industrie des noms de domaine. Nous avons accompagné des centaines d'entreprises françaises — startups, PME et grands groupes — dans l'acquisition de leur identité digitale. Cette expertise nous permet d'évaluer justement chaque domaine et de conseiller nos clients avec précision."
+      },
+      {
+        question: "Un domaine premium améliore-t-il le SEO ?",
+        answer: "Un nom de domaine contenant des mots-clés pertinents (exact match domain) peut renforcer votre positionnement pour ces requêtes. Plus important encore, un domaine mémorable génère davantage de recherches directes de marque, un signal de qualité majeur pour Google. L'autorité se construit plus vite sur un domaine qui inspire confiance."
+      }
+    ];
+    
+    // Render domains
+    function renderDomains(filter) {
+      filter = filter || 'all';
+      var grid = document.getElementById('domainsGrid');
+      grid.innerHTML = '';
+      
+      for (var i = 0; i < domains.length; i++) {
+        var domain = domains[i];
+        var matchesFilter = filter === 'all' || domain.category === filter || domain.category.indexOf(filter.replace('E-commerce', 'E-commerce & Créatif')) !== -1;
+        
+        var card = document.createElement('div');
+        card.className = 'domain-card' + (domain.highlight ? ' highlight' : '') + (!matchesFilter ? ' hidden' : '');
+        card.style.animationDelay = (i * 0.05) + 's';
+        
+        var mailtoSubject = encodeURIComponent('Intérêt pour le domaine ' + domain.name);
+        var mailtoBody = encodeURIComponent('Bonjour,\n\nJe suis intéressé(e) par le nom de domaine ' + domain.name + '.\n\nPouvez-vous me communiquer plus d\'informations ?\n\nCordialement');
+        var mailtoLink = 'mailto:contact' + '@' + 'francedomaine.fr?subject=' + mailtoSubject + '&body=' + mailtoBody;
+        
+        var html = '';
+        if (domain.highlight) {
+          html += '<div class="premium-badge">Premium</div>';
+        }
+        html += '<p class="domain-category">' + domain.category + '</p>';
+        html += '<h3 class="domain-name">' + domain.name + '</h3>';
+        html += '<p class="domain-description">' + domain.description + '</p>';
+        html += '<div class="domain-footer">';
+        html += '<span>Disponible</span>';
+        html += '<a href="' + mailtoLink + '" target="_blank" rel="noopener">En savoir plus →</a>';
+        html += '</div>';
+        
+        card.innerHTML = html;
+        grid.appendChild(card);
+      }
+    }
+    
+    // Render FAQs
+    function renderFaqs() {
+      var list = document.getElementById('faqList');
+      
+      for (var i = 0; i < faqs.length; i++) {
+        var faq = faqs[i];
+        var item = document.createElement('div');
+        item.className = 'faq-item';
+        
+        item.innerHTML = '<div class="faq-question"><h3>' + faq.question + '</h3><span class="faq-toggle">+</span></div><div class="faq-answer"><p>' + faq.answer + '</p></div>';
+        
+        (function(el) {
+          el.querySelector('.faq-question').addEventListener('click', function() {
+            el.classList.toggle('open');
+          });
+        })(item);
+        
+        list.appendChild(item);
+      }
+    }
+    
+    // Filter buttons
+    var filterBtns = document.querySelectorAll('.filter-btn');
+    for (var i = 0; i < filterBtns.length; i++) {
+      (function(btn) {
+        btn.addEventListener('click', function() {
+          for (var j = 0; j < filterBtns.length; j++) {
+            filterBtns[j].classList.remove('active');
+          }
+          btn.classList.add('active');
+          renderDomains(btn.getAttribute('data-filter'));
+        });
+      })(filterBtns[i]);
+    }
+    
+    // Theme toggle
+    var themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', function() {
+      document.body.classList.toggle('light-mode');
+      try {
+        localStorage.setItem('fdTheme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+      } catch(e) {}
+    });
+    
+    // Check saved theme preference
+    try {
+      if (localStorage.getItem('fdTheme') === 'light') {
+        document.body.classList.add('light-mode');
+      }
+    } catch(e) {}
+    
+    // Initialize
+    renderDomains();
+    renderFaqs();
+  </script>
+</body>
+</html>
