@@ -40,6 +40,7 @@ const filters = [
           placeholder="Rechercher un domaine..."
           autocomplete="off"
         />
+        <button type="button" class="search-clear" id="searchClear" aria-label="Effacer la recherche">×</button>
       </div>
     </div>
 
@@ -88,6 +89,7 @@ const filters = [
   const filterBtns = document.querySelectorAll('.filter-btn');
   const domainCards = document.querySelectorAll('.domain-card');
   const searchInput = document.getElementById('searchInput') as HTMLInputElement;
+  const searchClear = document.getElementById('searchClear');
   const visibleCount = document.getElementById('visibleCount');
 
   let currentFilter = 'all';
@@ -128,7 +130,24 @@ const filters = [
   searchInput?.addEventListener('input', (e) => {
     currentSearch = (e.target as HTMLInputElement).value.toLowerCase().trim();
     filterDomains();
+    updateClearButton();
   });
+
+  searchClear?.addEventListener('click', () => {
+    if (searchInput) {
+      searchInput.value = '';
+      currentSearch = '';
+      filterDomains();
+      updateClearButton();
+      searchInput.focus();
+    }
+  });
+
+  function updateClearButton() {
+    if (searchClear) {
+      searchClear.classList.toggle('visible', currentSearch.length > 0);
+    }
+  }
 </script>
 
 <style>
@@ -192,6 +211,32 @@ const filters = [
 
   .search-box input::placeholder {
     color: var(--color-text-light);
+  }
+
+  .search-clear {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: var(--color-text-light);
+    cursor: pointer;
+    padding: 4px 8px;
+    line-height: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+  }
+
+  .search-clear:hover {
+    color: var(--color-text);
+  }
+
+  .search-clear.visible {
+    opacity: 1;
+    visibility: visible;
   }
 
   .filters-row {
