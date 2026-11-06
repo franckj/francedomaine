@@ -40,7 +40,7 @@
   },
   {
     "id": "synergetic.fr",
-    "category": "Tech & Business",
+    "category": "Conseil & Finance",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -53,7 +53,7 @@
   },
   {
     "id": "infracloud.fr",
-    "category": "Tech & Business",
+    "category": "Tech & Numérique",
     "status": "masque",
     "featured": true,
     "price_eur": null,
@@ -92,7 +92,7 @@
   },
   {
     "id": "omnify.fr",
-    "category": "Tech & Business",
+    "category": "Tech & Numérique",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -377,7 +377,7 @@
   },
   {
     "id": "expertisemarketing.fr",
-    "category": "Tech & Business",
+    "category": "Conseil & Finance",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -429,7 +429,7 @@
   },
   {
     "id": "ecofactory.fr",
-    "category": "Tech & Business",
+    "category": "Énergie & Industrie",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -481,7 +481,7 @@
   },
   {
     "id": "sinergia.fr",
-    "category": "Tech & Business",
+    "category": "Conseil & Finance",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -494,7 +494,7 @@
   },
   {
     "id": "neocard.fr",
-    "category": "Tech & Business",
+    "category": "Conseil & Finance",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -559,7 +559,7 @@
   },
   {
     "id": "firstconsulting.fr",
-    "category": "Tech & Business",
+    "category": "Conseil & Finance",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -572,7 +572,7 @@
   },
   {
     "id": "prestadrone.fr",
-    "category": "Tech & Business",
+    "category": "Énergie & Industrie",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -585,7 +585,7 @@
   },
   {
     "id": "opora.fr",
-    "category": "Tech & Business",
+    "category": "Tech & Numérique",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -598,7 +598,7 @@
   },
   {
     "id": "abcgestion.fr",
-    "category": "Tech & Business",
+    "category": "Conseil & Finance",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -689,7 +689,7 @@
   },
   {
     "id": "harmonyos.fr",
-    "category": "Tech & Business",
+    "category": "Tech & Numérique",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -702,7 +702,7 @@
   },
   {
     "id": "episcope.fr",
-    "category": "Tech & Business",
+    "category": "Tech & Numérique",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -715,7 +715,7 @@
   },
   {
     "id": "capitalenergie.fr",
-    "category": "Tech & Business",
+    "category": "Énergie & Industrie",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -728,7 +728,7 @@
   },
   {
     "id": "citynews.fr",
-    "category": "Tech & Business",
+    "category": "Tech & Numérique",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -741,7 +741,7 @@
   },
   {
     "id": "datafact.fr",
-    "category": "Tech & Business",
+    "category": "Tech & Numérique",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -754,7 +754,7 @@
   },
   {
     "id": "movepay.fr",
-    "category": "Tech & Business",
+    "category": "Conseil & Finance",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -767,7 +767,7 @@
   },
   {
     "id": "cybercompany.fr",
-    "category": "Tech & Business",
+    "category": "Tech & Numérique",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -780,7 +780,7 @@
   },
   {
     "id": "opensourceacademy.fr",
-    "category": "Tech & Business",
+    "category": "Tech & Numérique",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -793,7 +793,7 @@
   },
   {
     "id": "atlasconstruction.fr",
-    "category": "Tech & Business",
+    "category": "Énergie & Industrie",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -806,7 +806,7 @@
   },
   {
     "id": "easyprotect.fr",
-    "category": "Tech & Business",
+    "category": "Conseil & Finance",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -819,7 +819,7 @@
   },
   {
     "id": "agriconnect.fr",
-    "category": "Tech & Business",
+    "category": "Énergie & Industrie",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -832,7 +832,7 @@
   },
   {
     "id": "superrecharge.fr",
-    "category": "Tech & Business",
+    "category": "Énergie & Industrie",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -845,7 +845,7 @@
   },
   {
     "id": "pooltech.fr",
-    "category": "Tech & Business",
+    "category": "Énergie & Industrie",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -858,7 +858,7 @@
   },
   {
     "id": "energetiques.fr",
-    "category": "Tech & Business",
+    "category": "Énergie & Industrie",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -871,7 +871,7 @@
   },
   {
     "id": "aquaprotect.fr",
-    "category": "Tech & Business",
+    "category": "Énergie & Industrie",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -884,7 +884,7 @@
   },
   {
     "id": "globalsecurity.fr",
-    "category": "Tech & Business",
+    "category": "Tech & Numérique",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -897,7 +897,7 @@
   },
   {
     "id": "apura.fr",
-    "category": "Tech & Business",
+    "category": "Tech & Numérique",
     "status": "disponible",
     "featured": false,
     "price_eur": null,
@@ -910,7 +910,7 @@
   },
   {
     "id": "darwincapital.fr",
-    "category": "Tech & Business",
+    "category": "Conseil & Finance",
     "status": "disponible",
     "featured": false,
     "price_eur": null,

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-06 · Tech & Business split
+
+- Tech & Business (29 names) split into 3 categories: Tech & Numérique (11, 10 shown), Conseil & Finance (9), Énergie & Industrie (9). Franck: "split Tech & Business into broader catégories".
+- /categories/tech-et-business/ and the older tech slugs 301 to /categories/tech-et-numerique/; /categories/industrie/ now 301s to Énergie & Industrie.
+
 ## 2026-11-06 — 35 more names (LIVE, Franck: "deploy")
 
 - From Franck's list, all registered at Dynadot behind DEUP privacy (RDAP 2026-11-06): InovAI.fr, HyperBot.fr, DataFusion.fr (IA); HarmonyOS.fr, Episcope.fr, CapitalEnergie.fr, CityNews.fr, DataFact.fr, MovePay.fr, CyberCompany.fr, OpenSourceAcademy.fr, AtlasConstruction.fr, EasyProtect.fr, AgriConnect.fr, SuperRecharge.fr, PoolTech.fr, Energetiques.fr, AquaProtect.fr, GlobalSecurity.fr, Apura.fr, DarwinCapital.fr (Tech & Business); ErgoPro.fr, SkinCenter.fr, InstantBeaute.fr (Santé & Bien-être); DirectTransport.fr, CabaretParis.fr (Tourisme & Territoires); DroneZone.fr, NeoCycles.com (Sport & Loisirs); Joies.fr, Colocate.fr, RockShop.fr, Convertibles.fr, EcoVert.fr, Sucres.fr, PrimaPizza.fr (Commerce & Lifestyle).

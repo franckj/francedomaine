@@ -18,10 +18,12 @@ function redirectsFile() {
         }
         // Categories merged 2026-11-06 (Franck: "less Catégories, way too many, find broader"): old pages 301 to the new ones.
         for (const [from, to] of [
-          ['business-et-tech', 'tech-et-business'],
-          ['tech-et-cloud', 'tech-et-business'],
-          ['tech-et-saas', 'tech-et-business'],
-          ['tech-et-communication', 'tech-et-business'],
+          // Tech & Business split 2026-11-06 (Franck: "split Tech & Business into broader catégories").
+          ['tech-et-business', 'tech-et-numerique'],
+          ['business-et-tech', 'tech-et-numerique'],
+          ['tech-et-cloud', 'tech-et-numerique'],
+          ['tech-et-saas', 'tech-et-numerique'],
+          ['tech-et-communication', 'tech-et-numerique'],
           ['sante', 'sante-et-bien-etre'],
           ['sante-et-nutrition', 'sante-et-bien-etre'],
           ['sport-et-mobilite', 'sport-et-loisirs'],
@@ -29,7 +31,7 @@ function redirectsFile() {
           ['luxe-et-lifestyle', 'commerce-et-lifestyle'],
           ['finance-et-luxe', 'commerce-et-lifestyle'],
           ['e-commerce-et-creatif', 'commerce-et-lifestyle'],
-          ['industrie', 'commerce-et-lifestyle'],
+          ['industrie', 'energie-et-industrie'],
           ['hotellerie', 'tourisme-et-territoires'],
           ['geographique', 'tourisme-et-territoires'],
         ]) lines.push(`/categories/${from}/  /categories/${to}/  301`);
