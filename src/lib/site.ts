@@ -10,6 +10,7 @@ export const SITE = {
     "Votre marque mérite le nom de domaine parfait. Noms de domaine clairs, en .fr et .com, prêts à l'emploi : prix sur demande, paiement par escrow, transfert sous 24 à 72 h.",
   locale: 'fr_FR',
   since: 1999,
+  experience: 'Plus de 25 ans', // Franck 2026-11-06: "plus de 25 ans d'expertise" (hero stat, footer)
   legal: {
     company: 'COMPANY 1972',
     form: 'SASU au capital de 1 000 €',

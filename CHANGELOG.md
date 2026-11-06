@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-06 — Experience line: "Plus de 25 ans d'expertise" everywhere
+
+- Hero said 27+ (counted from 1999), footer said 25. Franck: "plus de 25 ans d'expertise". One constant `SITE.experience` feeds both.
+- Copy fixes 2 to 5 from the review (repeated "une fois vendu" line, 3 unsourced promises, luxury words, 22 descriptions with the same opening): proposed, not applied, wait for Franck.
+
 ## 2026-11-06 — 22 names added, IA category, selection of 9, .com section, favicon (LIVE, Franck: "push it live!")
 
 - Added from Franck's list (RDAP 2026-11-06: all registered at Dynadot behind DEUP privacy; the monthly audit treats a masked holder as unknown, never hides on it): LaMovida.fr, ExpertiseMarketing.fr, AIcampus.fr, MyToy.fr, DermaPro.fr, EcoFactory.fr, NeoVita.fr, CoachUp.fr, HappyPark.fr, Sinergia.fr, NeoCard.fr, InfinityLabs.fr, Quizzy.fr, Ramoneurs.fr, NovaDoc.fr, FirstConsulting.fr, PrestaDrone.fr, Opora.fr, ABCgestion.fr, QuantumLab.fr, ProParking.fr, DomaineMouton.com. Already listed: IntelligencePhysique.com, MySticker.fr, MyTherapy.fr.

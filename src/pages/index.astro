@@ -24,7 +24,7 @@ if (!pick.some((d) => !d.id.endsWith('.fr'))) { const com = available.find((d) =
 const show = pick;
 const cats = await categories();
 const done = await sold();
-const years = new Date().getFullYear() - SITE.since;
+const years = SITE.experience;
 ---
 <Base title={SITE.title} description={SITE.description} path="/" jsonLd={[faqLd(faq)]}>
   <section class="hero">
@@ -41,7 +41,7 @@ const years = new Date().getFullYear() - SITE.since;
         {done.length > 0
           ? <li><strong>{done.length}</strong><span>noms de domaine déjà vendus</span></li>
           : <li><strong>{cats.length}</strong><span>secteurs</span></li>}
-        <li><strong>{years}+</strong><span>ans d'expertise</span></li>
+        <li><strong>{years}</strong><span>d'expertise</span></li>
         <li><strong>24–72 h</strong><span>pour le transfert</span></li>
       </ul>
     </div>
