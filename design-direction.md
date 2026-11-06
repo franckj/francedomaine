@@ -10,6 +10,6 @@ Brief for the brand and every build (site + LinkedIn). Decisions are Franck's, w
 ## Round 1: foundation
 
 - Three words (2026-11-06): **clair, direct, fiable** (Franck's pick).
-- Not: _pending_
+- Not (2026-11-06): **luxe, prétentieux** (Franck's pick). So: no gold, no "d'exception" talk, no velvet serif.
 - Palette: _pending_
 - Rejected directions: _none yet_
