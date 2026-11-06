@@ -15,7 +15,13 @@ import { hero, problem, reasons, audiences, faq, finalCta } from '../data/home';
 const all = await listed();
 const available = all.filter((d) => d.status === 'disponible');
 const featured = available.filter((d) => d.featured);
-const show = (featured.length >= 3 ? featured : available).slice(0, 6);
+// Notre sélection: 9 names. Franck picks them with `featured: true` in src/data/domains.json (2026-11-06: "9 domains
+// in Notre sélection section and I will select them"); until 9 are picked, the rest is filled from the catalog,
+// with at least one .com ("and a .com one too").
+const pick = featured.slice(0, 9);
+for (const d of available) { if (pick.length >= 9) break; if (!pick.includes(d)) pick.push(d); }
+if (!pick.some((d) => !d.id.endsWith('.fr'))) { const com = available.find((d) => !d.id.endsWith('.fr')); if (com) pick.splice(pick.length - 1, 1, com); }
+const show = pick;
 const cats = await categories();
 const done = await sold();
 const years = new Date().getFullYear() - SITE.since;

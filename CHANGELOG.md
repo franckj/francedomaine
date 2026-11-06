@@ -1,6 +1,15 @@
 # Changelog
 
-## 2026-11-06 — New brand on the site (preview https://brand.francedomaine.pages.dev, branding OK by Franck; waits for Franck: "deploy")
+## 2026-11-06 — 22 names added, IA category, selection of 9, .com section, favicon (LIVE, Franck: "push it live!")
+
+- Added from Franck's list (RDAP 2026-11-06: all registered at Dynadot behind DEUP privacy; the monthly audit treats a masked holder as unknown, never hides on it): LaMovida.fr, ExpertiseMarketing.fr, AIcampus.fr, MyToy.fr, DermaPro.fr, EcoFactory.fr, NeoVita.fr, CoachUp.fr, HappyPark.fr, Sinergia.fr, NeoCard.fr, InfinityLabs.fr, Quizzy.fr, Ramoneurs.fr, NovaDoc.fr, FirstConsulting.fr, PrestaDrone.fr, Opora.fr, ABCgestion.fr, QuantumLab.fr, ProParking.fr, DomaineMouton.com. Already listed: IntelligencePhysique.com, MySticker.fr, MyTherapy.fr.
+- New category IA: AIcampus.fr, InfinityLabs.fr, QuantumLab.fr, NextChat.fr (moved). 6 categories.
+- Notre sélection: 9 names. `featured: true` in the database is Franck's pick; unpicked slots fill from the catalogue, with at least one .com.
+- /domaines/: .fr first, then "Noms de domaine en .com" below.
+- Final block button: "Nous écrire" → "Sécuriser votre nom de domaine".
+- Favicon: "FD" in Passion One, Bleu France on white (SVG with the font embedded; ICO 16/32/48, PNG 32/180/192/512).
+
+## 2026-11-06 — New brand on the site (preview https://brand.francedomaine.pages.dev, branding OK by Franck; LIVE 2026-11-06 with the entry above)
 
 - Palette 1 "Papier et Bleu France" (design-direction.md, Franck: "keep, that's super clean and elegant"): paper #F9F6F2 bands, ink #161616, Bleu France for names and buttons, red only for VENDU and the underline. Radius 4px everywhere, no gradients.
 - Tricolour line under the header removed (Franck: "remove bleu blanc rouge stuff").

@@ -4,6 +4,9 @@ import DomainCard from './DomainCard.astro';
 import type { Domain } from '../lib/domains';
 interface Props { items: Domain[]; filters?: boolean; id?: string }
 const { items, filters = true, id = 'catalogue' } = Astro.props;
+// Full catalogue (filters on): .fr first, then the other extensions under their own heading (Franck 2026-11-06).
+const fr = filters ? items.filter((d) => d.id.endsWith('.fr')) : items;
+const other = filters ? items.filter((d) => !d.id.endsWith('.fr')) : [];
 const cats = [...new Set(items.map((d) => d.category))].sort((a, b) => a.localeCompare(b, 'fr'));
 ---
 <div class="catalog" id={id}>
@@ -21,7 +24,13 @@ const cats = [...new Set(items.map((d) => d.category))].sort((a, b) => a.localeC
       <p class="count muted"><span data-count>{items.length}</span> nom(s) de domaine</p>
     </div>
   )}
-  <div class="grid">{items.map((d) => <DomainCard d={d} />)}</div>
+  <div class="grid">{fr.map((d) => <DomainCard d={d} />)}</div>
+  {other.length > 0 && (
+    <div class="other" data-other>
+      <h2 class="ext">Noms de domaine en .com</h2>
+      <div class="grid">{other.map((d) => <DomainCard d={d} />)}</div>
+    </div>
+  )}
   <p class="empty muted" hidden data-empty>Aucun nom de domaine ne correspond. <a href="/contact/">Dites-nous ce que vous cherchez</a> : nous pouvons vous aider à l'obtenir.</p>
 </div>
 
@@ -43,6 +52,8 @@ const cats = [...new Set(items.map((d) => d.category))].sort((a, b) => a.localeC
         c.hidden = !show;
         if (show) n++;
       });
+      const other = root.querySelector<HTMLElement>('[data-other]');
+      if (other) other.hidden = !other.querySelector('.card:not([hidden])');
       if (count) count.textContent = String(n);
       if (empty) empty.hidden = n > 0;
       clearTimeout(timer);
@@ -58,6 +69,7 @@ const cats = [...new Set(items.map((d) => d.category))].sort((a, b) => a.localeC
 </script>
 
 <style>
+  .ext { font-size: 22px; margin: 48px 0 20px; }
   .tools { display: grid; gap: 14px; margin-bottom: 24px; }
   .search { display: flex; align-items: center; gap: 10px; border: 1px solid var(--line); border-radius: var(--radius); padding: 0 14px; background: #fff; color: var(--muted); max-width: 520px; }
   .search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
