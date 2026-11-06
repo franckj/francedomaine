@@ -3,7 +3,7 @@
 ## 2026-11-06 — Experience line: "Plus de 25 ans d'expertise" everywhere
 
 - Hero said 27+ (counted from 1999), footer said 25. Franck: "plus de 25 ans d'expertise". One constant `SITE.experience` feeds both.
-- Copy fixes 2 to 5 from the review (repeated "une fois vendu" line, 3 unsourced promises, luxury words, 22 descriptions with the same opening): proposed, not applied, wait for Franck.
+- Copy fixes 2 to 5 from the review (repeated "une fois vendu" line, 3 unsourced promises, luxury words, 22 descriptions with the same opening): proposed; Franck "Not now" (2026-11-06), recorded once in ops _context/decisions.md, not asked again.
 
 ## 2026-11-06 — 22 names added, IA category, selection of 9, .com section, favicon (LIVE, Franck: "push it live!")
 
