@@ -59,6 +59,8 @@ Part of Franck's portfolio. Cross-project context (rules, access, decisions) liv
 - The database is `src/data/domains.json` (schema `src/content.config.ts`). Change domains there, nowhere else. Task: `tasks/add-domain.md`.
 - Home copy is French, for a 100 % French audience, in `src/data/home.ts`. No figures without a source, no SEO promises.
 - The monthly audit (`scripts/audit-catalog.mjs`) is the only thing that hides or relists a domain on its own; never relist a .com it hid without Franck.
+- Colours: Bleu France #000091 and Rouge Marianne #E1000F only (DSFR 1.15.4, Franck 2026-11-06: "Find official blue and red for french flag and use them"). Tokens in `src/styles/global.css`.
+- Sold names (VENDU) come only from Franck's own list.
 - Light theme only, no dark mode (Franck, 2026-11-06: "clean and fresh layout, no dark theme").
 - Prices only from Franck. No invented facts, numbers, traffic or reviews.
 - Push to `main` builds and tests; it ships only with `[deploy]` in the commit message, and only when Franck said "deploy" in the session.

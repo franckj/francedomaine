@@ -5,9 +5,14 @@
   --muted: #5b6475;
   --line: #e6e8ee;
   --soft: #f7f8fb;
-  --accent: #1e4fd8;
-  --accent-dark: #173fae;
-  --accent-soft: #eef3ff;
+  /* Official French State colours, DSFR 1.15.4 (npm @gouvfr/dsfr, GouvernementFR/dsfr), checked 2026-11-06:
+     Bleu France blue-france-sun-113-625 #000091 (hover #1212ff), Rouge Marianne red-marianne-main-472 #e1000f. */
+  --accent: #000091;
+  --accent-dark: #1212ff;
+  --accent-soft: #f5f5fe;
+  --accent-line: #cacafb;
+  --red: #e1000f;
+  --red-soft: #fef4f4;
   --ok: #0f8a5f;
   --warn: #b26a00;
   --radius: 14px;

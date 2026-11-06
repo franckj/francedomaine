@@ -4,7 +4,8 @@
 
 export const hero = {
   eyebrow: 'Noms de domaine premium .fr et .com',
-  title: 'Votre marque commence par son nom de domaine.',
+  // Franck 2026-11-06: "Your first headline was the right one". The word in `hl` is set in Bleu France.
+  title: { before: 'Le nom de domaine ', hl: 'parfait', after: ' pour votre marque' },
   lead: "Un nom court, clair, en .fr : vos clients vous trouvent, vous retiennent et vous font confiance avant même d'avoir lu une ligne. Choisissez-le parmi une sélection de noms déjà enregistrés, prêts à devenir les vôtres.",
 };
 

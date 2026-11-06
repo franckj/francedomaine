@@ -21,6 +21,7 @@ const nav = [
 </header>
 
 <style>
+  .site-header::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: linear-gradient(90deg, var(--accent) 0 33.33%, #fff 33.33% 66.66%, var(--red) 66.66%); }
   .site-header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
   .header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
   .logo { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }

@@ -1,14 +1,14 @@
 # FranceDomaine.fr
 
 Domain marketplace for Franck's .fr and .com names: catalog, one landing page per domain, every forwarded domain counted.
-Astro 7, static, Cloudflare Pages. Light theme only. Owner: COMPANY 1972 (Franck).
+Astro 7, static, Cloudflare Pages. Light theme only, official French State colours (DSFR 1.15.4: Bleu France #000091, Rouge Marianne #E1000F). Owner: COMPANY 1972 (Franck).
 
 ## State (2026-11-06)
 
 - Rebuilt from scratch on branch `ccr-238aa4b4-ca2w6g`. **Waits for Franck: "deploy"** (the move to Cloudflare Pages runs from his machine: ops `domains/francedomaine/CC-TASK-launch-2026-11-06.md`).
 - Live today: an older single page on Hostinger (Plausible tag, which is cancelled). It is replaced at the DNS switch.
 - 14 domains listed, 1 hidden: infracloud.fr (redemption, deleted 2026-10-18). velobox.fr was unregistered in the morning of 2026-11-06 and registered again the same day to Franck (RDAP registrant), so it is listed.
-- Sold names (Franck 2026-11-06: "add the sold ones too, at the end of the listing - VENDU - like when real estate is sold"): 46 rows `status: vendu` from DOMAINS Portfolio › SALES (read 2026-11-06). Rule: every .fr sale, plus other extensions sold for $2,000 or more; left out JouetSexuel.fr (adult) and Recreation.ai (private sale, escrow instalments running). Shown at the end of /domaines/ and 8 on the home page with a VENDU ribbon; no page, no price, no redirect, not checked.
+- Sold names: the VENDU section (end of /domaines/, 8 on the home page, red rubber stamp) shows only the list Franck gives (2026-11-06: "I will give you the sold list to display"). Empty until then; the section and the home stat stay hidden. Add each as `status: vendu` with `display` and `sold_on`; never a price.
 - Home page rewritten 2026-11-06 as a French sales page (copy in `src/data/home.ts`): hero, problem, 8 reasons (confusion, category, .fr, short, brand, phone test, e-mail, asset), for whom, selection, how to buy, FAQ, final CTA.
 
 ## Layout

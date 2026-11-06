@@ -19,12 +19,12 @@ const { d } = Astro.props;
 
 <style>
   .card { display: flex; flex-direction: column; gap: 10px; padding: 22px; background: #fff; border: 1px solid var(--line); border-radius: 14px; color: var(--ink); text-decoration: none; transition: border-color .15s, box-shadow .15s, transform .15s; }
-  .card:hover { border-color: var(--accent); box-shadow: 0 8px 24px rgba(30,79,216,.08); transform: translateY(-2px); }
-  .card.featured { border-color: #c9d6fb; background: linear-gradient(180deg, var(--accent-soft), #fff 60%); }
+  .card:hover { border-color: var(--accent); box-shadow: 0 8px 24px rgba(0,0,145,.08); transform: translateY(-2px); }
+  .card.featured { border-color: var(--accent-line); background: linear-gradient(180deg, var(--accent-soft), #fff 60%); }
   .card.sold { opacity: .6; }
   .card-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
   .cat { font-size: 12px; font-weight: 600; letter-spacing: .6px; text-transform: uppercase; color: var(--muted); }
-  .badge { font-size: 11px; font-weight: 600; color: var(--accent); background: #fff; border: 1px solid #c9d6fb; border-radius: 99px; padding: 2px 9px; }
+  .badge { font-size: 11px; font-weight: 600; color: var(--accent); background: #fff; border: 1px solid var(--accent-line); border-radius: 99px; padding: 2px 9px; }
   .name { font-size: 22px; font-weight: 700; letter-spacing: -.3px; overflow-wrap: anywhere; }
   .tld { color: var(--accent); white-space: nowrap; }
   .desc { color: var(--muted); font-size: 14.5px; line-height: 1.55; flex: 1; }

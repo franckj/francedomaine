@@ -24,7 +24,7 @@ const years = new Date().getFullYear() - SITE.since;
   <section class="hero">
     <div class="container">
       <p class="eyebrow">{hero.eyebrow}</p>
-      <h1>{hero.title}</h1>
+      <h1>{hero.title.before}<span class="hl">{hero.title.hl}</span>{hero.title.after}</h1>
       <p class="lead">{hero.lead}</p>
       <div class="hero-cta">
         <a class="btn" href="/domaines/">Voir les {available.length} domaines disponibles</a>
@@ -32,7 +32,9 @@ const years = new Date().getFullYear() - SITE.since;
       </div>
       <ul class="stats">
         <li><strong>{available.length}</strong><span>domaines disponibles</span></li>
-        <li><strong>{done.length}</strong><span>domaines déjà vendus</span></li>
+        {done.length > 0
+          ? <li><strong>{done.length}</strong><span>domaines déjà vendus</span></li>
+          : <li><strong>{cats.length}</strong><span>secteurs</span></li>}
         <li><strong>{years}+</strong><span>ans d'expertise</span></li>
         <li><strong>24–72 h</strong><span>pour le transfert</span></li>
       </ul>
@@ -86,6 +88,7 @@ const years = new Date().getFullYear() - SITE.since;
 <style>
   .hero { background: radial-gradient(1200px 400px at 70% -10%, var(--accent-soft), transparent 70%), #fff; padding: 72px 0 24px; }
   .hero h1 { max-width: 900px; }
+  .hl { color: var(--accent); }
   .lead { font-size: 19px; color: var(--muted); max-width: 680px; }
   .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; margin: 28px 0 40px; }
   .stats { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 36px; }
@@ -97,7 +100,7 @@ const years = new Date().getFullYear() - SITE.since;
   .problem { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; padding: 40px; background: var(--soft); border-radius: 18px; }
   .problem ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
   .problem li { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px 14px 44px; position: relative; }
-  .problem li::before { content: '✕'; position: absolute; left: 16px; top: 14px; color: #c2410c; font-weight: 700; }
+  .problem li::before { content: '✕'; position: absolute; left: 16px; top: 14px; color: var(--red); font-weight: 700; }
   .reasons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 28px; }
   .reason { padding: 24px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
   .reason .n { color: var(--accent); font-weight: 700; font-size: 14px; letter-spacing: 1px; }
