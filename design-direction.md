@@ -26,5 +26,8 @@ Brief for the brand and every build (site + LinkedIn). Decisions are Franck's, w
 
 ## Logo and LinkedIn (2026-11-06)
 
-- Logo option 1: white ".fr" in Public Sans 800 on Bleu France #000091 (square), wordmark "France Domaine" beside it. Shown in the LinkedIn kit v2: https://claude.ai/artifact/FDundNZn2QeW9kAYAC9DUv . Waits for Franck: keep / next.
-- Copy voice: clair, direct; no "d'exception", no "25 ans d'expérience" (not sourced).
+- Logo option 1 (white ".fr" on a blue square) rejected. Franck: "LOGO is OFF, that's not the point! Keep FRANCE over DOMAINE like the original one, no logo of flag, just a clean font".
+- Logo now: wordmark FRANCE over DOMAINE, Public Sans 800, Bleu France #000091, FRANCE letter-spaced to the width of DOMAINE, no mark, no flag.
+- Banner text (Franck's words): "Votre marque mérite le nom de domaine parfait." with "parfait" underlined in Rouge Marianne. Paper ground, nothing else: Franck: "delete cards, busy and unreadable, same with 'Noms courts etc.'".
+- Copy rules: names "don't have to be short, remove that" (never sell on shortness). Franck: "just wait, all copy is wrong lol": all page copy waits for Franck's text.
+- Kit: https://claude.ai/artifact/FDundNZn2QeW9kAYAC9DUv (v3)
