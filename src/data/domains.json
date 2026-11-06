@@ -178,5 +178,157 @@
     "redirect": true,
     "added": "2026-01-19",
     "notes": ""
+  },
+  {
+    "id": "testlab.fr",
+    "display": "TestLab.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2026-10-06",
+    "notes": "Sold 2026-10-06 on Nameshift (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "mediumparis.fr",
+    "display": "MediumParis.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2026-08-07",
+    "notes": "Sold 2026-08-07 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "leanperformance.fr",
+    "display": "LeanPerformance.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2026-06-08",
+    "notes": "Sold 2026-06-08 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "campuscoach.fr",
+    "display": "CampusCoach.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2026-04-10",
+    "notes": "Sold 2026-04-10 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "lovelab.fr",
+    "display": "LoveLab.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2026-01-14",
+    "notes": "Sold 2026-01-14 on Nameshift (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "opencampus.fr",
+    "display": "OpenCampus.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2025-11-16",
+    "notes": "Sold 2025-11-16 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "ecocloud.fr",
+    "display": "EcoCloud.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2025-09-25",
+    "notes": "Sold 2025-09-25 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "assurancevoituresanspermis.fr",
+    "display": "AssuranceVoitureSansPermis.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2025-09-17",
+    "notes": "Sold 2025-09-17 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "franceformation.fr",
+    "display": "FranceFormation.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2024-08-22",
+    "notes": "Sold 2024-08-22 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "powercharge.fr",
+    "display": "PowerCharge.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2024-07-12",
+    "notes": "Sold 2024-07-12 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "luminescent.fr",
+    "display": "luminescent.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2024-03-08",
+    "notes": "Sold 2024-03-08 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "atlaspro.fr",
+    "display": "atlaspro.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2024-01-05",
+    "notes": "Sold 2024-01-05 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "auditseo.fr",
+    "display": "auditseo.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2024-01-03",
+    "notes": "Sold 2024-01-03 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "createam.fr",
+    "display": "createam.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2023-11-02",
+    "notes": "Sold 2023-11-02 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "clubpilates.fr",
+    "display": "clubpilates.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2023-08-29",
+    "notes": "Sold 2023-08-29 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "communitycare.fr",
+    "display": "communitycare.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2022-09-07",
+    "notes": "Sold 2022-09-07 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "aquabar.fr",
+    "display": "aquabar.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2022-04-01",
+    "notes": "Sold 2022-04-01 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "opticplus.fr",
+    "display": "OpticPlus.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2021-09-30",
+    "notes": "Sold 2021-09-30 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "artglass.fr",
+    "display": "ArtGlass.fr",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2021-09-15",
+    "notes": "Sold 2021-09-15 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
   }
 ]
