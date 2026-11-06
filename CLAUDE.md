@@ -67,6 +67,7 @@ Part of Franck's portfolio. Cross-project context (rules, access, decisions) liv
 - The monthly audit (`scripts/audit-catalog.mjs`) is the only thing that hides or relists a domain on its own; never relist a .com it hid without Franck.
 - Colours: Bleu France #000091 and Rouge Marianne #E1000F only (DSFR 1.15.4, Franck 2026-11-06: "Find official blue and red for french flag and use them"). Tokens in `src/styles/global.css`.
 - Sold names (VENDU) come only from Franck's own list.
+- Never write "domaine" for "nom de domaine" (Franck 2026-11-06: "2 different things in French"). Always "nom de domaine"; the brand "France Domaine" is the only bare "Domaine". Names are never sold on being short.
 - Every name is shown with word capitalization (`display`, e.g. LeMillion.com); URLs stay lowercase. Unclear split: ask Franck.
 - Light theme only, no dark mode (Franck, 2026-11-06: "clean and fresh layout, no dark theme").
 - Prices only from Franck. No invented facts, numbers, traffic or reviews.
