@@ -1,0 +1,20 @@
+---
+// A sold domain, real-estate style: VENDU stamp across the card. No link, no price.
+import { shown, tld, type Domain } from '../lib/domains';
+interface Props { d: Domain }
+const { d } = Astro.props;
+const n = shown(d);
+const t = tld(n);
+---
+<div class="sold" data-search={`${d.id} vendu`}>
+  <span class="name">{n.slice(0, -t.length)}<wbr /><span class="tld">{t}</span></span>
+  {d.sold_on && <span class="when">Vendu en {d.sold_on.slice(0, 4)}</span>}
+  <span class="stamp" aria-label="Vendu">VENDU</span>
+</div>
+<style>
+  .sold { position: relative; overflow: hidden; display: grid; gap: 4px; padding: 44px 20px 20px; border: 1px solid var(--line); border-radius: 14px; background: var(--soft); }
+  .name { font-size: 18px; font-weight: 700; color: #6b7280; overflow-wrap: anywhere; position: relative; z-index: 1; }
+  .tld { color: #9aa3b2; white-space: nowrap; }
+  .when { font-size: 13px; color: var(--muted); position: relative; z-index: 1; }
+  .stamp { position: absolute; right: -38px; top: 12px; transform: rotate(32deg); background: #c81e1e; color: #fff; font-weight: 800; font-size: 11px; letter-spacing: 2px; padding: 3px 40px; box-shadow: 0 2px 6px rgba(0,0,0,.15); }
+</style>

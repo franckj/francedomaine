@@ -1,5 +1,7 @@
 # Monthly (1st, 06:41 UTC): fresh RDAP check, then hide any listed domain that can no longer be sold, relist hidden .fr names registered to Franck again.
-# Commits data/ and src/data/domains.json. Ships the site only if data/config.json audit_autoship is true.
+# Commits data/ and src/data/domains.json, ships the site (data/config.json audit_autoship: true, Franck 2026-11-06
+# "Yes, ship it"), then alerts Franck on Telegram when the catalog changed (Franck 2026-11-06: "Ship and alert").
+# Secret TELEGRAM_BOT_TOKEN (bot @franckj_bot) → channel FranckJ, same as ops scripts/tg.py.
 name: Monthly catalog audit
 
 on:
@@ -40,3 +42,21 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: npx --yes wrangler@4 pages deploy dist --project-name francedomaine --branch main --commit-dirty=true
+      - name: Telegram alert (catalog changed, or the audit failed)
+        if: always() && (steps.audit.outputs.hidden != '0' || failure())
+        env:
+          TG: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          STATE: ${{ job.status }}
+          SHIPPED: ${{ steps.audit.outputs.hidden != '0' && steps.audit.outputs.autoship == 'true' }}
+        run: |
+          [ -z "$TG" ] && { echo "no TELEGRAM_BOT_TOKEN secret, alert skipped"; exit 0; }
+          if [ "$STATE" = "failure" ]; then
+            MSG="FranceDomaine monthly audit FAILED: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}. Claude's job: read the log and fix."
+          else
+            WHAT=$(grep -v '^HIDDEN=' audit.log | head -20)
+            [ "$SHIPPED" = "true" ] && LIVE="Live on francedomaine.fr now." || LIVE="Waits for Franck: deploy."
+            MSG=$(printf 'FranceDomaine monthly audit changed the catalog:\n%s\n%s\nLog: https://github.com/${{ github.repository }}/blob/main/data/AUDIT.md' "$WHAT" "$LIVE")
+          fi
+          curl -sS -X POST "https://api.telegram.org/bot$TG/sendMessage" \
+            --data-urlencode chat_id=-1003929633776 --data-urlencode "text=$MSG" \
+            --data-urlencode 'link_preview_options={"is_disabled":true}' -o /dev/null -w "telegram HTTP %{http_code}\n"

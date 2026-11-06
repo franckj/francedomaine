@@ -8,6 +8,7 @@ Astro 7, static, Cloudflare Pages. Light theme only. Owner: COMPANY 1972 (Franck
 - Rebuilt from scratch on branch `ccr-238aa4b4-ca2w6g`. **Waits for Franck: "deploy"** (the move to Cloudflare Pages runs from his machine: ops `domains/francedomaine/CC-TASK-launch-2026-11-06.md`).
 - Live today: an older single page on Hostinger (Plausible tag, which is cancelled). It is replaced at the DNS switch.
 - 14 domains listed, 1 hidden: infracloud.fr (redemption, deleted 2026-10-18). velobox.fr was unregistered in the morning of 2026-11-06 and registered again the same day to Franck (RDAP registrant), so it is listed.
+- Sold names (Franck 2026-11-06: "add the sold ones too, at the end of the listing - VENDU - like when real estate is sold"): 46 rows `status: vendu` from DOMAINS Portfolio › SALES (read 2026-11-06). Rule: every .fr sale, plus other extensions sold for $2,000 or more; left out JouetSexuel.fr (adult) and Recreation.ai (private sale, escrow instalments running). Shown at the end of /domaines/ and 8 on the home page with a VENDU ribbon; no page, no price, no redirect, not checked.
 - Home page rewritten 2026-11-06 as a French sales page (copy in `src/data/home.ts`): hero, problem, 8 reasons (confusion, category, .fr, short, brand, phone test, e-mail, asset), for whom, selection, how to buy, FAQ, final CTA.
 
 ## Layout
@@ -34,13 +35,15 @@ Astro 7, static, Cloudflare Pages. Light theme only. Owner: COMPANY 1972 (Franck
 {
   "id": "aurae.fr",               // the domain, lowercase (unique)
   "category": "Luxe & Lifestyle", // free text; each category gets a page
-  "status": "disponible",         // disponible | reserve (en négociation) | vendu | masque (not on the site)
+  "display": "Aurae.fr",          // optional brand casing
+  "status": "disponible",         // disponible | reserve (en négociation) | vendu (VENDU section) | masque (not on the site)
   "featured": true,               // "Premium" badge, shown on the home page
   "price_eur": null,              // integer € HT, or null = "Prix sur demande"
   "description": "…",             // public pitch, 20+ characters, French
   "uses": [],                     // optional public list of use ideas
   "redirect": true,               // Franck forwards this domain to /r/<domain>; the daily check expects it
   "added": "2026-01-19",
+  "sold_on": "2026-10-06",        // vendu only: shown as "Vendu en 2026"
   "notes": ""                     // internal, never shown
 }
 ```
@@ -73,7 +76,7 @@ python3 -I events/q.py "SELECT json_extract(props,'$.domain') AS d, count(*) n F
 | What | Where | When |
 |---|---|---|
 | Domain check (expiry + forwarding) | `.github/workflows/check-domains.yml` | daily 05:23 UTC, commits `data/` only |
-| Catalog audit: hides listed names that can't be sold (unregistered, redemption, pending delete, .fr registrant not Franck); relists hidden .fr names registered to Franck again | `.github/workflows/audit-catalog.yml` → `data/AUDIT.md` | monthly, 1st 06:41 UTC; ships at once (`data/config.json` `audit_autoship`: true, Franck 2026-11-06 "Yes, ship it") |
+| Catalog audit: hides listed names that can't be sold (unregistered, redemption, pending delete, .fr registrant not Franck); relists hidden .fr names registered to Franck again | `.github/workflows/audit-catalog.yml` → `data/AUDIT.md` | monthly, 1st 06:41 UTC; ships at once (`data/config.json` `audit_autoship`: true, Franck 2026-11-06 "Yes, ship it") and alerts on Telegram ("Ship and alert"; repo secret `TELEGRAM_BOT_TOKEN`) |
 | Build + test | `.github/workflows/deploy.yml` | every push to main and PR |
 | Deploy + IndexNow | same | commits with `[deploy]`, or run by hand |
 | Weekly report | `tasks/weekly-report.md` (Claude scheduled task) | Mondays |

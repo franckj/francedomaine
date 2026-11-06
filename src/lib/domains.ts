@@ -9,11 +9,20 @@ export const catSlug = (cat: string) =>
 
 const order = { disponible: 0, reserve: 1, vendu: 2, masque: 3 } as const;
 
-/** Every domain the public site shows (status "masque" never appears). */
+const all = async () => (await getCollection('domains')).map((e) => e.data);
+
+/** Domains for sale (disponible + reserve): they get a page, a category, a /r/ redirect. */
 export async function listed(): Promise<Domain[]> {
-  const all = (await getCollection('domains')).map((e) => e.data).filter((d) => d.status !== 'masque');
-  return all.sort((a, b) => order[a.status] - order[b.status] || Number(b.featured) - Number(a.featured) || a.id.localeCompare(b.id));
+  return (await all()).filter((d) => d.status === 'disponible' || d.status === 'reserve')
+    .sort((a, b) => order[a.status] - order[b.status] || Number(b.featured) - Number(a.featured) || a.id.localeCompare(b.id));
 }
+
+/** Sold domains, newest first: shown at the end of the catalog with a VENDU stamp, no page of their own. */
+export async function sold(): Promise<Domain[]> {
+  return (await all()).filter((d) => d.status === 'vendu').sort((a, b) => (b.sold_on || '').localeCompare(a.sold_on || ''));
+}
+
+export const shown = (d: Domain) => d.display || d.id;
 
 export async function categories() {
   const ds = await listed();

@@ -11,7 +11,7 @@ const EXPIRY_WARN_DAYS = 45;
 const catalog = JSON.parse(readFileSync('src/data/domains.json', 'utf8'));
 const extra = JSON.parse(readFileSync('data/redirects.json', 'utf8')).domains || [];
 const rows = [
-  ...catalog.map((d) => ({ domain: d.id, in_catalog: d.status !== 'masque', status: d.status, expect_redirect: d.redirect })),
+  ...catalog.filter((d) => d.status !== 'vendu').map((d) => ({ domain: d.id, in_catalog: d.status !== 'masque', status: d.status, expect_redirect: d.redirect })),
   ...extra.filter((x) => !catalog.some((d) => d.id === x)).map((x) => ({ domain: x, in_catalog: false, status: 'hors catalogue', expect_redirect: true })),
 ];
 const UA = 'FranceDomaine-check/1.0 (+https://francedomaine.fr)';

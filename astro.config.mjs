@@ -12,7 +12,7 @@ function redirectsFile() {
         const db = JSON.parse(readFileSync(new URL('./src/data/domains.json', import.meta.url), 'utf8'));
         const lines = ['# Generated at build from src/data/domains.json (astro.config.mjs). Do not edit by hand.'];
         for (const d of db) {
-          if (d.status === 'masque') continue;
+          if (d.status !== 'disponible' && d.status !== 'reserve') continue;
           const to = `/domaines/${d.id.replace(/\./g, '-')}/?via=redirect`;
           lines.push(`/r/${d.id}  ${to}  302`, `/r/${d.id}/*  ${to}  302`);
         }

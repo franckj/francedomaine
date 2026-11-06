@@ -1,4 +1,5 @@
 {
   "_doc": "Settings for the scheduled jobs. audit_autoship: when the monthly audit hides a domain, true = the audit also deploys the site (the hidden name disappears at once); false = the change waits in main for the next deploy. Set by Franck's word only.",
-  "audit_autoship": true
+  "audit_autoship": true,
+  "_alert": "Telegram alert on every hide or relist (Franck 2026-11-06: \"Ship and alert\"); needs repo secret TELEGRAM_BOT_TOKEN"
 }

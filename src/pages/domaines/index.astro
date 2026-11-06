@@ -3,9 +3,11 @@ import Base from '../../layouts/Base.astro';
 import Catalog from '../../components/Catalog.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Cta from '../../components/Cta.astro';
-import { listed, slug } from '../../lib/domains';
+import SoldGrid from '../../components/SoldGrid.astro';
+import { listed, sold, slug } from '../../lib/domains';
 import { SITE } from '../../lib/site';
 const all = await listed();
+const done = await sold();
 const n = all.filter((d) => d.status === 'disponible').length;
 const ld = {
   '@type': 'ItemList', name: 'Noms de domaine à vendre',
@@ -20,6 +22,7 @@ const ld = {
     <h1>Noms de domaine à vendre</h1>
     <p class="muted lead">{n} domaines disponibles. Cliquez sur un nom pour voir sa fiche, demander le prix ou faire une offre.</p>
     <Catalog items={all} />
+    <div class="section"><SoldGrid items={done} /></div>
     <div class="section"><Cta /></div>
   </div>
 </Base>

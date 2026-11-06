@@ -6,7 +6,8 @@ import Catalog from '../components/Catalog.astro';
 import Steps from '../components/Steps.astro';
 import Faq from '../components/Faq.astro';
 import Cta from '../components/Cta.astro';
-import { listed, categories } from '../lib/domains';
+import SoldGrid from '../components/SoldGrid.astro';
+import { listed, sold, categories } from '../lib/domains';
 import { faqLd } from '../lib/faq';
 import { SITE } from '../lib/site';
 import { hero, problem, reasons, audiences, faq, finalCta } from '../data/home';
@@ -16,6 +17,7 @@ const available = all.filter((d) => d.status === 'disponible');
 const featured = available.filter((d) => d.featured);
 const show = (featured.length >= 3 ? featured : available).slice(0, 6);
 const cats = await categories();
+const done = await sold();
 const years = new Date().getFullYear() - SITE.since;
 ---
 <Base title={SITE.title} description={SITE.description} path="/" jsonLd={[faqLd(faq)]}>
@@ -30,7 +32,7 @@ const years = new Date().getFullYear() - SITE.since;
       </div>
       <ul class="stats">
         <li><strong>{available.length}</strong><span>domaines disponibles</span></li>
-        <li><strong>{cats.length}</strong><span>secteurs</span></li>
+        <li><strong>{done.length}</strong><span>domaines déjà vendus</span></li>
         <li><strong>{years}+</strong><span>ans d'expertise</span></li>
         <li><strong>24–72 h</strong><span>pour le transfert</span></li>
       </ul>
@@ -74,6 +76,7 @@ const years = new Date().getFullYear() - SITE.since;
       </div>
     </section>
 
+    <div class="section"><SoldGrid items={done} limit={8} /></div>
     <div class="section"><Steps /></div>
     <div class="section"><Faq items={faq} /></div>
     <div class="section"><Cta title={finalCta.title} text={finalCta.text} /></div>
