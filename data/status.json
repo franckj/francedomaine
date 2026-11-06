@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-06T10:31Z",
+  "checked": "2026-11-06T10:38Z",
   "domains": [
     {
       "domain": "aurae.fr",
@@ -9,6 +9,12 @@
       "expires": "2027-05-11",
       "registered": "2025-05-11",
       "registrar": "Dynadot Inc",
+      "holder": "Franck JANKOWSKI",
+      "holder_is_franck": true,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
       "days_left": 186,
       "redirect": "no",
       "hops": [
@@ -28,6 +34,12 @@
       "expires": "2026-11-25",
       "registered": "2025-11-25",
       "registrar": "Infomaniak Network SA",
+      "holder": "Ano Nymous",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "active"
+      ],
+      "deleted": null,
       "days_left": 19,
       "redirect": "no",
       "hops": [
@@ -48,6 +60,12 @@
       "expires": "2027-09-23",
       "registered": "2002-09-23",
       "registrar": "Spaceship, Inc.",
+      "holder": null,
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
       "days_left": 321,
       "redirect": "no",
       "hops": [
@@ -67,6 +85,12 @@
       "expires": "2026-11-25",
       "registered": "2025-11-25",
       "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
       "days_left": 19,
       "redirect": "no",
       "hops": [
@@ -81,18 +105,27 @@
     },
     {
       "domain": "infracloud.fr",
-      "in_catalog": true,
-      "status": "disponible",
+      "in_catalog": false,
+      "status": "masque",
       "expect_redirect": true,
       "expires": "2026-09-23",
       "registered": "2025-09-23",
       "registrar": "Infomaniak Network SA",
+      "holder": "Ano Nymous",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "pending delete",
+        "redemption period"
+      ],
+      "deleted": "2026-10-18",
+      "unsellable": "pending delete, redemption period",
       "days_left": -44,
       "redirect": "no",
       "hops": [
         "error fetch failed"
       ],
       "alerts": [
+        "INVENDABLE (pending delete, redemption period)",
         "expire dans -44 j",
         "ne redirige pas vers /r/"
       ]
@@ -102,15 +135,22 @@
       "in_catalog": true,
       "status": "disponible",
       "expect_redirect": true,
-      "rdap_error": "not registered (RDAP 404)",
-      "unregistered": true,
-      "days_left": null,
+      "expires": "2027-11-06",
+      "registered": "2026-11-06",
+      "registrar": "Dynadot Inc",
+      "holder": "Franck JANKOWSKI",
+      "holder_is_franck": true,
+      "rdap_status": [
+        "inactive",
+        "add period"
+      ],
+      "deleted": null,
+      "days_left": 365,
       "redirect": "no",
       "hops": [
         "error fetch failed"
       ],
       "alerts": [
-        "NON ENREGISTRÉ : retirer du catalogue ou racheter",
         "ne redirige pas vers /r/"
       ]
     },
@@ -122,6 +162,12 @@
       "expires": "2026-11-25",
       "registered": "2025-11-25",
       "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
       "days_left": 19,
       "redirect": "no",
       "hops": [
@@ -142,6 +188,12 @@
       "expires": "2026-11-23",
       "registered": "2025-11-23",
       "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
       "days_left": 17,
       "redirect": "no",
       "hops": [
@@ -162,6 +214,12 @@
       "expires": "2026-11-23",
       "registered": "2025-11-23",
       "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
       "days_left": 17,
       "redirect": "no",
       "hops": [
@@ -182,6 +240,12 @@
       "expires": "2026-11-21",
       "registered": "2025-11-21",
       "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
       "days_left": 15,
       "redirect": "no",
       "hops": [
@@ -202,6 +266,12 @@
       "expires": "2027-01-15",
       "registered": "2009-02-02",
       "registrar": "Dynadot Inc",
+      "holder": null,
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
       "days_left": 70,
       "redirect": "no",
       "hops": [
@@ -220,6 +290,12 @@
       "expires": "2026-11-25",
       "registered": "2025-11-25",
       "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
       "days_left": 19,
       "redirect": "no",
       "hops": [
@@ -240,6 +316,12 @@
       "expires": "2026-11-12",
       "registered": "2025-11-12",
       "registrar": "Dynadot Inc",
+      "holder": null,
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
       "days_left": 6,
       "redirect": "no",
       "hops": [
@@ -260,6 +342,12 @@
       "expires": "2026-11-18",
       "registered": "2025-11-18",
       "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
       "days_left": 12,
       "redirect": "no",
       "hops": [
@@ -280,6 +368,12 @@
       "expires": "2026-11-20",
       "registered": "2025-11-20",
       "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
       "days_left": 14,
       "redirect": "no",
       "hops": [

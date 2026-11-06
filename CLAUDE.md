@@ -57,6 +57,8 @@ Part of Franck's portfolio. Cross-project context (rules, access, decisions) liv
 ## Rules
 - Franck prompts, Claude Code builds. Be direct.
 - The database is `src/data/domains.json` (schema `src/content.config.ts`). Change domains there, nowhere else. Task: `tasks/add-domain.md`.
+- Home copy is French, for a 100 % French audience, in `src/data/home.ts`. No figures without a source, no SEO promises.
+- The monthly audit (`scripts/audit-catalog.mjs`) is the only thing that hides or relists a domain on its own; never relist a .com it hid without Franck.
 - Light theme only, no dark mode (Franck, 2026-11-06: "clean and fresh layout, no dark theme").
 - Prices only from Franck. No invented facts, numbers, traffic or reviews.
 - Push to `main` builds and tests; it ships only with `[deploy]` in the commit message, and only when Franck said "deploy" in the session.

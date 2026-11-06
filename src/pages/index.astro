@@ -1,12 +1,15 @@
 ---
+// Sales page: hero → problem → why the right domain → for whom → selection → how to buy → FAQ → final CTA.
+// Copy lives in src/data/home.ts.
 import Base from '../layouts/Base.astro';
 import Catalog from '../components/Catalog.astro';
 import Steps from '../components/Steps.astro';
 import Faq from '../components/Faq.astro';
 import Cta from '../components/Cta.astro';
 import { listed, categories } from '../lib/domains';
-import { homeFaq, faqLd } from '../lib/faq';
+import { faqLd } from '../lib/faq';
 import { SITE } from '../lib/site';
+import { hero, problem, reasons, audiences, faq, finalCta } from '../data/home';
 
 const all = await listed();
 const available = all.filter((d) => d.status === 'disponible');
@@ -14,21 +17,16 @@ const featured = available.filter((d) => d.featured);
 const show = (featured.length >= 3 ? featured : available).slice(0, 6);
 const cats = await categories();
 const years = new Date().getFullYear() - SITE.since;
-const values = [
-  { t: 'Mémorable', d: 'Un domaine premium se retient dès la première lecture. Il devient un actif marketing qui travaille pour vous.' },
-  { t: 'Crédible', d: "Les entreprises établies possèdent des domaines premium : c'est un signal de confiance immédiat pour vos clients." },
-  { t: 'Un actif', d: 'Un bon nom de domaine se revend, se transmet et accompagne votre marque sur la durée.' },
-];
 ---
-<Base title={SITE.title} description={SITE.description} path="/" jsonLd={[faqLd(homeFaq)]}>
+<Base title={SITE.title} description={SITE.description} path="/" jsonLd={[faqLd(faq)]}>
   <section class="hero">
     <div class="container">
-      <p class="eyebrow">Noms de domaine premium .fr et .com</p>
-      <h1>Le nom de domaine <span class="hl">parfait</span> pour votre marque</h1>
-      <p class="lead">Une sélection de noms courts, mémorables et prêts à l'emploi pour les entreprises qui lancent ou renforcent leur marque en France.</p>
+      <p class="eyebrow">{hero.eyebrow}</p>
+      <h1>{hero.title}</h1>
+      <p class="lead">{hero.lead}</p>
       <div class="hero-cta">
-        <a class="btn" href="/domaines/">Voir les {available.length} domaines</a>
-        <a class="btn btn-ghost" href="#achat">Comment acheter</a>
+        <a class="btn" href="/domaines/">Voir les {available.length} domaines disponibles</a>
+        <a class="btn btn-ghost" href="#pourquoi">Pourquoi le nom compte</a>
       </div>
       <ul class="stats">
         <li><strong>{available.length}</strong><span>domaines disponibles</span></li>
@@ -40,48 +38,79 @@ const values = [
   </section>
 
   <div class="container">
-    <section class="section">
-      <div class="head">
-        <h2>Domaines à la une</h2>
-        <a href="/domaines/">Tout le catalogue →</a>
+    <section class="section problem">
+      <div>
+        <h2>{problem.title}</h2>
+        <p class="muted big">{problem.intro}</p>
       </div>
-      <Catalog items={show} filters={false} id="une" />
+      <ul>{problem.points.map((p) => <li>{p}</li>)}</ul>
+    </section>
+
+    <section class="section" id="pourquoi">
+      <h2>{reasons.title}</h2>
+      <p class="muted big narrowp">{reasons.intro}</p>
+      <div class="reasons">
+        {reasons.items.map((r, i) => (
+          <div class="reason"><span class="n">{String(i + 1).padStart(2, '0')}</span><h3>{r.t}</h3><p class="muted">{r.d}</p></div>
+        ))}
+      </div>
     </section>
 
     <section class="section">
-      <h2>Par secteur</h2>
+      <h2>{audiences.title}</h2>
+      <div class="aud">
+        {audiences.items.map((a) => <div><h3>{a.t}</h3><p class="muted">{a.d}</p></div>)}
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="head">
+        <h2>Notre sélection</h2>
+        <a href="/domaines/">Tout le catalogue →</a>
+      </div>
+      <Catalog items={show} filters={false} id="une" />
       <div class="cats">
         {cats.map((c) => <a href={`/categories/${c.slug}/`}>{c.name} <span>{c.items.length}</span></a>)}
       </div>
     </section>
 
-    <section class="section values">
-      {values.map((v) => <div><h3>{v.t}</h3><p class="muted">{v.d}</p></div>)}
-    </section>
-
     <div class="section"><Steps /></div>
-    <div class="section"><Faq items={homeFaq} /></div>
-    <div class="section"><Cta /></div>
+    <div class="section"><Faq items={faq} /></div>
+    <div class="section"><Cta title={finalCta.title} text={finalCta.text} /></div>
   </div>
 </Base>
 
 <style>
   .hero { background: radial-gradient(1200px 400px at 70% -10%, var(--accent-soft), transparent 70%), #fff; padding: 72px 0 24px; }
-  .hl { color: var(--accent); }
-  .lead { font-size: 19px; color: var(--muted); max-width: 640px; }
+  .hero h1 { max-width: 900px; }
+  .lead { font-size: 19px; color: var(--muted); max-width: 680px; }
   .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; margin: 28px 0 40px; }
   .stats { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 36px; }
   .stats li { display: grid; }
   .stats strong { font-size: 26px; }
   .stats span { color: var(--muted); font-size: 14px; }
+  .big { font-size: 18px; }
+  .narrowp { max-width: 680px; }
+  .problem { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; padding: 40px; background: var(--soft); border-radius: 18px; }
+  .problem ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+  .problem li { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px 14px 44px; position: relative; }
+  .problem li::before { content: '✕'; position: absolute; left: 16px; top: 14px; color: #c2410c; font-weight: 700; }
+  .reasons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 28px; }
+  .reason { padding: 24px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
+  .reason .n { color: var(--accent); font-weight: 700; font-size: 14px; letter-spacing: 1px; }
+  .reason h3 { margin: 8px 0 8px; }
+  .reason p { font-size: 15px; margin: 0; }
+  .aud { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 20px; }
+  .aud div { padding: 26px; background: var(--accent-soft); border-radius: var(--radius); }
+  .aud p { margin: 0; }
   .head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 20px; }
   .head h2 { margin: 0; }
   .head a { text-decoration: none; font-weight: 600; }
-  .cats { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
-  .cats a { border: 1px solid var(--line); border-radius: 99px; padding: 8px 16px; color: var(--ink); text-decoration: none; background: #fff; }
+  .cats { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+  .cats a { border: 1px solid var(--line); border-radius: 99px; padding: 8px 16px; color: var(--ink); text-decoration: none; background: #fff; font-size: 15px; }
   .cats a:hover { border-color: var(--accent); color: var(--accent); }
   .cats span { color: var(--muted); font-size: 13px; margin-left: 4px; }
-  .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-  .values div { padding: 26px; background: var(--soft); border-radius: var(--radius); }
-  @media (max-width: 760px) { .values { grid-template-columns: 1fr; } .hero { padding-top: 48px; } }
+  @media (max-width: 1000px) { .reasons { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 760px) { .problem, .aud { grid-template-columns: 1fr; } .problem { padding: 24px; gap: 20px; } .hero { padding-top: 48px; } }
+  @media (max-width: 520px) { .reasons { grid-template-columns: 1fr; } }
 </style>

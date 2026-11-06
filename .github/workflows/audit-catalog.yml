@@ -1,0 +1,42 @@
+# Monthly (1st, 06:41 UTC): fresh RDAP check, then hide any listed domain that can no longer be sold, relist hidden .fr names registered to Franck again.
+# Commits data/ and src/data/domains.json. Ships the site only if data/config.json audit_autoship is true.
+name: Monthly catalog audit
+
+on:
+  schedule:
+    - cron: '41 6 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: node scripts/check-domains.mjs
+      - id: audit
+        run: |
+          node scripts/audit-catalog.mjs | tee audit.log
+          echo "hidden=$(grep -oP '^HIDDEN=\K\d+' audit.log)" >> "$GITHUB_OUTPUT"
+          echo "autoship=$(node -p "require('./data/config.json').audit_autoship === true")" >> "$GITHUB_OUTPUT"
+      - name: Build and test before committing
+        run: npm ci && npm run build && npm test
+      - name: Commit
+        run: |
+          git config user.name "francedomaine-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/ src/data/domains.json
+          git diff --cached --quiet || git commit -m "Monthly catalog audit $(date -u +%F): ${{ steps.audit.outputs.hidden }} hidden [skip ci]"
+          git push
+      - name: Deploy (only with audit_autoship)
+        if: steps.audit.outputs.hidden != '0' && steps.audit.outputs.autoship == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 pages deploy dist --project-name francedomaine --branch main --commit-dirty=true

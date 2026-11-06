@@ -26,13 +26,22 @@ async function rdap(domain) {
       if (r.status !== 429) break;
       await new Promise((ok) => setTimeout(ok, 5000 * (i + 1)));
     }
-    if (r.status === 404) return { rdap_error: 'not registered (RDAP 404)', unregistered: true };
+    if (r.status === 404) return { rdap_error: 'not registered (RDAP 404)', unregistered: true, unsellable: 'not registered' };
     if (!r.ok) return { rdap_error: `HTTP ${r.status}` };
     const j = await r.json();
     const ev = (a) => (j.events || []).find((e) => e.eventAction === a)?.eventDate?.slice(0, 10) || null;
     const reg = (j.entities || []).find((e) => (e.roles || []).includes('registrar'));
-    const name = reg?.vcardArray?.[1]?.find((v) => v[0] === 'fn')?.[3] || null;
-    return { expires: ev('expiration'), registered: ev('registration'), registrar: name };
+    const fn = (e) => e?.vcardArray?.[1]?.find((v) => v[0] === 'fn')?.[3] || null;
+    const name = fn(reg);
+    // .fr shows the registrant's name when it is not redacted; .com (thin registry) never does.
+    const holder = fn((j.entities || []).find((e) => (e.roles || []).includes('registrant')));
+    // Privacy services (Dynadot "DEUP Privacy Service", Infomaniak "Ano Nymous", REDACTED…) hide the owner: unknown, not someone else.
+    const masked = !holder || /privacy|ano nymous|redacted|anonym|non publi|whois|proxy/i.test(holder);
+    const mine = masked ? null : /jankowski|company\s*1972/i.test(holder);
+    const st = (j.status || []).map((x) => String(x).toLowerCase());
+    const dead = st.filter((x) => /redemption|pending delete|pendingdelete|pending restore|pendingrestore/.test(x));
+    return { expires: ev('expiration'), registered: ev('registration'), registrar: name, holder, holder_is_franck: mine, rdap_status: st, deleted: ev('deletion'),
+      ...(dead.length ? { unsellable: dead.join(', ') } : mine === false ? { unsellable: `registrant is ${holder}` } : {}) };
   } catch (e) { return { rdap_error: String(e.message || e).slice(0, 120) }; }
 }
 
@@ -60,7 +69,7 @@ for (const row of rows) {
   await new Promise((ok) => setTimeout(ok, 1500)); // registries rate-limit
   const days = a.expires ? Math.round((new Date(a.expires) - today) / 864e5) : null;
   const alerts = [];
-  if (a.unregistered) alerts.push('NON ENREGISTRÉ : retirer du catalogue ou racheter');
+  if (a.unsellable) alerts.push(`INVENDABLE (${a.unsellable})`);
   if (days !== null && days <= EXPIRY_WARN_DAYS) alerts.push(`expire dans ${days} j`);
   if (row.expect_redirect && b.redirect !== 'ok') alerts.push(b.redirect === 'no' ? 'ne redirige pas vers /r/' : 'arrive sur le site sans /r/ (non compté)');
   out.domains.push({ ...row, ...a, days_left: days, ...b, alerts });

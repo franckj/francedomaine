@@ -62,14 +62,14 @@
   {
     "id": "velobox.fr",
     "category": "Sport & Mobilité",
-    "status": "masque",
+    "status": "disponible",
     "featured": false,
     "price_eur": null,
     "description": "Nom accrocheur pour une startup de livraison à vélo, un service de vélos en libre-service ou une box mensuelle cyclisme.",
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": "Hidden 2026-11-06: RDAP rdap.nic.fr returns 404, not registered. Was listed on the old site."
+    "notes": "Relisted 2026-11-06: RDAP rdap.nic.fr shows a new registration 2026-11-06 at Dynadot, registrant Franck JANKOWSKI (it was unregistered earlier the same day)."
   },
   {
     "id": "francemed.fr",

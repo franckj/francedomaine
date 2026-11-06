@@ -5,9 +5,9 @@ export const SITE = {
   url: 'https://francedomaine.fr',
   // The address is assembled in the browser (src/components/MailLinks.astro), never written whole in the HTML.
   mail: { user: 'contact', host: 'francedomaine.fr' },
-  title: 'FranceDomaine.fr — Noms de domaine premium .fr et .com',
+  title: 'Noms de domaine premium .fr à vendre pour votre marque | FranceDomaine.fr',
   description:
-    "Une sélection de noms de domaine premium en .fr et .com pour les entreprises qui visent l'excellence. Prix sur demande, transfert sécurisé par escrow.",
+    "Votre marque commence par son nom de domaine. Noms courts, clairs et en .fr, prêts à l'emploi : prix sur demande, paiement par escrow, transfert sous 24 à 72 h.",
   locale: 'fr_FR',
   since: 1999,
   legal: {

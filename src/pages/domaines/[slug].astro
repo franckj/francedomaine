@@ -7,7 +7,7 @@ import DomainCard from '../../components/DomainCard.astro';
 import Steps from '../../components/Steps.astro';
 import Faq from '../../components/Faq.astro';
 import { listed, slug, tld, catSlug, statusLabel, priceLabel, mailFor, type Domain } from '../../lib/domains';
-import { domainFaq, faqLd } from '../../lib/faq';
+import { domainFaq, domainPoints, faqLd } from '../../lib/faq';
 import { SITE } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -44,8 +44,11 @@ const desc = d.status === 'vendu'
       <div>
         <p class="eyebrow">{d.category}</p>
         <h1 class="name">{d.id.slice(0, -tld(d.id).length)}<span>{tld(d.id)}</span></h1>
-        <p class="pitch">{open ? 'est à vendre.' : 'a été vendu.'}</p>
+        <p class="pitch">{open ? 'est à vendre. Faites-en le nom de votre marque.' : 'a été vendu.'}</p>
         <p class="desc">{d.description}</p>
+        {open && (
+          <ul class="points">{domainPoints(d.id).map((p) => <li><strong>{p.t}</strong><span>{p.d}</span></li>)}</ul>
+        )}
         {d.uses.length > 0 && (
           <ul class="uses">{d.uses.map((u) => <li>{u}</li>)}</ul>
         )}
@@ -87,6 +90,10 @@ const desc = d.status === 'vendu'
   .name span { color: var(--accent); }
   .pitch { font-size: 24px; color: var(--muted); margin: 4px 0 24px; }
   .desc { font-size: 18px; max-width: 620px; }
+  .points { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .points li { display: grid; gap: 4px; padding: 16px; background: var(--soft); border-radius: 12px; font-size: 14.5px; color: var(--muted); }
+  .points strong { color: var(--ink); font-size: 15.5px; }
+  @media (max-width: 640px) { .points { grid-template-columns: 1fr; } }
   .uses { color: var(--muted); padding-left: 20px; }
   .box { border: 1px solid var(--line); border-radius: 16px; padding: 28px; display: grid; gap: 12px; background: #fff; box-shadow: 0 10px 30px rgba(16,24,40,.06); position: sticky; top: 88px; }
   .status { margin: 0; font-weight: 600; color: var(--ok); }
