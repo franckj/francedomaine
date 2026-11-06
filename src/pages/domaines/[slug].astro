@@ -6,7 +6,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import DomainCard from '../../components/DomainCard.astro';
 import Steps from '../../components/Steps.astro';
 import Faq from '../../components/Faq.astro';
-import { listed, slug, tld, catSlug, statusLabel, priceLabel, mailFor, type Domain } from '../../lib/domains';
+import { listed, slug, tld, catSlug, statusLabel, priceLabel, mailFor, shown, type Domain } from '../../lib/domains';
 import { domainFaq, domainPoints, faqLd } from '../../lib/faq';
 import { SITE } from '../../lib/site';
 
@@ -20,34 +20,35 @@ const related = all.filter((x) => x.id !== d.id && x.status === 'disponible')
   .sort((a, b) => Number(b.category === d.category) - Number(a.category === d.category) || Number(b.featured) - Number(a.featured))
   .slice(0, 3);
 const open = d.status !== 'vendu';
-const info = mailFor(d.id, 'info');
-const offer = mailFor(d.id, 'offre');
-const faq = domainFaq(d.id);
+const name = shown(d);
+const info = mailFor(name, 'info');
+const offer = mailFor(name, 'offre');
+const faq = domainFaq(name);
 const url = `${SITE.url}/domaines/${slug(d.id)}/`;
 const product: Record<string, unknown> = {
-  '@type': 'Product', name: d.id, description: d.description, category: `Nom de domaine ${tld(d.id)}`, url,
+  '@type': 'Product', name: name, description: d.description, category: `Nom de domaine ${tld(name)}`, url,
   brand: { '@id': `${SITE.url}/#org` },
 };
 if (d.price_eur && d.status === 'disponible') {
   product.offers = { '@type': 'Offer', price: d.price_eur, priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url, seller: { '@id': `${SITE.url}/#org` } };
 }
-const title = d.status === 'vendu' ? `${d.id} (vendu) | FranceDomaine.fr` : `${d.id} est à vendre | FranceDomaine.fr`;
+const title = d.status === 'vendu' ? `${name} (vendu) | FranceDomaine.fr` : `${name} est à vendre | FranceDomaine.fr`;
 const desc = d.status === 'vendu'
-  ? `Le nom de domaine ${d.id} a été vendu. Découvrez d'autres noms premium disponibles en .fr et .com.`
-  : `Le nom de domaine ${d.id} est à vendre. ${d.description} ${priceLabel(d)}, transfert sécurisé par escrow.`.slice(0, 300);
+  ? `Le nom de domaine ${name} a été vendu. Découvrez d'autres noms premium disponibles en .fr et .com.`
+  : `Le nom de domaine ${name} est à vendre. ${d.description} ${priceLabel(d)}, transfert sécurisé par escrow.`.slice(0, 300);
 ---
 <Base title={title} description={desc} type="product" jsonLd={[product, faqLd(faq)]}>
   <div class="container" data-arrival={d.id}>
-    <Breadcrumbs items={[{ name: 'Domaines', href: '/domaines/' }, { name: d.category, href: `/categories/${catSlug(d.category)}/` }, { name: d.id, href: `/domaines/${slug(d.id)}/` }]} />
+    <Breadcrumbs items={[{ name: 'Domaines', href: '/domaines/' }, { name: d.category, href: `/categories/${catSlug(d.category)}/` }, { name: name, href: `/domaines/${slug(d.id)}/` }]} />
 
     <section class="lander">
       <div>
         <p class="eyebrow">{d.category}</p>
-        <h1 class="name">{d.id.slice(0, -tld(d.id).length)}<span>{tld(d.id)}</span></h1>
+        <h1 class="name">{name.slice(0, -tld(name).length)}<span>{tld(name)}</span></h1>
         <p class="pitch">{open ? 'est à vendre. Faites-en le nom de votre marque.' : 'a été vendu.'}</p>
         <p class="desc">{d.description}</p>
         {open && (
-          <ul class="points">{domainPoints(d.id).map((p) => <li><strong>{p.t}</strong><span>{p.d}</span></li>)}</ul>
+          <ul class="points">{domainPoints(name).map((p) => <li><strong>{p.t}</strong><span>{p.d}</span></li>)}</ul>
         )}
         {d.uses.length > 0 && (
           <ul class="uses">{d.uses.map((u) => <li>{u}</li>)}</ul>
@@ -80,7 +81,7 @@ const desc = d.status === 'vendu'
       </section>
     )}
     {open && <div class="section"><Steps /></div>}
-    <div class="section"><Faq items={faq} title={`Questions sur ${d.id}`} /></div>
+    <div class="section"><Faq items={faq} title={`Questions sur ${name}`} /></div>
   </div>
 </Base>
 

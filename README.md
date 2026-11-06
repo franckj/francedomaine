@@ -8,7 +8,7 @@ Astro 7, static, Cloudflare Pages. Light theme only, official French State colou
 - Rebuilt from scratch on branch `ccr-238aa4b4-ca2w6g`. **Waits for Franck: "deploy"** (the move to Cloudflare Pages runs from his machine: ops `domains/francedomaine/CC-TASK-launch-2026-11-06.md`).
 - Live today: an older single page on Hostinger (Plausible tag, which is cancelled). It is replaced at the DNS switch.
 - 14 domains listed, 1 hidden: infracloud.fr (redemption, deleted 2026-10-18). velobox.fr was unregistered in the morning of 2026-11-06 and registered again the same day to Franck (RDAP registrant), so it is listed.
-- Sold names: the VENDU section (end of /domaines/, 8 on the home page, red rubber stamp) shows only the list Franck gives: all sold .fr except the adult name JouetSexuel.fr (Franck 2026-11-06: "all sold .fr for now, except adult"), 19 names from DOMAINS Portfolio › SALES. Add each as `status: vendu` with `display` and `sold_on`; never a price.
+- Sold names: the VENDU section (end of /domaines/, 8 on the home page, red rubber stamp) shows only the list Franck gives: all sold .fr except the adult name JouetSexuel.fr (Franck 2026-11-06: "all sold .fr for now, except adult"), plus LeTacos.com and Prix-Immobilier.com (Franck, same day): 21 names from DOMAINS Portfolio › SALES. Add each as `status: vendu` with `display` and `sold_on`; never a price.
 - Home page rewritten 2026-11-06 as a French sales page (copy in `src/data/home.ts`): hero, problem, 8 reasons (confusion, category, .fr, short, brand, phone test, e-mail, asset), for whom, selection, how to buy, FAQ, final CTA.
 
 ## Layout
@@ -35,7 +35,7 @@ Astro 7, static, Cloudflare Pages. Light theme only, official French State colou
 {
   "id": "aurae.fr",               // the domain, lowercase (unique)
   "category": "Luxe & Lifestyle", // free text; each category gets a page
-  "display": "Aurae.fr",          // optional brand casing
+  "display": "Aurae.fr",          // required: word capitalization (Franck 2026-11-06); ask him when the split is unclear
   "status": "disponible",         // disponible | reserve (en négociation) | vendu (VENDU section) | masque (not on the site)
   "featured": true,               // "Premium" badge, shown on the home page
   "price_eur": null,              // integer € HT, or null = "Prix sur demande"

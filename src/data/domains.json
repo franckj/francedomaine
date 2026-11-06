@@ -9,7 +9,8 @@
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": ""
+    "notes": "",
+    "display": "Aurae.fr"
   },
   {
     "id": "hotelroyal.fr",
@@ -21,7 +22,8 @@
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": ""
+    "notes": "",
+    "display": "HotelRoyal.fr"
   },
   {
     "id": "flandres.com",
@@ -33,7 +35,8 @@
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": ""
+    "notes": "",
+    "display": "Flandres.com"
   },
   {
     "id": "synergetic.fr",
@@ -45,7 +48,8 @@
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": ""
+    "notes": "",
+    "display": "Synergetic.fr"
   },
   {
     "id": "infracloud.fr",
@@ -57,7 +61,8 @@
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": "Hidden 2026-11-06: RDAP rdap.nic.fr shows 'redemption period / pending delete', deleted 2026-10-18, no longer sellable."
+    "notes": "Hidden 2026-11-06: RDAP rdap.nic.fr shows 'redemption period / pending delete', deleted 2026-10-18, no longer sellable.",
+    "display": "InfraCloud.fr"
   },
   {
     "id": "velobox.fr",
@@ -69,7 +74,8 @@
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": "Relisted 2026-11-06: RDAP rdap.nic.fr shows a new registration 2026-11-06 at Dynadot, registrant Franck JANKOWSKI (it was unregistered earlier the same day)."
+    "notes": "Relisted 2026-11-06: RDAP rdap.nic.fr shows a new registration 2026-11-06 at Dynadot, registrant Franck JANKOWSKI (it was unregistered earlier the same day).",
+    "display": "VeloBox.fr"
   },
   {
     "id": "francemed.fr",
@@ -81,7 +87,8 @@
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": ""
+    "notes": "",
+    "display": "FranceMed.fr"
   },
   {
     "id": "omnify.fr",
@@ -93,7 +100,8 @@
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": ""
+    "notes": "",
+    "display": "Omnify.fr"
   },
   {
     "id": "superaliments.fr",
@@ -105,7 +113,8 @@
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": ""
+    "notes": "",
+    "display": "SuperAliments.fr"
   },
   {
     "id": "occultation.fr",
@@ -117,7 +126,8 @@
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": ""
+    "notes": "",
+    "display": "Occultation.fr"
   },
   {
     "id": "lemillion.com",
@@ -129,7 +139,8 @@
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": ""
+    "notes": "",
+    "display": "LeMillion.com"
   },
   {
     "id": "mytherapy.fr",
@@ -141,7 +152,8 @@
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": ""
+    "notes": "",
+    "display": "MyTherapy.fr"
   },
   {
     "id": "intelligencephysique.com",
@@ -153,7 +165,8 @@
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": ""
+    "notes": "",
+    "display": "IntelligencePhysique.com"
   },
   {
     "id": "nextchat.fr",
@@ -165,7 +178,8 @@
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": ""
+    "notes": "",
+    "display": "NextChat.fr"
   },
   {
     "id": "mysticker.fr",
@@ -177,7 +191,8 @@
     "uses": [],
     "redirect": true,
     "added": "2026-01-19",
-    "notes": ""
+    "notes": "",
+    "display": "MySticker.fr"
   },
   {
     "id": "testlab.fr",
@@ -261,7 +276,7 @@
   },
   {
     "id": "luminescent.fr",
-    "display": "luminescent.fr",
+    "display": "Luminescent.fr",
     "status": "vendu",
     "added": "2026-11-06",
     "sold_on": "2024-03-08",
@@ -269,7 +284,7 @@
   },
   {
     "id": "atlaspro.fr",
-    "display": "atlaspro.fr",
+    "display": "AtlasPro.fr",
     "status": "vendu",
     "added": "2026-11-06",
     "sold_on": "2024-01-05",
@@ -277,7 +292,7 @@
   },
   {
     "id": "auditseo.fr",
-    "display": "auditseo.fr",
+    "display": "AuditSEO.fr",
     "status": "vendu",
     "added": "2026-11-06",
     "sold_on": "2024-01-03",
@@ -285,7 +300,7 @@
   },
   {
     "id": "createam.fr",
-    "display": "createam.fr",
+    "display": "CreaTeam.fr",
     "status": "vendu",
     "added": "2026-11-06",
     "sold_on": "2023-11-02",
@@ -293,7 +308,7 @@
   },
   {
     "id": "clubpilates.fr",
-    "display": "clubpilates.fr",
+    "display": "ClubPilates.fr",
     "status": "vendu",
     "added": "2026-11-06",
     "sold_on": "2023-08-29",
@@ -301,7 +316,7 @@
   },
   {
     "id": "communitycare.fr",
-    "display": "communitycare.fr",
+    "display": "CommunityCare.fr",
     "status": "vendu",
     "added": "2026-11-06",
     "sold_on": "2022-09-07",
@@ -309,7 +324,7 @@
   },
   {
     "id": "aquabar.fr",
-    "display": "aquabar.fr",
+    "display": "AquaBar.fr",
     "status": "vendu",
     "added": "2026-11-06",
     "sold_on": "2022-04-01",
@@ -330,5 +345,21 @@
     "added": "2026-11-06",
     "sold_on": "2021-09-15",
     "notes": "Sold 2021-09-15 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Franck 2026-11-06: \"all sold .fr for now, except adult\". Price never shown."
+  },
+  {
+    "id": "letacos.com",
+    "display": "LeTacos.com",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2022-03-22",
+    "notes": "Sold 2022-03-22 on Afternic (DOMAINS Portfolio › SALES, read 2026-11-06). Added by Franck 2026-11-06: \"add LeTacos.com and Prix-Immobilier.com to sold list\". Price never shown."
+  },
+  {
+    "id": "prix-immobilier.com",
+    "display": "Prix-Immobilier.com",
+    "status": "vendu",
+    "added": "2026-11-06",
+    "sold_on": "2023-05-19",
+    "notes": "Sold 2023-05-19 on Sedo (DOMAINS Portfolio › SALES, read 2026-11-06). Added by Franck 2026-11-06: \"add LeTacos.com and Prix-Immobilier.com to sold list\". Price never shown."
   }
 ]

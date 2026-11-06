@@ -1,7 +1,8 @@
 ---
-import { slug, tld, statusLabel, priceLabel, type Domain } from '../lib/domains';
+import { slug, tld, statusLabel, priceLabel, shown, type Domain } from '../lib/domains';
 interface Props { d: Domain }
 const { d } = Astro.props;
+const n = shown(d);
 ---
 <a class:list={['card', { featured: d.featured, sold: d.status === 'vendu' }]} href={`/domaines/${slug(d.id)}/`}
    data-cat={d.category} data-search={`${d.id} ${d.category} ${d.description}`.toLowerCase()}>
@@ -9,7 +10,7 @@ const { d } = Astro.props;
     <span class="cat">{d.category}</span>
     {d.featured && d.status === 'disponible' && <span class="badge">Premium</span>}
   </span>
-  <span class="name">{d.id.slice(0, -tld(d.id).length)}<span class="tld">{tld(d.id)}</span></span>
+  <span class="name">{n.slice(0, -tld(n).length)}<wbr /><span class="tld">{tld(n)}</span></span>
   <span class="desc">{d.description}</span>
   <span class="card-foot">
     <span class:list={['status', d.status]}>{statusLabel[d.status]}</span>

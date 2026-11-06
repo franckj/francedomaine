@@ -4,14 +4,14 @@ import Catalog from '../../components/Catalog.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Cta from '../../components/Cta.astro';
 import SoldGrid from '../../components/SoldGrid.astro';
-import { listed, sold, slug } from '../../lib/domains';
+import { listed, sold, slug, shown } from '../../lib/domains';
 import { SITE } from '../../lib/site';
 const all = await listed();
 const done = await sold();
 const n = all.filter((d) => d.status === 'disponible').length;
 const ld = {
   '@type': 'ItemList', name: 'Noms de domaine à vendre',
-  itemListElement: all.map((d, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/domaines/${slug(d.id)}/`, name: d.id })),
+  itemListElement: all.map((d, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/domaines/${slug(d.id)}/`, name: shown(d) })),
 };
 ---
 <Base title={`${n} noms de domaine premium à vendre (.fr, .com) | FranceDomaine.fr`}

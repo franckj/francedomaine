@@ -8,6 +8,7 @@ const page = (p) => readFileSync(`dist${p}index.html`, 'utf8');
 const listed = db.filter((d) => d.status === 'disponible' || d.status === 'reserve');
 const soldRows = db.filter((d) => d.status === 'vendu');
 ok(new Set(db.map((d) => d.id)).size === db.length, 'no duplicate domain in the database');
+for (const d of db) ok(typeof d.display === 'string' && d.display.toLowerCase() === d.id, `${d.id} has its capitalized display name`);
 for (const d of listed) {
   const p = `/domaines/${d.id.replace(/\./g, '-')}/`;
   ok(existsSync(`dist${p}index.html`), `page ${p}`);
