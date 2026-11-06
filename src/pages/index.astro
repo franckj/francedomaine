@@ -27,13 +27,13 @@ const years = new Date().getFullYear() - SITE.since;
       <h1>{hero.title.before}<span class="hl">{hero.title.hl}</span>{hero.title.after}</h1>
       <p class="lead">{hero.lead}</p>
       <div class="hero-cta">
-        <a class="btn" href="/domaines/">Voir les {available.length} domaines disponibles</a>
-        <a class="btn btn-ghost" href="#pourquoi">Pourquoi le nom compte</a>
+        <a class="btn" href="/domaines/">Voir les {available.length} noms de domaine disponibles</a>
+        <a class="btn btn-ghost" href="#pourquoi">Pourquoi le nom de domaine compte</a>
       </div>
       <ul class="stats">
-        <li><strong>{available.length}</strong><span>domaines disponibles</span></li>
+        <li><strong>{available.length}</strong><span>noms de domaine disponibles</span></li>
         {done.length > 0
-          ? <li><strong>{done.length}</strong><span>domaines déjà vendus</span></li>
+          ? <li><strong>{done.length}</strong><span>noms de domaine déjà vendus</span></li>
           : <li><strong>{cats.length}</strong><span>secteurs</span></li>}
         <li><strong>{years}+</strong><span>ans d'expertise</span></li>
         <li><strong>24–72 h</strong><span>pour le transfert</span></li>

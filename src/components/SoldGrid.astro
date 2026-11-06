@@ -8,9 +8,9 @@ const list = limit ? items.slice(0, limit) : items;
 {items.length > 0 && (
   <section class="sold-sec" id="vendus">
     <h2>{title}</h2>
-    <p class="muted">{items.length} noms de notre portefeuille ont déjà trouvé leur marque. Comme dans l'immobilier : une fois vendu, il ne revient pas.</p>
+    <p class="muted">{items.length} noms de domaine de notre portefeuille ont déjà trouvé leur marque. Comme dans l'immobilier : une fois vendu, il ne revient pas.</p>
     <div class="grid">{list.map((d) => <SoldCard d={d} />)}</div>
-    {limit && items.length > limit && <p><a href="/domaines/#vendus">Voir les {items.length} domaines vendus →</a></p>}
+    {limit && items.length > limit && <p><a href="/domaines/#vendus">Voir les {items.length} noms de domaine vendus →</a></p>}
   </section>
 )}
 <style>

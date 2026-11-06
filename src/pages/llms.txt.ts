@@ -7,8 +7,8 @@ export const GET: APIRoute = async () => {
   const lines = [
     '# FranceDomaine.fr', '',
     `> ${SITE.description}`, '',
-    `Éditeur : ${SITE.legal.company} (${SITE.legal.rcs}). Achat : e-mail depuis la fiche du domaine, paiement par escrow, transfert sous 24 à 72 heures.`, '',
-    '## Domaines', '',
+    `Éditeur : ${SITE.legal.company} (${SITE.legal.rcs}). Achat : e-mail depuis la fiche du nom de domaine, paiement par escrow, transfert sous 24 à 72 heures.`, '',
+    '## Noms de domaine', '',
     ...all.map((d) => `- [${shown(d)}](${SITE.url}/domaines/${slug(d.id)}/): ${statusLabel[d.status]}, ${d.status === 'vendu' ? '' : priceLabel(d) + ', '}${d.category}. ${d.description}`),
     '', '## Déjà vendus', '', done.map(shown).join(', '),
     '', '## Pages', '',

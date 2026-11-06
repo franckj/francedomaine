@@ -16,6 +16,23 @@ function redirectsFile() {
           const to = `/domaines/${d.id.replace(/\./g, '-')}/?via=redirect`;
           lines.push(`/r/${d.id}  ${to}  302`, `/r/${d.id}/*  ${to}  302`);
         }
+        // Categories merged 2026-11-06 (Franck: "less Catégories, way too many, find broader"): old pages 301 to the new ones.
+        for (const [from, to] of [
+          ['business-et-tech', 'tech-et-business'],
+          ['tech-et-cloud', 'tech-et-business'],
+          ['tech-et-saas', 'tech-et-business'],
+          ['tech-et-communication', 'tech-et-business'],
+          ['sante', 'sante-et-bien-etre'],
+          ['sante-et-nutrition', 'sante-et-bien-etre'],
+          ['sport-et-mobilite', 'sport-et-loisirs'],
+          ['sport-et-coaching', 'sport-et-loisirs'],
+          ['luxe-et-lifestyle', 'commerce-et-lifestyle'],
+          ['finance-et-luxe', 'commerce-et-lifestyle'],
+          ['e-commerce-et-creatif', 'commerce-et-lifestyle'],
+          ['industrie', 'commerce-et-lifestyle'],
+          ['hotellerie', 'tourisme-et-territoires'],
+          ['geographique', 'tourisme-et-territoires'],
+        ]) lines.push(`/categories/${from}/  /categories/${to}/  301`);
         // Pages does not fill :splat inside a query string, so /r/<any> serves /a-vendre/ (200 rewrite) and
         // Tracking.astro turns the path into ?nom=<domain>&via=redirect before anything reads it.
         lines.push('/r/*  /a-vendre/  200', '/r  /  302');

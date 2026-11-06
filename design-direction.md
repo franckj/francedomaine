@@ -7,6 +7,10 @@ Brief for the brand and every build (site + LinkedIn). Decisions are Franck's, w
 - Franck rejected the first LinkedIn kit (FD square in Arial, plain banner, generic copy): "that's awful, everything is wrong and off"; picked "Not our brand", "Copy is wrong", "Visuals look cheap". Then: **"New brand everywhere"** (site + LinkedIn).
 - Existing assets: LinkedIn logo = heavy navy capitals FRANCE DOMAINE + stacked blue/white/red stripe mark; banner "Votre marque mérite un domaine d'exception"; page name "France Domaine". Old site (Feb 2026): black + gold #c9a227, Cormorant Garamond + Outfit. Live site (2026-11-06): light, DSFR Bleu France #000091 + Rouge Marianne #E1000F, system font, no logo.
 
+## Site rebuild (2026-11-06)
+
+- Branding on the site: Franck "branding is OK". Categories cut to 5 broad ones.
+
 ## Round 1: foundation
 
 - Three words (2026-11-06): **clair, direct, fiable** (Franck's pick).
@@ -31,7 +35,7 @@ Brief for the brand and every build (site + LinkedIn). Decisions are Franck's, w
 - Big Shoulders Display tried, then Franck: "keep the old logo, same font, no flag".
 - Logo now (2026-11-06): the original wordmark without the flag mark: FRANCE over DOMAINE, Passion One 700 (Google Fonts; closest match to the original logo's font, compared side by side with 7 others), Bleu France #000091, left-aligned.
 - Banner text (Franck's words): "Votre marque mérite le nom de domaine parfait." with "parfait" underlined in Rouge Marianne, on 2 lines, right-aligned (Franck: "on 2 lines, justify right"). Paper ground, nothing else: Franck: "delete cards, busy and unreadable, same with 'Noms courts etc.'".
-- Copy rule (Franck 2026-11-06): **never "domaine" for "nom de domaine"**: "NEVER use Domaine for Nom de Domaine, 2 different things in French". Always "nom de domaine" / "noms de domaine" (the brand "France Domaine" is a name, not this word). The live site breaks it in many places (Header "Domaines", Steps, Catalog, home.ts "Pourquoi le bon domaine change tout"): fixed in the copy rewrite that waits for Franck's text.
+- Copy rule (Franck 2026-11-06): **never "domaine" nor "nom" for "nom de domaine"** ("stop with 'nom' too - no 'domaine', no 'nom', only 'nom de domaine'"): "NEVER use Domaine for Nom de Domaine, 2 different things in French". Always "nom de domaine" / "noms de domaine" (the brand "France Domaine" is a name, not this word). The live site breaks it in many places (Header "Domaines", Steps, Catalog, home.ts "Pourquoi le bon domaine change tout"): fixed in the copy rewrite that waits for Franck's text.
 - Copy rules: names "don't have to be short, remove that" (never sell on shortness). Franck: "just wait, all copy is wrong lol": all page copy waits for Franck's text.
 - Address rule (Franck 2026-11-06): never "francedomaine.fr/domaines" in copy or visuals ("really dumb"): always **FranceDomaine.fr**.
 - Kit kept by Franck 2026-11-06 ("ok, i'm done, keep this average one"): https://claude.ai/artifact/FDundNZn2QeW9kAYAC9DUv (v3)

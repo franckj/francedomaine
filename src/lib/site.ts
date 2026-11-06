@@ -7,7 +7,7 @@ export const SITE = {
   mail: { user: 'contact', host: 'francedomaine.fr' },
   title: 'Noms de domaine premium .fr à vendre pour votre marque | FranceDomaine.fr',
   description:
-    "Le nom de domaine parfait pour votre marque. Noms courts, clairs et en .fr, prêts à l'emploi : prix sur demande, paiement par escrow, transfert sous 24 à 72 h.",
+    "Votre marque mérite le nom de domaine parfait. Noms de domaine clairs, en .fr et .com, prêts à l'emploi : prix sur demande, paiement par escrow, transfert sous 24 à 72 h.",
   locale: 'fr_FR',
   since: 1999,
   legal: {

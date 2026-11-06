@@ -15,9 +15,9 @@ const n = items.filter((d) => d.status === 'disponible').length;
 <Base title={`Noms de domaine ${name} à vendre | FranceDomaine.fr`}
       description={`${n} nom(s) de domaine premium à vendre dans le secteur ${name} : ${items.slice(0, 4).map(shown).join(', ')}. Prix sur demande, transfert sécurisé.`}>
   <div class="container">
-    <Breadcrumbs items={[{ name: 'Domaines', href: '/domaines/' }, { name, href: Astro.url.pathname }]} />
+    <Breadcrumbs items={[{ name: 'Noms de domaine', href: '/domaines/' }, { name, href: Astro.url.pathname }]} />
     <h1>Noms de domaine : {name}</h1>
-    <p class="muted lead">{n} domaine(s) disponible(s) dans ce secteur.</p>
+    <p class="muted lead">{n} nom(s) de domaine disponible(s) dans ce secteur.</p>
     <Catalog items={items} filters={false} />
     <div class="section"><Cta /></div>
   </div>

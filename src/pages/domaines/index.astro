@@ -15,12 +15,12 @@ const ld = {
 };
 ---
 <Base title={`${n} noms de domaine premium à vendre (.fr, .com) | FranceDomaine.fr`}
-      description={`Catalogue de ${n} noms de domaine premium disponibles en .fr et .com : recherche par nom ou secteur, prix sur demande, transfert sécurisé.`}
+      description={`Catalogue de ${n} noms de domaine premium disponibles en .fr et .com : recherche par nom de domaine ou secteur, prix sur demande, transfert sécurisé.`}
       jsonLd={[ld]}>
   <div class="container">
-    <Breadcrumbs items={[{ name: 'Domaines', href: '/domaines/' }]} />
+    <Breadcrumbs items={[{ name: 'Noms de domaine', href: '/domaines/' }]} />
     <h1>Noms de domaine à vendre</h1>
-    <p class="muted lead">{n} domaines disponibles. Cliquez sur un nom pour voir sa fiche, demander le prix ou faire une offre.</p>
+    <p class="muted lead">{n} noms de domaine disponibles. Cliquez sur un nom de domaine pour voir sa fiche, demander le prix ou faire une offre.</p>
     <Catalog items={all} />
     <div class="section"><SoldGrid items={done} /></div>
     <div class="section"><Cta /></div>

@@ -34,18 +34,18 @@ if (d.price_eur && d.status === 'disponible') {
 }
 const title = d.status === 'vendu' ? `${name} (vendu) | FranceDomaine.fr` : `${name} est à vendre | FranceDomaine.fr`;
 const desc = d.status === 'vendu'
-  ? `Le nom de domaine ${name} a été vendu. Découvrez d'autres noms premium disponibles en .fr et .com.`
+  ? `Le nom de domaine ${name} a été vendu. Découvrez d'autres noms de domaine premium disponibles en .fr et .com.`
   : `Le nom de domaine ${name} est à vendre. ${d.description} ${priceLabel(d)}, transfert sécurisé par escrow.`.slice(0, 300);
 ---
 <Base title={title} description={desc} type="product" jsonLd={[product, faqLd(faq)]}>
   <div class="container" data-arrival={d.id}>
-    <Breadcrumbs items={[{ name: 'Domaines', href: '/domaines/' }, { name: d.category, href: `/categories/${catSlug(d.category)}/` }, { name: name, href: `/domaines/${slug(d.id)}/` }]} />
+    <Breadcrumbs items={[{ name: 'Noms de domaine', href: '/domaines/' }, { name: d.category, href: `/categories/${catSlug(d.category)}/` }, { name: name, href: `/domaines/${slug(d.id)}/` }]} />
 
     <section class="lander">
       <div>
         <p class="eyebrow">{d.category}</p>
         <h1 class="name">{name.slice(0, -tld(name).length)}<span>{tld(name)}</span></h1>
-        <p class="pitch">{open ? 'est à vendre. Faites-en le nom de votre marque.' : 'a été vendu.'}</p>
+        <p class="pitch">{open ? 'est à vendre. Faites-en le nom de domaine de votre marque.' : 'a été vendu.'}</p>
         <p class="desc">{d.description}</p>
         {open && (
           <ul class="points">{domainPoints(name).map((p) => <li><strong>{p.t}</strong><span>{p.d}</span></li>)}</ul>
@@ -60,7 +60,7 @@ const desc = d.status === 'vendu'
           <>
             <p class="price">{priceLabel(d)}</p>
             <a class="btn js-mail" href="/contact/" data-domain={d.id} data-kind="info" data-subject={info.subject} data-body={info.body}>
-              {d.price_eur ? 'Acheter ce domaine' : 'Demander le prix'}
+              {d.price_eur ? 'Acheter ce nom de domaine' : 'Demander le prix'}
             </a>
             <a class="btn btn-ghost js-mail" href="/contact/" data-domain={d.id} data-kind="offre" data-subject={offer.subject} data-body={offer.body}>Faire une offre</a>
             <ul class="trust">
@@ -76,7 +76,7 @@ const desc = d.status === 'vendu'
 
     {related.length > 0 && (
       <section class="section">
-        <h2>{open ? 'Vous aimerez aussi' : 'Domaines disponibles'}</h2>
+        <h2>{open ? 'Vous aimerez aussi' : 'Noms de domaine disponibles'}</h2>
         <div class="grid">{related.map((r) => <DomainCard d={r} />)}</div>
       </section>
     )}

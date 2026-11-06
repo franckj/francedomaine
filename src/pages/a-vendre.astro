@@ -20,7 +20,7 @@ const show = all.filter((d) => d.status === 'disponible' && d.featured).slice(0,
         <a class="btn btn-ghost" href="/domaines/">Voir le catalogue</a>
       </div>
     </section>
-    {show.length > 0 && <section class="section"><h2>Domaines à la une</h2><Catalog items={show} filters={false} /></section>}
+    {show.length > 0 && <section class="section"><h2>Noms de domaine à la une</h2><Catalog items={show} filters={false} /></section>}
   </div>
 </Base>
 <script is:inline define:vars={{ known }}>
@@ -33,7 +33,7 @@ const show = all.filter((d) => d.status === 'disponible' && d.featured).slice(0,
     document.title = nom + ' est à vendre | FranceDomaine.fr';
     var a = document.getElementById('ask');
     a.dataset.domain = nom;
-    a.dataset.subject = 'Intérêt pour le domaine ' + nom;
+    a.dataset.subject = 'Intérêt pour le nom de domaine ' + nom;
     a.dataset.body = "Bonjour,\n\nJe suis intéressé(e) par le nom de domaine " + nom + ". Pouvez-vous m'indiquer le prix et les conditions ?\n\nCordialement,\n";
   })();
 </script>

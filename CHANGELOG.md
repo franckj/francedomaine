@@ -1,6 +1,6 @@
 # Changelog
 
-## 2026-11-06 — New brand on the site (preview https://brand.francedomaine.pages.dev, waits for Franck: "deploy")
+## 2026-11-06 — New brand on the site (preview https://brand.francedomaine.pages.dev, branding OK by Franck; waits for Franck: "deploy")
 
 - Palette 1 "Papier et Bleu France" (design-direction.md, Franck: "keep, that's super clean and elegant"): paper #F9F6F2 bands, ink #161616, Bleu France for names and buttons, red only for VENDU and the underline. Radius 4px everywhere, no gradients.
 - Tricolour line under the header removed (Franck: "remove bleu blanc rouge stuff").
@@ -8,7 +8,9 @@
 - Hero headline (Franck's words): "Votre marque mérite le nom de domaine parfait." with "parfait" underlined in red.
 - Nav "Domaines" → "Noms de domaine" (rule: never "domaine" for "nom de domaine").
 - og.png redrawn in the brand (`scripts/og.cjs`).
-- Body copy unchanged: it waits for Franck's text ("all copy is wrong").
+- Copy round 1 (Franck 2026-11-06, his lines): nav "Le nom de domaine parfait"; hero lead "Un nom de domaine clair, en .fr … avant même d'avoir visité votre site"; "Pourquoi le nom de domaine compte"; "Un nom de domaine approximatif vous coûte des clients. Sans que vous le sachiez."; final block "Chaque nom de domaine est unique." + his paragraph.
+- Rule applied on every page, descriptions included: no bare "nom" or "domaine", only "nom de domaine" ("stop with 'nom' too"); nothing sold on being short ("Court, donc mémorable" → "Facile à retenir", the "N lettres · Court" point removed from name pages). Built-text scan: 0 left.
+- Categories 15 → 5 (Franck: "less Catégories, way too many, find broader"): Tech & Business, Santé & Bien-être, Sport & Loisirs, Commerce & Lifestyle, Tourisme & Territoires. Old /categories/ pages 301 to the new ones.
 
 ## 2026-11-06 — Launch on Cloudflare Pages (LIVE, Franck: "deploy")
 

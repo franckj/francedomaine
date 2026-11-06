@@ -38,7 +38,7 @@ export const priceLabel = (d: Domain) =>
 
 /** Subject and body of the prefilled email for a domain. */
 export const mailFor = (name: string, kind: 'offre' | 'info' = 'info') => ({
-  subject: kind === 'offre' ? `Offre pour ${name}` : `Intérêt pour le domaine ${name}`,
+  subject: kind === 'offre' ? `Offre pour ${name}` : `Intérêt pour le nom de domaine ${name}`,
   body:
     kind === 'offre'
       ? `Bonjour,\n\nJe souhaite faire une offre pour le nom de domaine ${name}.\n\nMon offre : ... €\nMon projet : ...\n\nCordialement,\n`
