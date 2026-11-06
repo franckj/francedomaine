@@ -1,5 +1,5 @@
 ---
-// Landing for any forwarded domain that is not in the catalog: /r/<domain> → /a-vendre/?nom=<domain>&via=redirect.
+// Landing for any forwarded domain that is not in the catalog: /r/<domain> is served this page (200 rewrite) and Tracking.astro rewrites the URL to /a-vendre/?nom=<domain>&via=redirect.
 // Not indexed. If the name is in the catalog after all (different case, extra path), it moves to the domain's page.
 import Base from '../layouts/Base.astro';
 import Catalog from '../components/Catalog.astro';

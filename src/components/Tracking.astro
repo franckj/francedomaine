@@ -15,6 +15,9 @@ const prod = import.meta.env.PROD;
 <script is:inline>
   // Arrival from a redirected domain: /r/<domain> sends here with ?via=redirect (see astro.config.mjs).
   (function () {
+    // /r/<domain> not in the catalog is served /a-vendre/ by a 200 rewrite: put the name in the URL the page reads.
+    var m = location.pathname.match(/^\/r\/([^/?#]+)/);
+    if (m) history.replaceState(null, '', '/a-vendre/?nom=' + encodeURIComponent(decodeURIComponent(m[1])) + '&via=redirect');
     var p = new URLSearchParams(location.search);
     if (p.get('via') !== 'redirect') return;
     var el = document.querySelector('[data-arrival]');

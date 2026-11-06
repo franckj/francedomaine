@@ -19,7 +19,7 @@ for (const d of listed) {
 for (const d of db.filter((d) => d.status === 'masque' || d.status === 'vendu')) ok(!existsSync(`dist/domaines/${d.id.replace(/\./g, '-')}/`), `hidden ${d.id} has no page`);
 const red = readFileSync('dist/_redirects', 'utf8');
 for (const d of listed) ok(red.includes(`/r/${d.id}  /domaines/${d.id.replace(/\./g, '-')}/?via=redirect  302`), `redirect /r/${d.id}`);
-ok(/\/r\/\*\s+\/a-vendre\/\?nom=:splat/.test(red), 'catch-all /r/* redirect');
+ok(/\/r\/\*\s+\/a-vendre\/\s+200/.test(red), 'catch-all /r/* rewrite');
 for (const p of ['/', '/domaines/', '/contact/', '/a-vendre/', '/mentions-legales/', '/confidentialite/']) {
   const h = page(p);
   ok(!/[a-z]+@francedomaine\.fr/.test(h), `no plain email address in ${p}`);

@@ -16,7 +16,9 @@ function redirectsFile() {
           const to = `/domaines/${d.id.replace(/\./g, '-')}/?via=redirect`;
           lines.push(`/r/${d.id}  ${to}  302`, `/r/${d.id}/*  ${to}  302`);
         }
-        lines.push('/r/*  /a-vendre/?nom=:splat&via=redirect  302', '/r  /  302');
+        // Pages does not fill :splat inside a query string, so /r/<any> serves /a-vendre/ (200 rewrite) and
+        // Tracking.astro turns the path into ?nom=<domain>&via=redirect before anything reads it.
+        lines.push('/r/*  /a-vendre/  200', '/r  /  302');
         writeFileSync(new URL('_redirects', dir), lines.join('\n') + '\n');
       },
     },
