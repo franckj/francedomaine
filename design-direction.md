@@ -23,3 +23,8 @@ Brief for the brand and every build (site + LinkedIn). Decisions are Franck's, w
   - Font: Public Sans (Google Fonts) 400/600/800
   - Risks named on the preview, kept by Franck: State look ("administratif"), blue carries most, Public Sans neutral.
 - Rejected directions: _none yet_
+
+## Logo and LinkedIn (2026-11-06)
+
+- Logo option 1: white ".fr" in Public Sans 800 on Bleu France #000091 (square), wordmark "France Domaine" beside it. Shown in the LinkedIn kit v2: https://claude.ai/artifact/FDundNZn2QeW9kAYAC9DUv . Waits for Franck: keep / next.
+- Copy voice: clair, direct; no "d'exception", no "25 ans d'expérience" (not sourced).
