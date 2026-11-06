@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-06 — 35 more names (LIVE, Franck: "deploy")
+
+- From Franck's list, all registered at Dynadot behind DEUP privacy (RDAP 2026-11-06): InovAI.fr, HyperBot.fr, DataFusion.fr (IA); HarmonyOS.fr, Episcope.fr, CapitalEnergie.fr, CityNews.fr, DataFact.fr, MovePay.fr, CyberCompany.fr, OpenSourceAcademy.fr, AtlasConstruction.fr, EasyProtect.fr, AgriConnect.fr, SuperRecharge.fr, PoolTech.fr, Energetiques.fr, AquaProtect.fr, GlobalSecurity.fr, Apura.fr, DarwinCapital.fr (Tech & Business); ErgoPro.fr, SkinCenter.fr, InstantBeaute.fr (Santé & Bien-être); DirectTransport.fr, CabaretParis.fr (Tourisme & Territoires); DroneZone.fr, NeoCycles.com (Sport & Loisirs); Joies.fr, Colocate.fr, RockShop.fr, Convertibles.fr, EcoVert.fr, Sucres.fr, PrimaPizza.fr (Commerce & Lifestyle).
+- CabaretParis.fr is Franck's live guide site: `redirect: false`, no /r/ forwarding expected. HarmonyOS.fr shares the name of Huawei's OS (trademark risk told to Franck; listed on his "deploy").
+
 ## 2026-11-06 — Experience line: "Plus de 25 ans d'expertise" everywhere
 
 - Hero said 27+ (counted from 1999), footer said 25. Franck: "plus de 25 ans d'expertise". One constant `SITE.experience` feeds both.
