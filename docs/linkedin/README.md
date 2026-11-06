@@ -12,4 +12,4 @@ Franck posts (his login). Claude prepares each week: one sold name from the VEND
 
 | Week | Sold name | News (source, date) | Status |
 |---|---|---|---|
-| 2026-11-06 | TestLab.fr (sold 2026-10-06) | .fr passes 4.5 million names (Afnic, 2026-09-03) | v2 drafted; waits for Franck |
+| 2026-11-06 | TestLab.fr (sold 2026-10-06) | .fr passes 4.5 million names (Afnic, 2026-09-03) | Visuals kept by Franck (v5); copy waits for Franck's text |

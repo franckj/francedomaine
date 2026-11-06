@@ -16,7 +16,7 @@ const jobs=[
      <b style="font-size:128px;letter-spacing:-.03em;line-height:1">TestLab.fr</b>
      <span style="font-size:36px;color:#4a4a4a">a trouvé son propriétaire.</span>
      <span class="stamp" style="right:56px;top:56px;font-size:48px;padding:2px 22px;border-width:6px">VENDU</span></div></div>
-   <div style="font-size:28px;color:#4a4a4a">francedomaine.fr/domaines</div></div>`],
+   <div style="font-size:28px;color:#4a4a4a">FranceDomaine.fr</div></div>`],
 ];
 (async()=>{const b=await chromium.launch();for(const [f,w,h,html] of jobs){const p=await b.newPage({viewport:{width:w,height:h}});await p.setContent(head+html,{waitUntil:'networkidle'});await p.evaluate(()=>document.fonts.ready);await p.evaluate(()=>{document.querySelectorAll('.fit').forEach(f=>{const r=f.parentElement.querySelector('.ref');const n=f.textContent.length;const ls=parseFloat(getComputedStyle(f).letterSpacing)||0;const diff=r.getBoundingClientRect().width-f.getBoundingClientRect().width;f.style.letterSpacing=(ls+diff/n)+'px';f.style.marginRight=(-(ls+diff/n))+'px';})});
 const ok=await p.evaluate(()=>document.fonts.check('800 20px "Bricolage Grotesque"'));console.log(f,'font',ok);await p.screenshot({path:`${S}/${f}`});await p.close();}await b.close()})();
