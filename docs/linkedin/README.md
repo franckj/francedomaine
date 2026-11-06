@@ -13,3 +13,7 @@ Franck posts (his login). Claude prepares each week: one sold name from the VEND
 | Week | Sold name | News (source, date) | Status |
 |---|---|---|---|
 | 2026-11-06 | TestLab.fr (sold 2026-10-06) | .fr passes 4.5 million names (Afnic, 2026-09-03) | Visuals kept by Franck (v5); copy waits for Franck's text |
+
+## Page state
+
+- 2026-11-06 16:13 (Franck's screenshot): LinkedIn page updated by Franck: logo FRANCE/DOMAINE, banner v7 (text inside the mobile crop), tagline "Un nom de domaine clair, en .fr : vos clients vous trouvent et vous font confiance avant même d'avoir visité votre site." Post 1 not posted yet.
