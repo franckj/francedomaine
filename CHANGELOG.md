@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-06 · Home sections on alternating backgrounds; /r/ redirect fix
+
+- Home: each section is a full-width band, white and paper (#F9F6F2) in turn, after the paper hero. Franck: "alternate bg colors for section". Preview https://bands.francedomaine.pages.dev
+- Bug found on the live site: Cloudflare Pages applied only about the first 100 lines of `_redirects`. /r/<name> for names past line ~102 (NeoCycles.com, PoolTech.fr and 30 more) and every old category 301 answered 404.
+- Fix: `functions/_middleware.js` now sends /r/<name>[/path] for every listed name to its page (302, ?via=redirect, case-insensitive). `_redirects` keeps only the category 301s and the /r/* fallback (17 lines); the build fails past 90 lines.
+- Tested on the preview: /r/neocycles.com, /r/pooltech.fr, /r/Aurae.fr/page 302 to their pages; /r/inconnu.fr 200 (a-vendre); /categories/tech-et-business/ and /categories/sante/ 301.
+
 ## 2026-11-06 · Tech & Business split
 
 - Tech & Business (29 names) split into 3 categories: Tech & Numérique (11, 10 shown), Conseil & Finance (9), Énergie & Industrie (9). Franck: "split Tech & Business into broader catégories".

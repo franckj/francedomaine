@@ -47,16 +47,18 @@ const years = SITE.experience;
     </div>
   </section>
 
-  <div class="container">
-    <section class="section problem">
+  <section class="band">
+    <div class="container problem">
       <div>
         <h2>{problem.title}</h2>
         <p class="muted big">{problem.intro}</p>
       </div>
       <ul>{problem.points.map((p) => <li>{p}</li>)}</ul>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="pourquoi">
+  <section class="band alt" id="pourquoi">
+    <div class="container">
       <h2>{reasons.title}</h2>
       <p class="muted big narrowp">{reasons.intro}</p>
       <div class="reasons">
@@ -64,16 +66,20 @@ const years = SITE.experience;
           <div class="reason"><span class="n">{String(i + 1).padStart(2, '0')}</span><h3>{r.t}</h3><p class="muted">{r.d}</p></div>
         ))}
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section">
+  <section class="band">
+    <div class="container">
       <h2>{audiences.title}</h2>
       <div class="aud">
         {audiences.items.map((a) => <div><h3>{a.t}</h3><p class="muted">{a.d}</p></div>)}
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section">
+  <section class="band alt">
+    <div class="container">
       <div class="head">
         <h2>Notre sélection</h2>
         <a href="/domaines/">Tout le catalogue →</a>
@@ -82,17 +88,17 @@ const years = SITE.experience;
       <div class="cats">
         {cats.map((c) => <a href={`/categories/${c.slug}/`}>{c.name} <span>{c.items.length}</span></a>)}
       </div>
-    </section>
+    </div>
+  </section>
 
-    <div class="section"><SoldGrid items={done} limit={8} /></div>
-    <div class="section"><Steps /></div>
-    <div class="section"><Faq items={faq} /></div>
-    <div class="section"><Cta title={finalCta.title} text={finalCta.text} /></div>
-  </div>
+  <section class="band"><div class="container"><SoldGrid items={done} limit={8} /></div></section>
+  <section class="band alt"><div class="container"><Steps /></div></section>
+  <section class="band"><div class="container"><Faq items={faq} /></div></section>
+  <section class="band alt"><div class="container"><Cta title={finalCta.title} text={finalCta.text} /></div></section>
 </Base>
 
 <style>
-  .hero { background: var(--soft); padding: 72px 0 48px; border-bottom: 1px solid var(--line); }
+  .hero { background: var(--soft); padding: 72px 0 64px; }
   .hero h1 { max-width: 900px; }
   .hl { text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: .09em; text-underline-offset: .14em; }
   .lead { font-size: 19px; color: var(--muted); max-width: 680px; }
@@ -103,7 +109,9 @@ const years = SITE.experience;
   .stats span { color: var(--muted); font-size: 14px; }
   .big { font-size: 18px; }
   .narrowp { max-width: 680px; }
-  .problem { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; padding: 40px; background: var(--soft); border-radius: var(--radius); }
+  .band { padding: 80px 0; }
+  .band.alt { background: var(--soft); border-block: 1px solid var(--line); }
+  .problem { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
   .problem ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
   .problem li { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px 14px 44px; position: relative; }
   .problem li::before { content: '✕'; position: absolute; left: 16px; top: 14px; color: var(--red); font-weight: 700; }
@@ -123,6 +131,6 @@ const years = SITE.experience;
   .cats a:hover { border-color: var(--accent); color: var(--accent); }
   .cats span { color: var(--muted); font-size: 13px; margin-left: 4px; }
   @media (max-width: 1000px) { .reasons { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 760px) { .problem, .aud { grid-template-columns: 1fr; } .problem { padding: 24px; gap: 20px; } .hero { padding-top: 48px; } }
+  @media (max-width: 760px) { .problem, .aud { grid-template-columns: 1fr; } .problem { gap: 20px; } .band { padding: 56px 0; } .hero { padding-top: 48px; } }
   @media (max-width: 520px) { .reasons { grid-template-columns: 1fr; } }
 </style>

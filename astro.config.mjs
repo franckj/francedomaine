@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
-import { writeFileSync, readFileSync } from 'node:fs';
+import { writeFileSync } from 'node:fs';
 
 // Writes dist/_redirects (Cloudflare Pages) from the database, so every domain Franck forwards to
 // https://francedomaine.fr/r/<domain> lands on its own page, tagged ?via=redirect for the arrival event.
@@ -9,13 +9,9 @@ function redirectsFile() {
     name: 'fd-redirects',
     hooks: {
       'astro:build:done': ({ dir }) => {
-        const db = JSON.parse(readFileSync(new URL('./src/data/domains.json', import.meta.url), 'utf8'));
         const lines = ['# Generated at build from src/data/domains.json (astro.config.mjs). Do not edit by hand.'];
-        for (const d of db) {
-          if (d.status !== 'disponible' && d.status !== 'reserve') continue;
-          const to = `/domaines/${d.id.replace(/\./g, '-')}/?via=redirect`;
-          lines.push(`/r/${d.id}  ${to}  302`, `/r/${d.id}/*  ${to}  302`);
-        }
+        // Listed names (/r/<domain> → its page) are handled in functions/_middleware.js: Pages applied only
+        // about the first 100 lines of this file. Keep this file short; the build fails past 90 lines.
         // Categories merged 2026-11-06 (Franck: "less Catégories, way too many, find broader"): old pages 301 to the new ones.
         for (const [from, to] of [
           // Tech & Business split 2026-11-06 (Franck: "split Tech & Business into broader catégories").
@@ -38,6 +34,7 @@ function redirectsFile() {
         // Pages does not fill :splat inside a query string, so /r/<any> serves /a-vendre/ (200 rewrite) and
         // Tracking.astro turns the path into ?nom=<domain>&via=redirect before anything reads it.
         lines.push('/r/*  /a-vendre/  200', '/r  /  302');
+        if (lines.length > 90) throw new Error(`_redirects has ${lines.length} lines; Pages ignored lines past ~100 (2026-11-06)`);
         writeFileSync(new URL('_redirects', dir), lines.join('\n') + '\n');
       },
     },
