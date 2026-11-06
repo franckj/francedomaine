@@ -73,7 +73,7 @@ python3 -I events/q.py "SELECT json_extract(props,'$.domain') AS d, count(*) n F
 | What | Where | When |
 |---|---|---|
 | Domain check (expiry + forwarding) | `.github/workflows/check-domains.yml` | daily 05:23 UTC, commits `data/` only |
-| Catalog audit: hides listed names that can't be sold (unregistered, redemption, pending delete, .fr registrant not Franck); relists hidden .fr names registered to Franck again | `.github/workflows/audit-catalog.yml` → `data/AUDIT.md` | monthly, 1st 06:41 UTC; ships at once only if `data/config.json` `audit_autoship` is true |
+| Catalog audit: hides listed names that can't be sold (unregistered, redemption, pending delete, .fr registrant not Franck); relists hidden .fr names registered to Franck again | `.github/workflows/audit-catalog.yml` → `data/AUDIT.md` | monthly, 1st 06:41 UTC; ships at once (`data/config.json` `audit_autoship`: true, Franck 2026-11-06 "Yes, ship it") |
 | Build + test | `.github/workflows/deploy.yml` | every push to main and PR |
 | Deploy + IndexNow | same | commits with `[deploy]`, or run by hand |
 | Weekly report | `tasks/weekly-report.md` (Claude scheduled task) | Mondays |
