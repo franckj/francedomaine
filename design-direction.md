@@ -28,7 +28,8 @@ Brief for the brand and every build (site + LinkedIn). Decisions are Franck's, w
 
 - Logo option 1 (white ".fr" on a blue square) rejected. Franck: "LOGO is OFF, that's not the point! Keep FRANCE over DOMAINE like the original one, no logo of flag, just a clean font".
 - Logo v2 (Public Sans 800, FRANCE letter-spaced to DOMAINE's width) rejected: "font is booooriiiiing, why extra space, that's horrible".
-- Logo now: FRANCE over DOMAINE in Big Shoulders Display 900 (Google Fonts, heavy condensed, like the original), Bleu France, natural spacing, left-aligned. Waits for Franck: keep / next.
+- Big Shoulders Display tried, then Franck: "keep the old logo, same font, no flag".
+- Logo now (2026-11-06): the original wordmark without the flag mark: FRANCE over DOMAINE, Passion One 700 (Google Fonts; closest match to the original logo's font, compared side by side with 7 others), Bleu France #000091, left-aligned.
 - Banner text (Franck's words): "Votre marque mérite le nom de domaine parfait." with "parfait" underlined in Rouge Marianne, on 2 lines, right-aligned (Franck: "on 2 lines, justify right"). Paper ground, nothing else: Franck: "delete cards, busy and unreadable, same with 'Noms courts etc.'".
 - Copy rule (Franck 2026-11-06): **never "domaine" for "nom de domaine"**: "NEVER use Domaine for Nom de Domaine, 2 different things in French". Always "nom de domaine" / "noms de domaine" (the brand "France Domaine" is a name, not this word). The live site breaks it in many places (Header "Domaines", Steps, Catalog, home.ts "Pourquoi le bon domaine change tout"): fixed in the copy rewrite that waits for Franck's text.
 - Copy rules: names "don't have to be short, remove that" (never sell on shortness). Franck: "just wait, all copy is wrong lol": all page copy waits for Franck's text.
