@@ -8,7 +8,7 @@ const head=`<link rel="stylesheet" href="https://fonts.googleapis.com/css2?famil
 .stamp{position:absolute;transform:rotate(-8deg);border:3px solid #E1000F;color:#E1000F;font-weight:800;letter-spacing:.1em}</style>`;
 const jobs=[
  ['logo-400.png',400,400,`<div style="width:400px;height:400px;background:#fff;display:flex;align-items:center;justify-content:center"><span class="wm" style="font-size:88px">FRANCE<br>DOMAINE</span></div>`],
- ['cover-1128x191.png',1128,191,`<div style="width:1128px;height:191px;background:#f9f6f2;display:flex;align-items:center;justify-content:flex-end;padding:0 56px 0 260px"><div style="font-size:36px;font-weight:800;letter-spacing:-.01em;line-height:1.2;text-align:right;white-space:nowrap">Votre marque mérite<br>le nom de domaine <span style="text-decoration:underline;text-decoration-color:#E1000F;text-decoration-thickness:5px;text-underline-offset:8px">parfait</span>.</div></div>`],
+ ['cover-1128x191.png',1128,191,`<div style="width:1128px;height:191px;background:#f9f6f2;display:flex;align-items:center;justify-content:center;padding:0 0 0 120px"><div style="font-size:36px;font-weight:800;letter-spacing:-.01em;line-height:1.2;text-align:right;white-space:nowrap">Votre marque mérite<br>le nom de domaine <span style="text-decoration:underline;text-decoration-color:#E1000F;text-decoration-thickness:5px;text-underline-offset:8px">parfait</span>.</div></div>`],
  ['post-vendu-testlab-1200.png',1200,1200,`<div style="width:1200px;height:1200px;background:#f9f6f2;padding:96px;display:grid;grid-template-rows:auto 1fr auto">
    <div><span class="wm" style="font-size:54px">FRANCE<br>DOMAINE</span></div>
    <div style="align-self:center" class="card"><div style="padding:72px 64px;display:grid;gap:18px;position:relative">
