@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-06T10:38Z",
+  "checked": "2026-11-06T12:59Z",
   "domains": [
     {
       "domain": "aurae.fr",
@@ -15,7 +15,7 @@
         "client transfer prohibited"
       ],
       "deleted": null,
-      "days_left": 186,
+      "days_left": 185,
       "redirect": "no",
       "hops": [
         "301 http://aurae.fr/",
@@ -40,7 +40,7 @@
         "active"
       ],
       "deleted": null,
-      "days_left": 19,
+      "days_left": 18,
       "redirect": "no",
       "hops": [
         "301 http://hotelroyal.fr/",
@@ -48,7 +48,7 @@
         "200 https://hotelroyal.fr/en-gb"
       ],
       "alerts": [
-        "expire dans 19 j",
+        "expire dans 18 j",
         "ne redirige pas vers /r/"
       ]
     },
@@ -66,7 +66,7 @@
         "client transfer prohibited"
       ],
       "deleted": null,
-      "days_left": 321,
+      "days_left": 320,
       "redirect": "no",
       "hops": [
         "301 http://flandres.com/",
@@ -91,7 +91,7 @@
         "client transfer prohibited"
       ],
       "deleted": null,
-      "days_left": 19,
+      "days_left": 18,
       "redirect": "no",
       "hops": [
         "301 http://synergetic.fr/",
@@ -99,7 +99,7 @@
         "200 https://synergetic.fr/en-gb"
       ],
       "alerts": [
-        "expire dans 19 j",
+        "expire dans 18 j",
         "ne redirige pas vers /r/"
       ]
     },
@@ -119,14 +119,14 @@
       ],
       "deleted": "2026-10-18",
       "unsellable": "pending delete, redemption period",
-      "days_left": -44,
+      "days_left": -45,
       "redirect": "no",
       "hops": [
         "error fetch failed"
       ],
       "alerts": [
         "INVENDABLE (pending delete, redemption period)",
-        "expire dans -44 j",
+        "expire dans -45 j",
         "ne redirige pas vers /r/"
       ]
     },
@@ -141,11 +141,11 @@
       "holder": "Franck JANKOWSKI",
       "holder_is_franck": true,
       "rdap_status": [
-        "inactive",
+        "client transfer prohibited",
         "add period"
       ],
       "deleted": null,
-      "days_left": 365,
+      "days_left": 364,
       "redirect": "no",
       "hops": [
         "error fetch failed"
@@ -168,7 +168,7 @@
         "client transfer prohibited"
       ],
       "deleted": null,
-      "days_left": 19,
+      "days_left": 18,
       "redirect": "no",
       "hops": [
         "301 http://francemed.fr/",
@@ -176,7 +176,7 @@
         "200 https://francemed.fr/en-gb"
       ],
       "alerts": [
-        "expire dans 19 j",
+        "expire dans 18 j",
         "ne redirige pas vers /r/"
       ]
     },
@@ -194,7 +194,7 @@
         "client transfer prohibited"
       ],
       "deleted": null,
-      "days_left": 17,
+      "days_left": 16,
       "redirect": "no",
       "hops": [
         "301 http://omnify.fr/",
@@ -202,7 +202,7 @@
         "200 https://omnify.fr/en-gb"
       ],
       "alerts": [
-        "expire dans 17 j",
+        "expire dans 16 j",
         "ne redirige pas vers /r/"
       ]
     },
@@ -220,7 +220,7 @@
         "client transfer prohibited"
       ],
       "deleted": null,
-      "days_left": 17,
+      "days_left": 16,
       "redirect": "no",
       "hops": [
         "301 http://superaliments.fr/",
@@ -228,7 +228,7 @@
         "200 https://superaliments.fr/en-gb"
       ],
       "alerts": [
-        "expire dans 17 j",
+        "expire dans 16 j",
         "ne redirige pas vers /r/"
       ]
     },
@@ -246,7 +246,7 @@
         "client transfer prohibited"
       ],
       "deleted": null,
-      "days_left": 15,
+      "days_left": 14,
       "redirect": "no",
       "hops": [
         "301 http://occultation.fr/",
@@ -254,7 +254,7 @@
         "200 https://occultation.fr/en-gb"
       ],
       "alerts": [
-        "expire dans 15 j",
+        "expire dans 14 j",
         "ne redirige pas vers /r/"
       ]
     },
@@ -272,7 +272,7 @@
         "client transfer prohibited"
       ],
       "deleted": null,
-      "days_left": 70,
+      "days_left": 69,
       "redirect": "no",
       "hops": [
         "302 http://lemillion.com/",
@@ -296,7 +296,7 @@
         "client transfer prohibited"
       ],
       "deleted": null,
-      "days_left": 19,
+      "days_left": 18,
       "redirect": "no",
       "hops": [
         "301 http://mytherapy.fr/",
@@ -304,7 +304,7 @@
         "200 https://mytherapy.fr/en-gb"
       ],
       "alerts": [
-        "expire dans 19 j",
+        "expire dans 18 j",
         "ne redirige pas vers /r/"
       ]
     },
@@ -322,7 +322,7 @@
         "client transfer prohibited"
       ],
       "deleted": null,
-      "days_left": 6,
+      "days_left": 5,
       "redirect": "no",
       "hops": [
         "301 http://intelligencephysique.com/",
@@ -330,7 +330,7 @@
         "200 https://intelligencephysique.com/en-gb"
       ],
       "alerts": [
-        "expire dans 6 j",
+        "expire dans 5 j",
         "ne redirige pas vers /r/"
       ]
     },
@@ -348,7 +348,7 @@
         "client transfer prohibited"
       ],
       "deleted": null,
-      "days_left": 12,
+      "days_left": 11,
       "redirect": "no",
       "hops": [
         "301 http://nextchat.fr/",
@@ -356,7 +356,7 @@
         "200 https://nextchat.fr/en-gb"
       ],
       "alerts": [
-        "expire dans 12 j",
+        "expire dans 11 j",
         "ne redirige pas vers /r/"
       ]
     },
@@ -374,7 +374,7 @@
         "client transfer prohibited"
       ],
       "deleted": null,
-      "days_left": 14,
+      "days_left": 13,
       "redirect": "no",
       "hops": [
         "301 http://mysticker.fr/",
@@ -382,7 +382,7 @@
         "200 https://mysticker.fr/en-gb"
       ],
       "alerts": [
-        "expire dans 14 j",
+        "expire dans 13 j",
         "ne redirige pas vers /r/"
       ]
     }
