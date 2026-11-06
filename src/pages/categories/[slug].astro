@@ -1,0 +1,25 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Catalog from '../../components/Catalog.astro';
+import Cta from '../../components/Cta.astro';
+import { categories, type Domain } from '../../lib/domains';
+
+export async function getStaticPaths() {
+  return (await categories()).map((c) => ({ params: { slug: c.slug }, props: { name: c.name, items: c.items } }));
+}
+interface Props { name: string; items: Domain[] }
+const { name, items } = Astro.props;
+const n = items.filter((d) => d.status === 'disponible').length;
+---
+<Base title={`Noms de domaine ${name} à vendre | FranceDomaine.fr`}
+      description={`${n} nom(s) de domaine premium à vendre dans le secteur ${name} : ${items.slice(0, 4).map((d) => d.id).join(', ')}. Prix sur demande, transfert sécurisé.`}>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Domaines', href: '/domaines/' }, { name, href: Astro.url.pathname }]} />
+    <h1>Noms de domaine : {name}</h1>
+    <p class="muted lead">{n} domaine(s) disponible(s) dans ce secteur.</p>
+    <Catalog items={items} filters={false} />
+    <div class="section"><Cta /></div>
+  </div>
+</Base>
+<style>.lead { font-size: 18px; margin-bottom: 28px; }</style>

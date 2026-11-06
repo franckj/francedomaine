@@ -1,20 +1,87 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
-import Portfolio from '../components/Portfolio.astro';
-import ValueProps from '../components/ValueProps.astro';
-import FAQ from '../components/FAQ.astro';
-import CTA from '../components/CTA.astro';
-import Footer from '../components/Footer.astro';
----
+import Base from '../layouts/Base.astro';
+import Catalog from '../components/Catalog.astro';
+import Steps from '../components/Steps.astro';
+import Faq from '../components/Faq.astro';
+import Cta from '../components/Cta.astro';
+import { listed, categories } from '../lib/domains';
+import { homeFaq, faqLd } from '../lib/faq';
+import { SITE } from '../lib/site';
 
-<Layout title="FranceDomaine.fr — Noms de Domaine Premium">
-  <Header />
-  <Hero />
-  <Portfolio />
-  <ValueProps />
-  <FAQ />
-  <CTA />
-  <Footer />
-</Layout>
+const all = await listed();
+const available = all.filter((d) => d.status === 'disponible');
+const featured = available.filter((d) => d.featured);
+const show = (featured.length >= 3 ? featured : available).slice(0, 6);
+const cats = await categories();
+const years = new Date().getFullYear() - SITE.since;
+const values = [
+  { t: 'Mémorable', d: 'Un domaine premium se retient dès la première lecture. Il devient un actif marketing qui travaille pour vous.' },
+  { t: 'Crédible', d: "Les entreprises établies possèdent des domaines premium : c'est un signal de confiance immédiat pour vos clients." },
+  { t: 'Un actif', d: 'Un bon nom de domaine se revend, se transmet et accompagne votre marque sur la durée.' },
+];
+---
+<Base title={SITE.title} description={SITE.description} path="/" jsonLd={[faqLd(homeFaq)]}>
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Noms de domaine premium .fr et .com</p>
+      <h1>Le nom de domaine <span class="hl">parfait</span> pour votre marque</h1>
+      <p class="lead">Une sélection de noms courts, mémorables et prêts à l'emploi pour les entreprises qui lancent ou renforcent leur marque en France.</p>
+      <div class="hero-cta">
+        <a class="btn" href="/domaines/">Voir les {available.length} domaines</a>
+        <a class="btn btn-ghost" href="#achat">Comment acheter</a>
+      </div>
+      <ul class="stats">
+        <li><strong>{available.length}</strong><span>domaines disponibles</span></li>
+        <li><strong>{cats.length}</strong><span>secteurs</span></li>
+        <li><strong>{years}+</strong><span>ans d'expertise</span></li>
+        <li><strong>24–72 h</strong><span>pour le transfert</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="section">
+      <div class="head">
+        <h2>Domaines à la une</h2>
+        <a href="/domaines/">Tout le catalogue →</a>
+      </div>
+      <Catalog items={show} filters={false} id="une" />
+    </section>
+
+    <section class="section">
+      <h2>Par secteur</h2>
+      <div class="cats">
+        {cats.map((c) => <a href={`/categories/${c.slug}/`}>{c.name} <span>{c.items.length}</span></a>)}
+      </div>
+    </section>
+
+    <section class="section values">
+      {values.map((v) => <div><h3>{v.t}</h3><p class="muted">{v.d}</p></div>)}
+    </section>
+
+    <div class="section"><Steps /></div>
+    <div class="section"><Faq items={homeFaq} /></div>
+    <div class="section"><Cta /></div>
+  </div>
+</Base>
+
+<style>
+  .hero { background: radial-gradient(1200px 400px at 70% -10%, var(--accent-soft), transparent 70%), #fff; padding: 72px 0 24px; }
+  .hl { color: var(--accent); }
+  .lead { font-size: 19px; color: var(--muted); max-width: 640px; }
+  .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; margin: 28px 0 40px; }
+  .stats { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 36px; }
+  .stats li { display: grid; }
+  .stats strong { font-size: 26px; }
+  .stats span { color: var(--muted); font-size: 14px; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 20px; }
+  .head h2 { margin: 0; }
+  .head a { text-decoration: none; font-weight: 600; }
+  .cats { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .cats a { border: 1px solid var(--line); border-radius: 99px; padding: 8px 16px; color: var(--ink); text-decoration: none; background: #fff; }
+  .cats a:hover { border-color: var(--accent); color: var(--accent); }
+  .cats span { color: var(--muted); font-size: 13px; margin-left: 4px; }
+  .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .values div { padding: 26px; background: var(--soft); border-radius: var(--radius); }
+  @media (max-width: 760px) { .values { grid-template-columns: 1fr; } .hero { padding-top: 48px; } }
+</style>

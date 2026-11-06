@@ -1,0 +1,16 @@
+import type { APIRoute } from 'astro';
+import { listed, slug, priceLabel, statusLabel } from '../lib/domains';
+import { SITE } from '../lib/site';
+export const GET: APIRoute = async () => {
+  const all = await listed();
+  const lines = [
+    '# FranceDomaine.fr', '',
+    `> ${SITE.description}`, '',
+    `Éditeur : ${SITE.legal.company} (${SITE.legal.rcs}). Achat : e-mail depuis la fiche du domaine, paiement par escrow, transfert sous 24 à 72 heures.`, '',
+    '## Domaines', '',
+    ...all.map((d) => `- [${d.id}](${SITE.url}/domaines/${slug(d.id)}/): ${statusLabel[d.status]}, ${d.status === 'vendu' ? '' : priceLabel(d) + ', '}${d.category}. ${d.description}`),
+    '', '## Pages', '',
+    `- [Catalogue](${SITE.url}/domaines/)`, `- [Contact](${SITE.url}/contact/)`, `- [Mentions légales](${SITE.url}/mentions-legales/)`, '',
+  ];
+  return new Response(lines.join('\n'), { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
+};

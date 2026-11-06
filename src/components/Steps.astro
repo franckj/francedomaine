@@ -1,0 +1,26 @@
+---
+// How a purchase works. Same facts as the FAQ answer "Comment se déroule l'acquisition d'un domaine ?".
+const steps = [
+  { t: 'Vous nous écrivez', d: 'Indiquez le domaine qui vous intéresse et, si vous le souhaitez, votre offre.' },
+  { t: 'Nous faisons une proposition', d: 'Prix et conditions, par écrit.' },
+  { t: 'Paiement sécurisé par escrow', d: "Un service d'escrow protège les deux parties : les fonds ne sont versés qu'après le transfert." },
+  { t: 'Transfert du domaine', d: 'Vous recevez le domaine sous 24 à 72 heures.' },
+];
+---
+<section class="steps" id="achat">
+  <h2>Comment acheter un domaine</h2>
+  <ol>
+    {steps.map((s, i) => (
+      <li><span class="n">{i + 1}</span><strong>{s.t}</strong><span class="muted">{s.d}</span></li>
+    ))}
+  </ol>
+</section>
+
+<style>
+  ol { list-style: none; padding: 0; margin: 24px 0 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  li { display: grid; gap: 8px; align-content: start; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+  .n { width: 32px; height: 32px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); font-weight: 700; display: grid; place-items: center; }
+  li .muted { font-size: 15px; }
+  @media (max-width: 900px) { ol { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { ol { grid-template-columns: 1fr; } }
+</style>

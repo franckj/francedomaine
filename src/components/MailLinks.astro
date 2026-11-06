@@ -1,0 +1,19 @@
+---
+// Builds every mailto link in the browser so the address is never whole in the HTML (spam bots), and counts the click.
+// Markup: <a class="js-mail" data-subject="…" data-body="…" data-domain="aurae.fr" data-kind="offre" href="/contact/">
+//         <span class="js-mail-text"></span> shows the address.
+import { SITE } from '../lib/site';
+---
+<script is:inline define:vars={{ u: SITE.mail.user, h: SITE.mail.host }}>
+  var addr = u + '@' + h;
+  document.querySelectorAll('.js-mail-text').forEach(function (s) { s.textContent = addr; });
+  document.querySelectorAll('a.js-mail').forEach(function (a) {
+    var q = [];
+    if (a.dataset.subject) q.push('subject=' + encodeURIComponent(a.dataset.subject));
+    if (a.dataset.body) q.push('body=' + encodeURIComponent(a.dataset.body));
+    a.href = 'mailto:' + addr + (q.length ? '?' + q.join('&') : '');
+    a.addEventListener('click', function () {
+      if (window.events) window.events('Contact: Click', { domain: a.dataset.domain || '', kind: a.dataset.kind || 'general' });
+    });
+  });
+</script>

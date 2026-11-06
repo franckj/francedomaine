@@ -1,0 +1,47 @@
+---
+// One component for every page's SEO head: title, description, canonical, Open Graph, Twitter, robots, JSON-LD.
+import { SITE } from '../lib/site';
+
+interface Props {
+  title: string;
+  description: string;
+  path?: string;
+  image?: string;
+  type?: 'website' | 'product' | 'article';
+  noindex?: boolean;
+  jsonLd?: Record<string, unknown>[];
+}
+const { title, description, path = Astro.url.pathname, image = '/og.png', type = 'website', noindex = false, jsonLd = [] } = Astro.props;
+const canonical = new URL(path, SITE.url).href;
+const img = new URL(image, SITE.url).href;
+const graph = [
+  {
+    '@type': 'Organization',
+    '@id': `${SITE.url}/#org`,
+    name: SITE.name,
+    url: SITE.url + '/',
+    logo: `${SITE.url}/favicon.svg`,
+    legalName: SITE.legal.company,
+  },
+  { '@type': 'WebSite', '@id': `${SITE.url}/#website`, name: 'FranceDomaine.fr', url: SITE.url + '/', inLanguage: 'fr-FR', publisher: { '@id': `${SITE.url}/#org` } },
+  ...jsonLd,
+];
+---
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large'} />
+<meta property="og:site_name" content="FranceDomaine.fr" />
+<meta property="og:locale" content={SITE.locale} />
+<meta property="og:type" content={type === 'article' ? 'article' : 'website'} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={img} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={img} />
+<script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })} />

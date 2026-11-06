@@ -1,0 +1,296 @@
+{
+  "checked": "2026-11-06T10:31Z",
+  "domains": [
+    {
+      "domain": "aurae.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-11",
+      "registered": "2025-05-11",
+      "registrar": "Dynadot Inc",
+      "days_left": 186,
+      "redirect": "no",
+      "hops": [
+        "301 http://aurae.fr/",
+        "307 https://aurae.fr/",
+        "200 https://aurae.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "hotelroyal.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-25",
+      "registered": "2025-11-25",
+      "registrar": "Infomaniak Network SA",
+      "days_left": 19,
+      "redirect": "no",
+      "hops": [
+        "301 http://hotelroyal.fr/",
+        "307 https://hotelroyal.fr/",
+        "200 https://hotelroyal.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 19 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "flandres.com",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-09-23",
+      "registered": "2002-09-23",
+      "registrar": "Spaceship, Inc.",
+      "days_left": 321,
+      "redirect": "no",
+      "hops": [
+        "301 http://flandres.com/",
+        "307 https://flandres.com/",
+        "200 https://flandres.com/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "synergetic.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-25",
+      "registered": "2025-11-25",
+      "registrar": "Dynadot Inc",
+      "days_left": 19,
+      "redirect": "no",
+      "hops": [
+        "301 http://synergetic.fr/",
+        "307 https://synergetic.fr/",
+        "200 https://synergetic.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 19 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "infracloud.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-09-23",
+      "registered": "2025-09-23",
+      "registrar": "Infomaniak Network SA",
+      "days_left": -44,
+      "redirect": "no",
+      "hops": [
+        "error fetch failed"
+      ],
+      "alerts": [
+        "expire dans -44 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "velobox.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "rdap_error": "not registered (RDAP 404)",
+      "unregistered": true,
+      "days_left": null,
+      "redirect": "no",
+      "hops": [
+        "error fetch failed"
+      ],
+      "alerts": [
+        "NON ENREGISTRÉ : retirer du catalogue ou racheter",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "francemed.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-25",
+      "registered": "2025-11-25",
+      "registrar": "Dynadot Inc",
+      "days_left": 19,
+      "redirect": "no",
+      "hops": [
+        "301 http://francemed.fr/",
+        "307 https://francemed.fr/",
+        "200 https://francemed.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 19 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "omnify.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-23",
+      "registered": "2025-11-23",
+      "registrar": "Dynadot Inc",
+      "days_left": 17,
+      "redirect": "no",
+      "hops": [
+        "301 http://omnify.fr/",
+        "307 https://omnify.fr/",
+        "200 https://omnify.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 17 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "superaliments.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-23",
+      "registered": "2025-11-23",
+      "registrar": "Dynadot Inc",
+      "days_left": 17,
+      "redirect": "no",
+      "hops": [
+        "301 http://superaliments.fr/",
+        "307 https://superaliments.fr/",
+        "200 https://superaliments.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 17 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "occultation.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-21",
+      "registered": "2025-11-21",
+      "registrar": "Dynadot Inc",
+      "days_left": 15,
+      "redirect": "no",
+      "hops": [
+        "301 http://occultation.fr/",
+        "307 https://occultation.fr/",
+        "200 https://occultation.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 15 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "lemillion.com",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-15",
+      "registered": "2009-02-02",
+      "registrar": "Dynadot Inc",
+      "days_left": 70,
+      "redirect": "no",
+      "hops": [
+        "302 http://lemillion.com/",
+        "403 https://www.atom.com/name/LeMillion"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "mytherapy.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-25",
+      "registered": "2025-11-25",
+      "registrar": "Dynadot Inc",
+      "days_left": 19,
+      "redirect": "no",
+      "hops": [
+        "301 http://mytherapy.fr/",
+        "307 https://mytherapy.fr/",
+        "200 https://mytherapy.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 19 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "intelligencephysique.com",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-12",
+      "registered": "2025-11-12",
+      "registrar": "Dynadot Inc",
+      "days_left": 6,
+      "redirect": "no",
+      "hops": [
+        "301 http://intelligencephysique.com/",
+        "307 https://intelligencephysique.com/",
+        "200 https://intelligencephysique.com/en-gb"
+      ],
+      "alerts": [
+        "expire dans 6 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "nextchat.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-18",
+      "registered": "2025-11-18",
+      "registrar": "Dynadot Inc",
+      "days_left": 12,
+      "redirect": "no",
+      "hops": [
+        "301 http://nextchat.fr/",
+        "307 https://nextchat.fr/",
+        "200 https://nextchat.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 12 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "mysticker.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-20",
+      "registered": "2025-11-20",
+      "registrar": "Dynadot Inc",
+      "days_left": 14,
+      "redirect": "no",
+      "hops": [
+        "301 http://mysticker.fr/",
+        "307 https://mysticker.fr/",
+        "200 https://mysticker.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 14 j",
+        "ne redirige pas vers /r/"
+      ]
+    }
+  ]
+}

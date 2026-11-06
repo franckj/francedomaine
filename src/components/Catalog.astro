@@ -1,0 +1,72 @@
+---
+// Searchable, filterable list of domains. Works without JavaScript (every card is a plain link).
+import DomainCard from './DomainCard.astro';
+import type { Domain } from '../lib/domains';
+interface Props { items: Domain[]; filters?: boolean; id?: string }
+const { items, filters = true, id = 'catalogue' } = Astro.props;
+const cats = [...new Set(items.map((d) => d.category))].sort((a, b) => a.localeCompare(b, 'fr'));
+---
+<div class="catalog" id={id}>
+  {filters && (
+    <div class="tools">
+      <label class="search">
+        <span class="sr-only">Rechercher un domaine</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" placeholder="Rechercher un nom, un secteur…" autocomplete="off" data-q />
+      </label>
+      <div class="chips" role="group" aria-label="Filtrer par catégorie">
+        <button type="button" class="chip active" data-f="all">Tous</button>
+        {cats.map((c) => <button type="button" class="chip" data-f={c}>{c}</button>)}
+      </div>
+      <p class="count muted"><span data-count>{items.length}</span> domaine(s)</p>
+    </div>
+  )}
+  <div class="grid">{items.map((d) => <DomainCard d={d} />)}</div>
+  <p class="empty muted" hidden data-empty>Aucun domaine ne correspond. <a href="/contact/">Dites-nous ce que vous cherchez</a> : nous avons d'autres noms hors catalogue.</p>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.catalog').forEach((root) => {
+    const input = root.querySelector<HTMLInputElement>('[data-q]');
+    const chips = root.querySelectorAll<HTMLButtonElement>('.chip');
+    const cards = root.querySelectorAll<HTMLElement>('.card');
+    const count = root.querySelector('[data-count]');
+    const empty = root.querySelector<HTMLElement>('[data-empty]');
+    if (!input) return;
+    let f = 'all';
+    let timer: number | undefined;
+    const run = () => {
+      const q = input.value.trim().toLowerCase();
+      let n = 0;
+      cards.forEach((c) => {
+        const show = (f === 'all' || c.dataset.cat === f) && (!q || (c.dataset.search || '').includes(q));
+        c.hidden = !show;
+        if (show) n++;
+      });
+      if (count) count.textContent = String(n);
+      if (empty) empty.hidden = n > 0;
+      clearTimeout(timer);
+      if (q.length >= 3 && n === 0) timer = window.setTimeout(() => (window as any).events?.('Search', { q: q.slice(0, 60) }), 1500);
+    };
+    input.addEventListener('input', run);
+    chips.forEach((b) => b.addEventListener('click', () => {
+      chips.forEach((x) => x.classList.toggle('active', x === b));
+      f = b.dataset.f || 'all';
+      run();
+    }));
+  });
+</script>
+
+<style>
+  .tools { display: grid; gap: 14px; margin-bottom: 24px; }
+  .search { display: flex; align-items: center; gap: 10px; border: 1px solid var(--line); border-radius: 12px; padding: 0 14px; background: #fff; color: var(--muted); max-width: 520px; }
+  .search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .search input { border: 0; outline: 0; font: inherit; font-size: 16px; padding: 13px 0; width: 100%; color: var(--ink); background: transparent; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { font: inherit; font-size: 14px; border: 1px solid var(--line); background: #fff; color: var(--muted); border-radius: 99px; padding: 6px 14px; cursor: pointer; }
+  .chip:hover { color: var(--ink); border-color: #cfd4de; }
+  .chip.active { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .count { font-size: 14px; margin: 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+  .empty { margin-top: 20px; }
+</style>

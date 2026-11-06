@@ -1,0 +1,45 @@
+---
+// Landing for any forwarded domain that is not in the catalog: /r/<domain> → /a-vendre/?nom=<domain>&via=redirect.
+// Not indexed. If the name is in the catalog after all (different case, extra path), it moves to the domain's page.
+import Base from '../layouts/Base.astro';
+import Catalog from '../components/Catalog.astro';
+import { listed, slug } from '../lib/domains';
+const all = await listed();
+const known = Object.fromEntries(all.map((d) => [d.id, `/domaines/${slug(d.id)}/`]));
+const show = all.filter((d) => d.status === 'disponible' && d.featured).slice(0, 3);
+---
+<Base title="Ce nom de domaine est à vendre | FranceDomaine.fr" description="Ce nom de domaine fait partie du portefeuille FranceDomaine. Demandez le prix ou faites une offre." noindex>
+  <div class="container">
+    <section class="lander">
+      <p class="eyebrow">Nom de domaine à vendre</p>
+      <h1 id="nom">Ce nom de domaine</h1>
+      <p class="pitch">est à vendre.</p>
+      <p class="muted">Il fait partie de notre portefeuille. Écrivez-nous pour connaître le prix ou faire une offre.</p>
+      <div class="cta-row">
+        <a class="btn js-mail" id="ask" href="/contact/" data-kind="info" data-subject="Intérêt pour un nom de domaine">Demander le prix</a>
+        <a class="btn btn-ghost" href="/domaines/">Voir le catalogue</a>
+      </div>
+    </section>
+    {show.length > 0 && <section class="section"><h2>Domaines à la une</h2><Catalog items={show} filters={false} /></section>}
+  </div>
+</Base>
+<script is:inline define:vars={{ known }}>
+  (function () {
+    var p = new URLSearchParams(location.search);
+    var nom = (p.get('nom') || '').toLowerCase().split('/')[0].replace(/[^a-z0-9.-]/g, '').slice(0, 80);
+    if (known[nom]) { location.replace(known[nom] + (p.get('via') ? '?via=redirect' : '')); return; }
+    if (!/^[a-z0-9-]+(\.[a-z0-9-]+)+$/.test(nom)) return;
+    document.getElementById('nom').textContent = nom;
+    document.title = nom + ' est à vendre | FranceDomaine.fr';
+    var a = document.getElementById('ask');
+    a.dataset.domain = nom;
+    a.dataset.subject = 'Intérêt pour le domaine ' + nom;
+    a.dataset.body = "Bonjour,\n\nJe suis intéressé(e) par le nom de domaine " + nom + ". Pouvez-vous m'indiquer le prix et les conditions ?\n\nCordialement,\n";
+  })();
+</script>
+<style>
+  .lander { padding: 56px 0 8px; }
+  h1 { font-size: clamp(36px, 6vw, 64px); overflow-wrap: anywhere; margin: 0; }
+  .pitch { font-size: 24px; color: var(--muted); margin: 4px 0 18px; }
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+</style>

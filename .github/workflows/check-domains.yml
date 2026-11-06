@@ -1,0 +1,28 @@
+# Daily: expiry (RDAP) and forwarding check for every domain, written to data/status.json and data/STATUS.md.
+# Commits only data/ with [skip ci], so it never ships the site. Runs on the default branch (must be main).
+name: Check domains
+
+on:
+  schedule:
+    - cron: '23 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/check-domains.mjs
+      - name: Commit status
+        run: |
+          git config user.name "francedomaine-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Domain status $(date -u +%F) [skip ci]"
+          git push

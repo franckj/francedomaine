@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../lib/site';
+---
+<Base title="Confidentialité | FranceDomaine.fr" description="Comment FranceDomaine.fr mesure son audience sans cookies et traite les e-mails reçus.">
+  <div class="container narrow prose">
+    <h1>Confidentialité</h1>
+    <p>Ce site ne dépose aucun cookie et n'utilise aucun outil publicitaire.</p>
+    <h2>Mesure d'audience</h2>
+    <p>Un petit compteur d'événements que nous exploitons sur Cloudflare enregistre les pages vues et quelques actions (un clic sur un bouton de contact, une recherche sans résultat, l'arrivée depuis l'un de nos noms de domaine redirigés), sans cookies : il conserve l'action, la page, le site qui vous a envoyé et votre pays, jamais votre adresse IP, et ne peut pas vous identifier.</p>
+    <h2>E-mails</h2>
+    <p>Quand vous nous écrivez, nous utilisons votre message et votre adresse uniquement pour vous répondre et traiter votre demande d'achat. Nous ne les vendons ni ne les cédons. Vous pouvez demander leur suppression à tout moment en nous écrivant.</p>
+    <h2>Responsable du traitement</h2>
+    <p>{SITE.legal.company}, {SITE.legal.address}. Vous pouvez aussi saisir la CNIL (cnil.fr).</p>
+  </div>
+</Base>

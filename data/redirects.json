@@ -1,0 +1,4 @@
+{
+  "_doc": "Domains Franck forwards to https://francedomaine.fr/r/<domain> that are NOT in the public catalog (src/data/domains.json). The daily check (scripts/check-domains.mjs) tests these too. One lowercase domain per entry.",
+  "domains": []
+}

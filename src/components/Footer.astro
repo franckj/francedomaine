@@ -1,142 +1,42 @@
 ---
+import { SITE } from '../lib/site';
+import { categories } from '../lib/domains';
+const cats = await categories();
+const year = new Date().getFullYear();
 ---
-
-<footer>
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <div class="footer-logo">
-          <div class="logo-mark">FD</div>
-          <span class="logo-name">FranceDomaine</span>
-        </div>
-        <p class="footer-tagline">25 ans d'expertise en noms de domaine premium</p>
-      </div>
-      <div class="footer-links">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#expertise">FAQ</a>
-        <a href="mailto:contact@francedomaine.fr">Contact</a>
-      </div>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="/" class="f-logo">France<strong>Domaine</strong>.fr</a>
+      <p class="muted">Noms de domaine premium en .fr et .com. 25 ans d’expertise en noms de domaine.</p>
+      <p><a class="js-mail" data-kind="general" href="/contact/"><span class="js-mail-text">Nous écrire</span></a></p>
     </div>
-    <div class="footer-bottom">
-      <p>© 2025 FranceDomaine.fr. Tous droits réservés.</p>
-      <a href="mailto:contact@francedomaine.fr">contact@francedomaine.fr</a>
+    <div>
+      <p class="f-title">Catégories</p>
+      <ul>{cats.map((c) => <li><a href={`/categories/${c.slug}/`}>{c.name}</a></li>)}</ul>
+    </div>
+    <div>
+      <p class="f-title">Le site</p>
+      <ul>
+        <li><a href="/domaines/">Tous les domaines</a></li>
+        <li><a href="/#achat">Comment acheter</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/mentions-legales/">Mentions légales</a></li>
+        <li><a href="/confidentialite/">Confidentialité</a></li>
+      </ul>
     </div>
   </div>
+  <div class="container f-bottom muted">© {year} FranceDomaine.fr · {SITE.legal.company}</div>
 </footer>
 
 <style>
-  footer {
-    padding: 60px 0 40px;
-    background: var(--color-bg-alt);
-    border-top: 1px solid var(--color-border);
-  }
-
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
-  }
-
-  .footer-brand {
-    max-width: 300px;
-  }
-
-  .footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
-  }
-
-  .logo-mark {
-    width: 36px;
-    height: 36px;
-    background: var(--color-primary);
-    color: white;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: 700;
-  }
-
-  .logo-name {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--color-text);
-  }
-
-  .footer-tagline {
-    font-size: 14px;
-    color: var(--color-text-light);
-    line-height: 1.6;
-  }
-
-  .footer-links {
-    display: flex;
-    gap: 32px;
-  }
-
-  .footer-links a {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--color-text-light);
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-
-  .footer-links a:hover {
-    color: var(--color-primary);
-  }
-
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 24px;
-    border-top: 1px solid var(--color-border);
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-
-  .footer-bottom p {
-    font-size: 13px;
-    color: var(--color-text-light);
-  }
-
-  .footer-bottom a {
-    font-size: 13px;
-    color: var(--color-primary);
-    text-decoration: none;
-  }
-
-  .footer-bottom a:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 768px) {
-    footer {
-      padding: 40px 0 32px;
-    }
-
-    .footer-content {
-      flex-direction: column;
-      gap: 32px;
-    }
-
-    .footer-links {
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .footer-bottom {
-      flex-direction: column;
-      text-align: center;
-      gap: 12px;
-    }
-  }
+  .site-footer { border-top: 1px solid var(--line); background: var(--soft); padding: 56px 0 28px; margin-top: 96px; font-size: 15px; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1.3fr 1fr; gap: 40px; }
+  .f-logo { font-size: 18px; color: var(--ink); text-decoration: none; }
+  .f-title { font-weight: 600; margin-bottom: 10px; }
+  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+  ul a, .site-footer p a { color: var(--muted); text-decoration: none; }
+  ul a:hover, .site-footer p a:hover { color: var(--accent); }
+  .f-bottom { border-top: 1px solid var(--line); margin-top: 40px; padding-top: 20px; font-size: 13px; }
+  @media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
 </style>

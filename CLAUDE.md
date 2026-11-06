@@ -47,19 +47,21 @@ reply. Edit it here only; a copy edited in a repo is overwritten the next mornin
 Part of Franck's portfolio. Cross-project context (rules, access, decisions) lives in `franckj/ops`: read its `BA-STATE.md` first when you need it.
 
 ## At the start of a session
-`git pull`, then read the README.
+`git pull`, then read the README (database, redirect tracking, scheduled jobs).
 
 ## Commands
-- `npm run build`: `astro build`
-- `npm run dev`: `astro dev`
-- `npm run preview`: `astro preview`
+- `npm run build` / `npm test` (checks dist/) / `npm run check` (types)
+- `npm run domains:check`: expiry + forwarding check → `data/STATUS.md`
+- `npm run indexnow [url…]`
 
 ## Rules
 - Franck prompts, Claude Code builds. Be direct.
-- A push to `main` can go live; only push site changes when Franck said "deploy" in the session.
-- No invented facts, numbers, prices or reviews: every figure comes from a source you checked, or it stays out.
-- Never commit keys, tokens, `.env` files or credentials. Name a secret by its variable name only.
-- After a live page change: submit the changed URLs (IndexNow) and resubmit the sitemap, as described in `franckj/ops`.
-- Update the docs you changed or whose state changed before ending a session, then commit and push.
-
-_Generated 2026-11-01 from the repo's README and package.json. Add the project's real conventions here as they come up._
+- The database is `src/data/domains.json` (schema `src/content.config.ts`). Change domains there, nowhere else. Task: `tasks/add-domain.md`.
+- Light theme only, no dark mode (Franck, 2026-11-06: "clean and fresh layout, no dark theme").
+- Prices only from Franck. No invented facts, numbers, traffic or reviews.
+- Push to `main` builds and tests; it ships only with `[deploy]` in the commit message, and only when Franck said "deploy" in the session.
+- Every forwarded domain points to `https://francedomaine.fr/r/<domain>`; never remove the `/r/` rules or the arrival event.
+- The email address is never written whole in HTML (built by `MailLinks.astro`).
+- Never commit keys, tokens, `.env` files or credentials.
+- After a live page change: IndexNow (`npm run indexnow`) and sitemap resubmitted in Search Console (ops `scripts/gsc.py`).
+- Update README "State" before ending a session, then commit and push.

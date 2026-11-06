@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import Catalog from '../../components/Catalog.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Cta from '../../components/Cta.astro';
+import { listed, slug } from '../../lib/domains';
+import { SITE } from '../../lib/site';
+const all = await listed();
+const n = all.filter((d) => d.status === 'disponible').length;
+const ld = {
+  '@type': 'ItemList', name: 'Noms de domaine à vendre',
+  itemListElement: all.map((d, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/domaines/${slug(d.id)}/`, name: d.id })),
+};
+---
+<Base title={`${n} noms de domaine premium à vendre (.fr, .com) | FranceDomaine.fr`}
+      description={`Catalogue de ${n} noms de domaine premium disponibles en .fr et .com : recherche par nom ou secteur, prix sur demande, transfert sécurisé.`}
+      jsonLd={[ld]}>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Domaines', href: '/domaines/' }]} />
+    <h1>Noms de domaine à vendre</h1>
+    <p class="muted lead">{n} domaines disponibles. Cliquez sur un nom pour voir sa fiche, demander le prix ou faire une offre.</p>
+    <Catalog items={all} />
+    <div class="section"><Cta /></div>
+  </div>
+</Base>
+<style>.lead { font-size: 18px; margin-bottom: 28px; }</style>

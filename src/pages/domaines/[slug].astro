@@ -1,0 +1,100 @@
+---
+// One landing page per domain. A visitor forwarded from the domain itself (/r/<domain>) arrives here with
+// ?via=redirect; Tracking.astro reads data-arrival and records "Redirect: Arrival".
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import DomainCard from '../../components/DomainCard.astro';
+import Steps from '../../components/Steps.astro';
+import Faq from '../../components/Faq.astro';
+import { listed, slug, tld, catSlug, statusLabel, priceLabel, mailFor, type Domain } from '../../lib/domains';
+import { domainFaq, faqLd } from '../../lib/faq';
+import { SITE } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const all = await listed();
+  return all.map((d) => ({ params: { slug: slug(d.id) }, props: { d, all } }));
+}
+interface Props { d: Domain; all: Domain[] }
+const { d, all } = Astro.props;
+const related = all.filter((x) => x.id !== d.id && x.status === 'disponible')
+  .sort((a, b) => Number(b.category === d.category) - Number(a.category === d.category) || Number(b.featured) - Number(a.featured))
+  .slice(0, 3);
+const open = d.status !== 'vendu';
+const info = mailFor(d.id, 'info');
+const offer = mailFor(d.id, 'offre');
+const faq = domainFaq(d.id);
+const url = `${SITE.url}/domaines/${slug(d.id)}/`;
+const product: Record<string, unknown> = {
+  '@type': 'Product', name: d.id, description: d.description, category: `Nom de domaine ${tld(d.id)}`, url,
+  brand: { '@id': `${SITE.url}/#org` },
+};
+if (d.price_eur && d.status === 'disponible') {
+  product.offers = { '@type': 'Offer', price: d.price_eur, priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url, seller: { '@id': `${SITE.url}/#org` } };
+}
+const title = d.status === 'vendu' ? `${d.id} (vendu) | FranceDomaine.fr` : `${d.id} est à vendre | FranceDomaine.fr`;
+const desc = d.status === 'vendu'
+  ? `Le nom de domaine ${d.id} a été vendu. Découvrez d'autres noms premium disponibles en .fr et .com.`
+  : `Le nom de domaine ${d.id} est à vendre. ${d.description} ${priceLabel(d)}, transfert sécurisé par escrow.`.slice(0, 300);
+---
+<Base title={title} description={desc} type="product" jsonLd={[product, faqLd(faq)]}>
+  <div class="container" data-arrival={d.id}>
+    <Breadcrumbs items={[{ name: 'Domaines', href: '/domaines/' }, { name: d.category, href: `/categories/${catSlug(d.category)}/` }, { name: d.id, href: `/domaines/${slug(d.id)}/` }]} />
+
+    <section class="lander">
+      <div>
+        <p class="eyebrow">{d.category}</p>
+        <h1 class="name">{d.id.slice(0, -tld(d.id).length)}<span>{tld(d.id)}</span></h1>
+        <p class="pitch">{open ? 'est à vendre.' : 'a été vendu.'}</p>
+        <p class="desc">{d.description}</p>
+        {d.uses.length > 0 && (
+          <ul class="uses">{d.uses.map((u) => <li>{u}</li>)}</ul>
+        )}
+      </div>
+      <aside class="box">
+        <p class:list={['status', d.status]}>{statusLabel[d.status]}</p>
+        {open ? (
+          <>
+            <p class="price">{priceLabel(d)}</p>
+            <a class="btn js-mail" href="/contact/" data-domain={d.id} data-kind="info" data-subject={info.subject} data-body={info.body}>
+              {d.price_eur ? 'Acheter ce domaine' : 'Demander le prix'}
+            </a>
+            <a class="btn btn-ghost js-mail" href="/contact/" data-domain={d.id} data-kind="offre" data-subject={offer.subject} data-body={offer.body}>Faire une offre</a>
+            <ul class="trust">
+              <li>Paiement sécurisé par escrow</li>
+              <li>Transfert sous 24 à 72 h</li>
+            </ul>
+          </>
+        ) : (
+          <a class="btn" href="/domaines/">Voir les domaines disponibles</a>
+        )}
+      </aside>
+    </section>
+
+    {related.length > 0 && (
+      <section class="section">
+        <h2>{open ? 'Vous aimerez aussi' : 'Domaines disponibles'}</h2>
+        <div class="grid">{related.map((r) => <DomainCard d={r} />)}</div>
+      </section>
+    )}
+    {open && <div class="section"><Steps /></div>}
+    <div class="section"><Faq items={faq} title={`Questions sur ${d.id}`} /></div>
+  </div>
+</Base>
+
+<style>
+  .lander { display: grid; grid-template-columns: 1.6fr 1fr; gap: 40px; align-items: start; margin-top: 24px; }
+  .name { font-size: clamp(40px, 7vw, 76px); font-weight: 800; letter-spacing: -.03em; margin: 0; overflow-wrap: anywhere; }
+  .name span { color: var(--accent); }
+  .pitch { font-size: 24px; color: var(--muted); margin: 4px 0 24px; }
+  .desc { font-size: 18px; max-width: 620px; }
+  .uses { color: var(--muted); padding-left: 20px; }
+  .box { border: 1px solid var(--line); border-radius: 16px; padding: 28px; display: grid; gap: 12px; background: #fff; box-shadow: 0 10px 30px rgba(16,24,40,.06); position: sticky; top: 88px; }
+  .status { margin: 0; font-weight: 600; color: var(--ok); }
+  .status.reserve { color: var(--warn); }
+  .status.vendu { color: var(--muted); }
+  .price { font-size: 28px; font-weight: 700; margin: 0 0 6px; }
+  .trust { list-style: none; padding: 14px 0 0; margin: 4px 0 0; border-top: 1px solid var(--line); display: grid; gap: 6px; font-size: 14.5px; color: var(--muted); }
+  .trust li::before { content: '✓  '; color: var(--ok); font-weight: 700; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; margin-top: 20px; }
+  @media (max-width: 860px) { .lander { grid-template-columns: 1fr; } .box { position: static; } }
+</style>

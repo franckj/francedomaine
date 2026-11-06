@@ -1,0 +1,27 @@
+---
+// Cookie-free events counter (ops events/README.md, e.franckj.com): page views ("always": this site has no
+// Cloudflare Web Analytics) + named events. Production builds only. Events sent by this site:
+//   Redirect: Arrival  {domain, known}   a visitor forwarded from one of Franck's domains (/r/<domain>)
+//   Contact: Click     {domain, kind}    a prefilled email opened (kind: offre | info | general)
+//   Search             {q}               a catalog search with no result (what people want and we lack)
+const prod = import.meta.env.PROD;
+---
+{prod && (
+  <>
+    <script is:inline>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)};window.events=window.events||function(){(events.q=events.q||[]).push(arguments)};</script>
+    <script is:inline defer data-no-forms data-pageviews="always" src="https://e.franckj.com/s.js"></script>
+  </>
+)}
+<script is:inline>
+  // Arrival from a redirected domain: /r/<domain> sends here with ?via=redirect (see astro.config.mjs).
+  (function () {
+    var p = new URLSearchParams(location.search);
+    if (p.get('via') !== 'redirect') return;
+    var el = document.querySelector('[data-arrival]');
+    var domain = (el && el.getAttribute('data-arrival')) || (p.get('nom') || '').toLowerCase().split('/')[0].slice(0, 80);
+    if (domain && window.events) window.events('Redirect: Arrival', { domain: domain, known: el ? 'yes' : 'no' });
+    p.delete('via');
+    var q = p.toString();
+    history.replaceState(null, '', location.pathname + (q ? '?' + q : '') + location.hash);
+  })();
+</script>

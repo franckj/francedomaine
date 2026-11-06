@@ -1,0 +1,22 @@
+---
+interface Props { title?: string; text?: string; domain?: string; subject?: string; body?: string }
+const {
+  title = 'Vous cherchez un nom précis ?',
+  text = "Dites-nous votre projet : nous avons d'autres noms hors catalogue.",
+  domain = '', subject = 'Recherche de nom de domaine', body = 'Bonjour,\n\nMon projet : ...\nLe type de nom que je cherche : ...\nMon budget : ...\n\nCordialement,\n',
+} = Astro.props;
+---
+<section class="cta">
+  <div>
+    <h2>{title}</h2>
+    <p>{text}</p>
+  </div>
+  <a class="btn btn-light js-mail" href="/contact/" data-kind="general" data-domain={domain} data-subject={subject} data-body={body}>Nous écrire</a>
+</section>
+
+<style>
+  .cta { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; padding: 40px; border-radius: 18px; background: var(--accent); color: #fff; }
+  .cta h2 { color: #fff; margin: 0 0 6px; }
+  .cta p { margin: 0; color: rgba(255,255,255,.85); max-width: 560px; }
+  @media (max-width: 560px) { .cta { padding: 28px 22px; } }
+</style>

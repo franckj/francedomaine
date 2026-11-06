@@ -1,0 +1,36 @@
+---
+import { slug, tld, statusLabel, priceLabel, type Domain } from '../lib/domains';
+interface Props { d: Domain }
+const { d } = Astro.props;
+---
+<a class:list={['card', { featured: d.featured, sold: d.status === 'vendu' }]} href={`/domaines/${slug(d.id)}/`}
+   data-cat={d.category} data-search={`${d.id} ${d.category} ${d.description}`.toLowerCase()}>
+  <span class="card-top">
+    <span class="cat">{d.category}</span>
+    {d.featured && d.status === 'disponible' && <span class="badge">Premium</span>}
+  </span>
+  <span class="name">{d.id.slice(0, -tld(d.id).length)}<span class="tld">{tld(d.id)}</span></span>
+  <span class="desc">{d.description}</span>
+  <span class="card-foot">
+    <span class:list={['status', d.status]}>{statusLabel[d.status]}</span>
+    <span class="price">{d.status === 'vendu' ? '' : priceLabel(d)}</span>
+  </span>
+</a>
+
+<style>
+  .card { display: flex; flex-direction: column; gap: 10px; padding: 22px; background: #fff; border: 1px solid var(--line); border-radius: 14px; color: var(--ink); text-decoration: none; transition: border-color .15s, box-shadow .15s, transform .15s; }
+  .card:hover { border-color: var(--accent); box-shadow: 0 8px 24px rgba(30,79,216,.08); transform: translateY(-2px); }
+  .card.featured { border-color: #c9d6fb; background: linear-gradient(180deg, var(--accent-soft), #fff 60%); }
+  .card.sold { opacity: .6; }
+  .card-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  .cat { font-size: 12px; font-weight: 600; letter-spacing: .6px; text-transform: uppercase; color: var(--muted); }
+  .badge { font-size: 11px; font-weight: 600; color: var(--accent); background: #fff; border: 1px solid #c9d6fb; border-radius: 99px; padding: 2px 9px; }
+  .name { font-size: 22px; font-weight: 700; letter-spacing: -.3px; overflow-wrap: anywhere; }
+  .tld { color: var(--accent); }
+  .desc { color: var(--muted); font-size: 14.5px; line-height: 1.55; flex: 1; }
+  .card-foot { display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--line); font-size: 14px; }
+  .status { font-weight: 600; color: var(--ok); }
+  .status.reserve { color: var(--warn); }
+  .status.vendu { color: var(--muted); }
+  .price { color: var(--ink); font-weight: 500; }
+</style>
