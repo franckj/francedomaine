@@ -18,7 +18,11 @@ for (const d of listed) {
 }
 for (const d of db.filter((d) => d.status === 'masque' || d.status === 'vendu')) ok(!existsSync(`dist/domaines/${d.id.replace(/\./g, '-')}/`), `hidden ${d.id} has no page`);
 const red = readFileSync('dist/_redirects', 'utf8');
-for (const d of listed) ok(red.includes(`/r/${d.id}  /domaines/${d.id.replace(/\./g, '-')}/?via=redirect  302`), `redirect /r/${d.id}`);
+// /r/<name> for listed names is handled by functions/_middleware.js (Pages ignored _redirects past ~100 lines).
+const mw = readFileSync('functions/_middleware.js', 'utf8');
+ok(mw.includes("domains.json") && mw.includes('/domaines/') && mw.includes('via=redirect'), 'middleware sends listed /r/<name> to its page');
+ok(red.trim().split('\n').length <= 90, `_redirects short enough for Pages (${red.trim().split('\n').length} lines)`);
+ok(red.includes('/categories/tech-et-business/  /categories/tech-et-numerique/  301'), 'old Tech & Business page 301');
 ok(/\/r\/\*\s+\/a-vendre\/\s+200/.test(red), 'catch-all /r/* rewrite');
 for (const p of ['/', '/domaines/', '/contact/', '/a-vendre/', '/mentions-legales/', '/confidentialite/']) {
   const h = page(p);
