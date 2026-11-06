@@ -1,7 +1,7 @@
 ---
 const path = Astro.url.pathname;
 const nav = [
-  { href: '/domaines/', label: 'Domaines' },
+  { href: '/domaines/', label: 'Noms de domaine' },
   { href: '/#pourquoi', label: 'Pourquoi un bon nom' },
   { href: '/#achat', label: 'Comment acheter' },
   { href: '/#faq', label: 'FAQ' },
@@ -10,8 +10,7 @@ const nav = [
 <header class="site-header">
   <div class="container header-inner">
     <a href="/" class="logo" aria-label="FranceDomaine.fr, accueil">
-      <span class="logo-mark" aria-hidden="true">FD</span>
-      <span class="logo-name">France<strong>Domaine</strong></span>
+      <span class="logo-word" aria-hidden="true">France<br />Domaine</span>
     </a>
     <nav aria-label="Navigation principale">
       {nav.map((n) => <a href={n.href} aria-current={path === n.href ? 'page' : undefined}>{n.label}</a>)}
@@ -21,13 +20,10 @@ const nav = [
 </header>
 
 <style>
-  .site-header::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: linear-gradient(90deg, var(--accent) 0 33.33%, #fff 33.33% 66.66%, var(--red) 66.66%); }
   .site-header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
   .header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
   .logo { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }
-  .logo-mark { width: 34px; height: 34px; border-radius: 9px; background: var(--accent); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 14px; letter-spacing: .5px; }
-  .logo-name { font-size: 18px; font-weight: 500; }
-  .logo-name strong { font-weight: 700; }
+  .logo-word { font-family: var(--logo); font-weight: 700; text-transform: uppercase; color: var(--accent); font-size: 21px; line-height: .88; letter-spacing: .01em; }
   nav { display: flex; align-items: center; gap: 24px; }
   nav a:not(.btn) { color: var(--muted); text-decoration: none; font-size: 15px; font-weight: 500; }
   nav a:not(.btn):hover, nav a[aria-current] { color: var(--ink); }

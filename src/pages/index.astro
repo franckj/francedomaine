@@ -86,9 +86,9 @@ const years = new Date().getFullYear() - SITE.since;
 </Base>
 
 <style>
-  .hero { background: radial-gradient(1200px 400px at 70% -10%, var(--accent-soft), transparent 70%), #fff; padding: 72px 0 24px; }
+  .hero { background: var(--soft); padding: 72px 0 48px; border-bottom: 1px solid var(--line); }
   .hero h1 { max-width: 900px; }
-  .hl { color: var(--accent); }
+  .hl { text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: .09em; text-underline-offset: .14em; }
   .lead { font-size: 19px; color: var(--muted); max-width: 680px; }
   .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; margin: 28px 0 40px; }
   .stats { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 36px; }
@@ -97,9 +97,9 @@ const years = new Date().getFullYear() - SITE.since;
   .stats span { color: var(--muted); font-size: 14px; }
   .big { font-size: 18px; }
   .narrowp { max-width: 680px; }
-  .problem { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; padding: 40px; background: var(--soft); border-radius: 18px; }
+  .problem { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; padding: 40px; background: var(--soft); border-radius: var(--radius); }
   .problem ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
-  .problem li { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px 14px 44px; position: relative; }
+  .problem li { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px 14px 44px; position: relative; }
   .problem li::before { content: '✕'; position: absolute; left: 16px; top: 14px; color: var(--red); font-weight: 700; }
   .reasons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 28px; }
   .reason { padding: 24px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }

@@ -92,11 +92,11 @@ const desc = d.status === 'vendu'
   .pitch { font-size: 24px; color: var(--muted); margin: 4px 0 24px; }
   .desc { font-size: 18px; max-width: 620px; }
   .points { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-  .points li { display: grid; gap: 4px; padding: 16px; background: var(--soft); border-radius: 12px; font-size: 14.5px; color: var(--muted); }
+  .points li { display: grid; gap: 4px; padding: 16px; background: var(--soft); border-radius: var(--radius); font-size: 14.5px; color: var(--muted); }
   .points strong { color: var(--ink); font-size: 15.5px; }
   @media (max-width: 640px) { .points { grid-template-columns: 1fr; } }
   .uses { color: var(--muted); padding-left: 20px; }
-  .box { border: 1px solid var(--line); border-radius: 16px; padding: 28px; display: grid; gap: 12px; background: #fff; box-shadow: 0 10px 30px rgba(16,24,40,.06); position: sticky; top: 88px; }
+  .box { border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; display: grid; gap: 12px; background: #fff; box-shadow: 0 10px 30px rgba(16,24,40,.06); position: sticky; top: 88px; }
   .status { margin: 0; font-weight: 600; color: var(--ok); }
   .status.reserve { color: var(--warn); }
   .status.vendu { color: var(--muted); }

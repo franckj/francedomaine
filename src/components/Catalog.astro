@@ -59,7 +59,7 @@ const cats = [...new Set(items.map((d) => d.category))].sort((a, b) => a.localeC
 
 <style>
   .tools { display: grid; gap: 14px; margin-bottom: 24px; }
-  .search { display: flex; align-items: center; gap: 10px; border: 1px solid var(--line); border-radius: 12px; padding: 0 14px; background: #fff; color: var(--muted); max-width: 520px; }
+  .search { display: flex; align-items: center; gap: 10px; border: 1px solid var(--line); border-radius: var(--radius); padding: 0 14px; background: #fff; color: var(--muted); max-width: 520px; }
   .search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
   .search input { border: 0; outline: 0; font: inherit; font-size: 16px; padding: 13px 0; width: 100%; color: var(--ink); background: transparent; }
   .chips { display: flex; flex-wrap: wrap; gap: 8px; }

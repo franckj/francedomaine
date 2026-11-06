@@ -7,7 +7,7 @@ const year = new Date().getFullYear();
 <footer class="site-footer">
   <div class="container footer-grid">
     <div>
-      <a href="/" class="f-logo">France<strong>Domaine</strong>.fr</a>
+      <a href="/" class="f-logo" aria-label="FranceDomaine.fr, accueil">France<br />Domaine</a>
       <p class="muted">Noms de domaine premium en .fr et .com. 25 ans d’expertise en noms de domaine.</p>
       <p><a class="js-mail" data-kind="general" href="/contact/"><span class="js-mail-text">Nous écrire</span></a></p>
     </div>
@@ -32,7 +32,7 @@ const year = new Date().getFullYear();
 <style>
   .site-footer { border-top: 1px solid var(--line); background: var(--soft); padding: 56px 0 28px; margin-top: 96px; font-size: 15px; }
   .footer-grid { display: grid; grid-template-columns: 2fr 1.3fr 1fr; gap: 40px; }
-  .f-logo { font-size: 18px; color: var(--ink); text-decoration: none; }
+  .f-logo { font-family: var(--logo); font-weight: 700; text-transform: uppercase; color: var(--accent); font-size: 26px; line-height: .88; letter-spacing: .01em; text-decoration: none; display: inline-block; margin-bottom: 10px; }
   .f-title { font-weight: 600; margin-bottom: 10px; }
   ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
   ul a, .site-footer p a { color: var(--muted); text-decoration: none; }

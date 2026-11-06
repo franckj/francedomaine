@@ -17,7 +17,7 @@ const { items, title = 'Questions fréquentes' } = Astro.props;
 
 <style>
   .list { display: grid; gap: 10px; margin-top: 24px; max-width: 820px; }
-  details { border: 1px solid var(--line); border-radius: 12px; background: #fff; padding: 0 20px; }
+  details { border: 1px solid var(--line); border-radius: var(--radius); background: #fff; padding: 0 20px; }
   summary { cursor: pointer; list-style: none; padding: 18px 0; font-weight: 600; font-size: 17px; display: flex; justify-content: space-between; gap: 16px; }
   summary::-webkit-details-marker { display: none; }
   summary::after { content: '+'; color: var(--accent); font-size: 22px; line-height: 1; }

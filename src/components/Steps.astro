@@ -18,7 +18,7 @@ const steps = [
 
 <style>
   ol { list-style: none; padding: 0; margin: 24px 0 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-  li { display: grid; gap: 8px; align-content: start; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+  li { display: grid; gap: 8px; align-content: start; padding: 22px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
   .n { width: 32px; height: 32px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); font-weight: 700; display: grid; place-items: center; }
   li .muted { font-size: 15px; }
   @media (max-width: 900px) { ol { grid-template-columns: 1fr 1fr; } }
