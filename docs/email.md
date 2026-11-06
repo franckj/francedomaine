@@ -17,9 +17,13 @@ DNS is on Cloudflare (brian / ryleigh). Records to add (copied from bonjourdomai
 | CNAME | hostingermail-c._domainkey | hostingermail-c.dkim.mail.hostinger.com | DNS only |
 | CNAME | autodiscover | autodiscover.mail.hostinger.com | DNS only |
 
-## Mailbox
+## Mailbox (checked 2026-11-06)
 
-Whether `contact@francedomaine.fr` already exists in Hostinger is **not checked** (only hPanel shows it). Hostinger's guide to create a mailbox: https://www.hostinger.com/support/1583217-how-to-create-and-manage-mailboxes-for-hostinger-email/
+- The mailbox is **franck@francedomaine.fr** (Hostinger Email). contact@francedomaine.fr is only a forward to it. Outbound goes from franck@ (Franck 2026-11-06: "use franck@, better for trust").
+- Claude reaches it over IMAP/SMTP (imap.hostinger.com 993, smtp.hostinger.com 465, from Hostinger's settings page), password saved on Franck's machine only, never printed. No Hostinger account access (Franck refused the OAuth: it grants the whole account).
+- Helpers on Franck's machine: `fd-mail.py status|list|read|send` and `fd-mail-triage.py` (daily, read-only, Telegram note only when a real person wrote; scams and newsletters ignored).
+- **Every send needs Franck's yes on that exact email** (2026-11-06: "always ask me to validate sending"). `fd-mail.py send` refuses without `--approved`.
+- Inbox on 2026-11-06: 112 messages in INBOX plus Junk; no real buyer. 33 scam (fake brokers and "financing for domain buyers" on throwaway .help/.co domains, fake tax, notary, registered-letter and bank mail), the rest newsletters and DMARC/TLS reports.
 
 ## Outbound rules
 
