@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-06 · 119 names from Franck's third list; France and Éducation & Formation categories
+
+- 118 names added, and AquaBar.fr moved from the sold list back to the catalogue (Franck listed it; RDAP: Dynadot, DEUP privacy, so his). 190 names listed, 20 sold.
+- New category France (Franck: "also add a France category, I have several 'France' domains"): FranceMed.fr moved in, plus FranceCompta, FranceEntrepreneurs.com, FranceProxy, FranceSociete, FranceTours, FranceTrampoline, ToitureFrance. 8 names.
+- New category Éducation & Formation: CampusLab, CampusLink, CloudCampus, VirtualCampus, StartupCampus, CreatorAcademy, CreaFormation.com. 7 names.
+- RDAP 2026-11-06 on all 119: 116 at Dynadot (102 behind DEUP privacy, 14 in Franck's name; 3 .com with no holder shown), ModeIA.fr at IONOS (holder anonymised), VitaBoost.fr at Key-Systems (COMPANY 1972). Earliest expiry 2027-01-19.
+- `redirect: false` (no /r/ forwarding expected): PizzaRustica.fr, CampingPorto.fr, ExpertsRenovation.fr (live sites), ModeIA.fr and VitaBoost.fr (not at Dynadot).
+
 ## 2026-11-06 · Home sections on alternating backgrounds; /r/ redirect fix
 
 - Home: each section is a full-width band, white and paper (#F9F6F2) in turn, after the paper hero. Franck: "alternate bg colors for section". Preview https://bands.francedomaine.pages.dev
