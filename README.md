@@ -5,8 +5,10 @@ Astro 7, static, Cloudflare Pages. Light theme only, official French State colou
 
 ## State (2026-11-06)
 
-- Rebuilt from scratch on branch `ccr-238aa4b4-ca2w6g`. **Waits for Franck: "deploy"** (the move to Cloudflare Pages runs from his machine: ops `domains/francedomaine/CC-TASK-launch-2026-11-06.md`).
-- Live today: an older single page on Hostinger (Plausible tag, which is cancelled). It is replaced at the DNS switch.
+- **LIVE 2026-11-06** on Cloudflare Pages, project `francedomaine` (Templatery account), production branch `main` (Franck: "deploy"). francedomaine.fr and www (301 to apex, `functions/_middleware.js`) point to `francedomaine.pages.dev`. DNS before the switch: ops `domains/francedomaine/dns-before-2026-11-06.txt`.
+- Mail DNS: the Hostinger DKIM, autodiscover and autoconfig CNAMEs were proxied (DKIM could not resolve); set to DNS only 2026-11-06. MX, SPF, DMARC, Google TXT untouched.
+- Deploys: the first ones ran locally (`cf-run.sh npx wrangler@4 pages deploy dist --project-name francedomaine --branch main`, Node >= 22.23.4). **Not done, blocked:** repo secrets CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN, TELEGRAM_BOT_TOKEN (Claude's secret writes were refused by the local safety check; Franck allows it or runs the commands). Until then the GitHub deploy step and the monthly audit alert fail.
+- The old Hostinger hosting still exists, serving nothing on this domain; cancelling it is Franck's call.
 - 14 domains listed, 1 hidden: infracloud.fr (redemption, deleted 2026-10-18). velobox.fr was unregistered in the morning of 2026-11-06 and registered again the same day to Franck (RDAP registrant), so it is listed.
 - Sold names: the VENDU section (end of /domaines/, 8 on the home page, red rubber stamp) shows only the list Franck gives: all sold .fr except the adult name JouetSexuel.fr (Franck 2026-11-06: "all sold .fr for now, except adult"), plus LeTacos.com and Prix-Immobilier.com (Franck, same day): 21 names from DOMAINS Portfolio › SALES. Add each as `status: vendu` with `display` and `sold_on`; never a price.
 - Home page rewritten 2026-11-06 as a French sales page (copy in `src/data/home.ts`): hero, problem, 8 reasons (confusion, category, .fr, short, brand, phone test, e-mail, asset), for whom, selection, how to buy, FAQ, final CTA.
@@ -59,7 +61,7 @@ https://francedomaine.fr/r/<domain>
 ```
 
 - In the catalog → `/domaines/<domain>/?via=redirect` (rules generated into `_redirects` at build).
-- Not in the catalog → `/a-vendre/?nom=<domain>` (generic "ce nom est à vendre" page, not indexed).
+- Not in the catalog → `/r/*` serves `/a-vendre/` (200 rewrite: Pages does not fill `:splat` inside a query string), and `Tracking.astro` rewrites the URL to `/a-vendre/?nom=<domain>` (generic "ce nom est à vendre" page, not indexed).
 - The page records `Redirect: Arrival` `{domain, known}` in the events counter, then cleans the URL.
 - `scripts/check-domains.mjs` tests each domain daily and flags any that doesn't reach `/r/<domain>`.
 
