@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-06T12:59Z",
+  "checked": "2026-11-07T11:48Z",
   "domains": [
     {
       "domain": "aurae.fr",
@@ -383,6 +383,4401 @@
       ],
       "alerts": [
         "expire dans 13 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "aquabar.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-29",
+      "registered": "2026-04-29",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 173,
+      "redirect": "no",
+      "hops": [
+        "301 http://aquabar.fr/",
+        "307 https://aquabar.fr/",
+        "200 https://aquabar.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "lamovida.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-20",
+      "registered": "2025-11-20",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 13,
+      "redirect": "no",
+      "hops": [
+        "301 http://lamovida.fr/",
+        "307 https://lamovida.fr/",
+        "200 https://lamovida.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 13 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "expertisemarketing.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-21",
+      "registered": "2025-11-21",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 14,
+      "redirect": "no",
+      "hops": [
+        "301 http://expertisemarketing.fr/",
+        "307 https://expertisemarketing.fr/",
+        "200 https://expertisemarketing.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 14 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "aicampus.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-22",
+      "registered": "2025-11-22",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 15,
+      "redirect": "no",
+      "hops": [
+        "301 http://aicampus.fr/",
+        "307 https://aicampus.fr/",
+        "200 https://aicampus.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 15 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "mytoy.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-04",
+      "registered": "2025-12-04",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 27,
+      "redirect": "no",
+      "hops": [
+        "301 http://mytoy.fr/",
+        "307 https://mytoy.fr/",
+        "200 https://mytoy.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 27 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "dermapro.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-26",
+      "registered": "2025-11-26",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 19,
+      "redirect": "no",
+      "hops": [
+        "301 http://dermapro.fr/",
+        "307 https://dermapro.fr/",
+        "200 https://dermapro.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 19 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "ecofactory.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-27",
+      "registered": "2025-11-27",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 20,
+      "redirect": "no",
+      "hops": [
+        "301 http://ecofactory.fr/",
+        "307 https://ecofactory.fr/",
+        "200 https://ecofactory.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 20 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "neovita.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-28",
+      "registered": "2025-11-28",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 21,
+      "redirect": "no",
+      "hops": [
+        "301 http://neovita.fr/",
+        "307 https://neovita.fr/",
+        "200 https://neovita.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 21 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "coachup.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-28",
+      "registered": "2025-11-28",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 21,
+      "redirect": "no",
+      "hops": [
+        "301 http://coachup.fr/",
+        "307 https://coachup.fr/",
+        "200 https://coachup.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 21 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "happypark.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-29",
+      "registered": "2025-11-29",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 22,
+      "redirect": "no",
+      "hops": [
+        "301 http://happypark.fr/",
+        "307 https://happypark.fr/",
+        "200 https://happypark.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 22 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "sinergia.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-11-29",
+      "registered": "2025-11-29",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 22,
+      "redirect": "no",
+      "hops": [
+        "301 http://sinergia.fr/",
+        "307 https://sinergia.fr/",
+        "200 https://sinergia.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 22 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "neocard.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-05",
+      "registered": "2025-12-05",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 28,
+      "redirect": "no",
+      "hops": [
+        "301 http://neocard.fr/",
+        "307 https://neocard.fr/",
+        "200 https://neocard.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 28 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "infinitylabs.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-06",
+      "registered": "2025-12-06",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 29,
+      "redirect": "no",
+      "hops": [
+        "301 http://infinitylabs.fr/",
+        "307 https://infinitylabs.fr/",
+        "200 https://infinitylabs.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 29 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "quizzy.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-06",
+      "registered": "2025-12-06",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 29,
+      "redirect": "no",
+      "hops": [
+        "301 http://quizzy.fr/",
+        "307 https://quizzy.fr/",
+        "200 https://quizzy.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 29 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "ramoneurs.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-07",
+      "registered": "2025-12-07",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 30,
+      "redirect": "no",
+      "hops": [
+        "301 http://ramoneurs.fr/",
+        "307 https://ramoneurs.fr/",
+        "200 https://ramoneurs.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 30 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "novadoc.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-09",
+      "registered": "2025-12-09",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 32,
+      "redirect": "no",
+      "hops": [
+        "301 http://novadoc.fr/",
+        "307 https://novadoc.fr/",
+        "200 https://novadoc.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 32 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "firstconsulting.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-09",
+      "registered": "2025-12-09",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 32,
+      "redirect": "no",
+      "hops": [
+        "301 http://firstconsulting.fr/",
+        "307 https://firstconsulting.fr/",
+        "200 https://firstconsulting.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 32 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "prestadrone.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-10",
+      "registered": "2025-12-10",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 33,
+      "redirect": "no",
+      "hops": [
+        "301 http://prestadrone.fr/",
+        "307 https://prestadrone.fr/",
+        "200 https://prestadrone.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 33 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "opora.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-10",
+      "registered": "2025-12-10",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 33,
+      "redirect": "no",
+      "hops": [
+        "301 http://opora.fr/",
+        "307 https://opora.fr/",
+        "200 https://opora.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 33 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "abcgestion.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-10",
+      "registered": "2025-12-10",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 33,
+      "redirect": "no",
+      "hops": [
+        "301 http://abcgestion.fr/",
+        "307 https://abcgestion.fr/",
+        "200 https://abcgestion.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 33 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "quantumlab.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-13",
+      "registered": "2025-12-13",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 36,
+      "redirect": "no",
+      "hops": [
+        "301 http://quantumlab.fr/",
+        "307 https://quantumlab.fr/",
+        "200 https://quantumlab.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 36 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "proparking.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-15",
+      "registered": "2025-12-15",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 38,
+      "redirect": "no",
+      "hops": [
+        "301 http://proparking.fr/",
+        "307 https://proparking.fr/",
+        "200 https://proparking.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 38 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "domainemouton.com",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-08",
+      "registered": "2025-12-08",
+      "registrar": "Dynadot Inc",
+      "holder": null,
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 31,
+      "redirect": "no",
+      "hops": [
+        "301 http://domainemouton.com/",
+        "307 https://domainemouton.com/",
+        "200 https://domainemouton.com/en-gb"
+      ],
+      "alerts": [
+        "expire dans 31 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "inovai.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-19",
+      "registered": "2025-12-19",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 42,
+      "redirect": "no",
+      "hops": [
+        "301 http://inovai.fr/",
+        "307 https://inovai.fr/",
+        "200 https://inovai.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 42 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "hyperbot.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-15",
+      "registered": "2025-12-15",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 38,
+      "redirect": "no",
+      "hops": [
+        "301 http://hyperbot.fr/",
+        "307 https://hyperbot.fr/",
+        "200 https://hyperbot.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 38 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "datafusion.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-03",
+      "registered": "2026-01-03",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 57,
+      "redirect": "no",
+      "hops": [
+        "301 http://datafusion.fr/",
+        "307 https://datafusion.fr/",
+        "200 https://datafusion.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "harmonyos.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-21",
+      "registered": "2025-12-21",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 44,
+      "redirect": "no",
+      "hops": [
+        "301 http://harmonyos.fr/",
+        "307 https://harmonyos.fr/",
+        "200 https://harmonyos.fr/en-gb"
+      ],
+      "alerts": [
+        "expire dans 44 j",
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "episcope.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-26",
+      "registered": "2025-12-26",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 49,
+      "redirect": "no",
+      "hops": [
+        "301 http://episcope.fr/",
+        "307 https://episcope.fr/",
+        "200 https://episcope.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "capitalenergie.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-27",
+      "registered": "2025-12-27",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 50,
+      "redirect": "no",
+      "hops": [
+        "301 http://capitalenergie.fr/",
+        "307 https://capitalenergie.fr/",
+        "200 https://capitalenergie.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "citynews.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-26",
+      "registered": "2025-12-26",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 49,
+      "redirect": "no",
+      "hops": [
+        "301 http://citynews.fr/",
+        "307 https://citynews.fr/",
+        "200 https://citynews.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "datafact.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-16",
+      "registered": "2026-01-16",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 70,
+      "redirect": "no",
+      "hops": [
+        "301 http://datafact.fr/",
+        "307 https://datafact.fr/",
+        "200 https://datafact.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "movepay.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-04",
+      "registered": "2026-01-04",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 58,
+      "redirect": "no",
+      "hops": [
+        "301 http://movepay.fr/",
+        "307 https://movepay.fr/",
+        "200 https://movepay.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "cybercompany.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-14",
+      "registered": "2026-01-14",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 68,
+      "redirect": "no",
+      "hops": [
+        "301 http://cybercompany.fr/",
+        "307 https://cybercompany.fr/",
+        "200 https://cybercompany.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "opensourceacademy.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-14",
+      "registered": "2026-01-14",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 68,
+      "redirect": "no",
+      "hops": [
+        "301 http://opensourceacademy.fr/",
+        "307 https://opensourceacademy.fr/",
+        "200 https://opensourceacademy.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "atlasconstruction.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-15",
+      "registered": "2026-01-15",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 69,
+      "redirect": "no",
+      "hops": [
+        "301 http://atlasconstruction.fr/",
+        "307 https://atlasconstruction.fr/",
+        "200 https://atlasconstruction.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "easyprotect.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-15",
+      "registered": "2026-01-15",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 69,
+      "redirect": "no",
+      "hops": [
+        "301 http://easyprotect.fr/",
+        "307 https://easyprotect.fr/",
+        "200 https://easyprotect.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "agriconnect.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-16",
+      "registered": "2026-01-16",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 70,
+      "redirect": "no",
+      "hops": [
+        "301 http://agriconnect.fr/",
+        "307 https://agriconnect.fr/",
+        "200 https://agriconnect.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "superrecharge.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-17",
+      "registered": "2026-01-17",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 71,
+      "redirect": "no",
+      "hops": [
+        "301 http://superrecharge.fr/",
+        "307 https://superrecharge.fr/",
+        "200 https://superrecharge.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "pooltech.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-17",
+      "registered": "2026-01-17",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 71,
+      "redirect": "no",
+      "hops": [
+        "301 http://pooltech.fr/",
+        "307 https://pooltech.fr/",
+        "200 https://pooltech.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "energetiques.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-18",
+      "registered": "2026-01-18",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 72,
+      "redirect": "no",
+      "hops": [
+        "301 http://energetiques.fr/",
+        "307 https://energetiques.fr/",
+        "200 https://energetiques.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "aquaprotect.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-18",
+      "registered": "2026-01-18",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 72,
+      "redirect": "no",
+      "hops": [
+        "301 http://aquaprotect.fr/",
+        "307 https://aquaprotect.fr/",
+        "200 https://aquaprotect.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "globalsecurity.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-18",
+      "registered": "2026-01-18",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 72,
+      "redirect": "no",
+      "hops": [
+        "301 http://globalsecurity.fr/",
+        "307 https://globalsecurity.fr/",
+        "200 https://globalsecurity.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "apura.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-18",
+      "registered": "2026-01-18",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 72,
+      "redirect": "no",
+      "hops": [
+        "301 http://apura.fr/",
+        "307 https://apura.fr/",
+        "200 https://apura.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "darwincapital.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-19",
+      "registered": "2026-01-19",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 73,
+      "redirect": "no",
+      "hops": [
+        "301 http://darwincapital.fr/",
+        "307 https://darwincapital.fr/",
+        "200 https://darwincapital.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "ergopro.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-12",
+      "registered": "2026-01-12",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 66,
+      "redirect": "no",
+      "hops": [
+        "301 http://ergopro.fr/",
+        "307 https://ergopro.fr/",
+        "200 https://ergopro.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "skincenter.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-16",
+      "registered": "2026-01-16",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 70,
+      "redirect": "no",
+      "hops": [
+        "301 http://skincenter.fr/",
+        "307 https://skincenter.fr/",
+        "200 https://skincenter.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "instantbeaute.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-18",
+      "registered": "2026-01-18",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 72,
+      "redirect": "no",
+      "hops": [
+        "301 http://instantbeaute.fr/",
+        "307 https://instantbeaute.fr/",
+        "200 https://instantbeaute.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "directtransport.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-31",
+      "registered": "2025-12-31",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 54,
+      "redirect": "no",
+      "hops": [
+        "301 http://directtransport.fr/",
+        "307 https://directtransport.fr/",
+        "200 https://directtransport.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "cabaretparis.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": false,
+      "expires": "2027-01-14",
+      "registered": "2026-01-14",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 68,
+      "redirect": "no",
+      "hops": [
+        "301 http://cabaretparis.fr/",
+        "200 https://cabaretparis.fr/"
+      ],
+      "alerts": []
+    },
+    {
+      "domain": "dronezone.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-17",
+      "registered": "2026-01-17",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 71,
+      "redirect": "no",
+      "hops": [
+        "301 http://dronezone.fr/",
+        "307 https://dronezone.fr/",
+        "200 https://dronezone.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "neocycles.com",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2026-12-25",
+      "registered": "2024-12-25",
+      "registrar": "Dynadot Inc",
+      "holder": null,
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 48,
+      "redirect": "no",
+      "hops": [
+        "302 http://neocycles.com/",
+        "403 https://www.atom.com/name/NeoCycles"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "joies.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-04",
+      "registered": "2026-01-04",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 58,
+      "redirect": "no",
+      "hops": [
+        "301 http://joies.fr/",
+        "307 https://joies.fr/",
+        "200 https://joies.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "colocate.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-16",
+      "registered": "2026-01-16",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 70,
+      "redirect": "no",
+      "hops": [
+        "301 http://colocate.fr/",
+        "307 https://colocate.fr/",
+        "200 https://colocate.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "rockshop.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-16",
+      "registered": "2026-01-16",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 70,
+      "redirect": "no",
+      "hops": [
+        "301 http://rockshop.fr/",
+        "307 https://rockshop.fr/",
+        "200 https://rockshop.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "convertibles.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-18",
+      "registered": "2026-01-18",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 72,
+      "redirect": "no",
+      "hops": [
+        "301 http://convertibles.fr/",
+        "307 https://convertibles.fr/",
+        "200 https://convertibles.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "ecovert.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-18",
+      "registered": "2026-01-18",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 72,
+      "redirect": "no",
+      "hops": [
+        "301 http://ecovert.fr/",
+        "307 https://ecovert.fr/",
+        "200 https://ecovert.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "sucres.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-18",
+      "registered": "2026-01-18",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 72,
+      "redirect": "no",
+      "hops": [
+        "301 http://sucres.fr/",
+        "307 https://sucres.fr/",
+        "200 https://sucres.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "primapizza.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-18",
+      "registered": "2026-01-18",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 72,
+      "redirect": "no",
+      "hops": [
+        "301 http://primapizza.fr/",
+        "307 https://primapizza.fr/",
+        "200 https://primapizza.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "renovahome.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-19",
+      "registered": "2026-01-19",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 73,
+      "redirect": "no",
+      "hops": [
+        "301 http://renovahome.fr/",
+        "307 https://renovahome.fr/",
+        "200 https://renovahome.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "notairesassocies.com",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "rdap_error": "fetch failed",
+      "days_left": null,
+      "redirect": "no",
+      "hops": [
+        "301 http://notairesassocies.com/",
+        "307 https://notairesassocies.com/",
+        "200 https://notairesassocies.com/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "franceentrepreneurs.com",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-20",
+      "registered": "2026-01-20",
+      "registrar": "Dynadot Inc",
+      "holder": null,
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 74,
+      "redirect": "no",
+      "hops": [
+        "301 http://franceentrepreneurs.com/",
+        "307 https://franceentrepreneurs.com/",
+        "200 https://franceentrepreneurs.com/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "francetours.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-21",
+      "registered": "2026-01-21",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 75,
+      "redirect": "no",
+      "hops": [
+        "301 http://francetours.fr/",
+        "307 https://francetours.fr/",
+        "200 https://francetours.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "francecompta.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-25",
+      "registered": "2026-01-25",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 79,
+      "redirect": "no",
+      "hops": [
+        "301 http://francecompta.fr/",
+        "307 https://francecompta.fr/",
+        "200 https://francecompta.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "francesociete.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-03",
+      "registered": "2026-02-03",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 88,
+      "redirect": "no",
+      "hops": [
+        "301 http://francesociete.fr/",
+        "307 https://francesociete.fr/",
+        "200 https://francesociete.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "franceproxy.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-14",
+      "registered": "2026-04-14",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 158,
+      "redirect": "no",
+      "hops": [
+        "301 http://franceproxy.fr/",
+        "307 https://franceproxy.fr/",
+        "200 https://franceproxy.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "francetrampoline.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-18",
+      "registered": "2026-04-18",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 162,
+      "redirect": "no",
+      "hops": [
+        "301 http://francetrampoline.fr/",
+        "307 https://francetrampoline.fr/",
+        "200 https://francetrampoline.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "toiturefrance.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-09",
+      "registered": "2026-05-09",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 183,
+      "redirect": "no",
+      "hops": [
+        "301 http://toiturefrance.fr/",
+        "307 https://toiturefrance.fr/",
+        "200 https://toiturefrance.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "cafedigital.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-21",
+      "registered": "2026-01-21",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 75,
+      "redirect": "no",
+      "hops": [
+        "301 http://cafedigital.fr/",
+        "307 https://cafedigital.fr/",
+        "200 https://cafedigital.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "pulsecare.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-23",
+      "registered": "2026-01-23",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 77,
+      "redirect": "no",
+      "hops": [
+        "301 http://pulsecare.fr/",
+        "307 https://pulsecare.fr/",
+        "200 https://pulsecare.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "deepcoaching.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-23",
+      "registered": "2026-01-23",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 77,
+      "redirect": "no",
+      "hops": [
+        "301 http://deepcoaching.fr/",
+        "307 https://deepcoaching.fr/",
+        "200 https://deepcoaching.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "cookingbox.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-24",
+      "registered": "2026-01-24",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 78,
+      "redirect": "no",
+      "hops": [
+        "301 http://cookingbox.fr/",
+        "307 https://cookingbox.fr/",
+        "200 https://cookingbox.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "cheftouch.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-24",
+      "registered": "2026-01-24",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 78,
+      "redirect": "no",
+      "hops": [
+        "301 http://cheftouch.fr/",
+        "307 https://cheftouch.fr/",
+        "200 https://cheftouch.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "protectexpert.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-25",
+      "registered": "2026-01-25",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 79,
+      "redirect": "no",
+      "hops": [
+        "301 http://protectexpert.fr/",
+        "307 https://protectexpert.fr/",
+        "200 https://protectexpert.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "solodesk.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-25",
+      "registered": "2026-01-25",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 79,
+      "redirect": "no",
+      "hops": [
+        "301 http://solodesk.fr/",
+        "307 https://solodesk.fr/",
+        "200 https://solodesk.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "boxmaster.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-27",
+      "registered": "2026-01-27",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 81,
+      "redirect": "no",
+      "hops": [
+        "301 http://boxmaster.fr/",
+        "307 https://boxmaster.fr/",
+        "200 https://boxmaster.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "maxfit.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-25",
+      "registered": "2026-01-25",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 79,
+      "redirect": "no",
+      "hops": [
+        "301 http://maxfit.fr/",
+        "307 https://maxfit.fr/",
+        "200 https://maxfit.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "dronefly.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-25",
+      "registered": "2026-01-25",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 79,
+      "redirect": "no",
+      "hops": [
+        "301 http://dronefly.fr/",
+        "307 https://dronefly.fr/",
+        "200 https://dronefly.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "peti.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-26",
+      "registered": "2026-01-26",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 80,
+      "redirect": "no",
+      "hops": [
+        "301 http://peti.fr/",
+        "307 https://peti.fr/",
+        "200 https://peti.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "focuslab.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-27",
+      "registered": "2026-01-27",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 81,
+      "redirect": "no",
+      "hops": [
+        "301 http://focuslab.fr/",
+        "307 https://focuslab.fr/",
+        "200 https://focuslab.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "copyexpress.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-27",
+      "registered": "2026-01-27",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 81,
+      "redirect": "no",
+      "hops": [
+        "301 http://copyexpress.fr/",
+        "307 https://copyexpress.fr/",
+        "200 https://copyexpress.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "dentalcom.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-27",
+      "registered": "2026-01-27",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 81,
+      "redirect": "no",
+      "hops": [
+        "301 http://dentalcom.fr/",
+        "307 https://dentalcom.fr/",
+        "200 https://dentalcom.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "linktech.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-27",
+      "registered": "2026-01-27",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 81,
+      "redirect": "no",
+      "hops": [
+        "301 http://linktech.fr/",
+        "307 https://linktech.fr/",
+        "200 https://linktech.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "brandlink.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-07",
+      "registered": "2026-02-07",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 92,
+      "redirect": "no",
+      "hops": [
+        "301 http://brandlink.fr/",
+        "307 https://brandlink.fr/",
+        "200 https://brandlink.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "chatup.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-27",
+      "registered": "2026-01-27",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 81,
+      "redirect": "no",
+      "hops": [
+        "301 http://chatup.fr/",
+        "307 https://chatup.fr/",
+        "200 https://chatup.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "leadfactory.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-28",
+      "registered": "2026-01-28",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 82,
+      "redirect": "no",
+      "hops": [
+        "301 http://leadfactory.fr/",
+        "307 https://leadfactory.fr/",
+        "200 https://leadfactory.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "boosterlab.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-04",
+      "registered": "2026-02-04",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 89,
+      "redirect": "no",
+      "hops": [
+        "301 http://boosterlab.fr/",
+        "307 https://boosterlab.fr/",
+        "200 https://boosterlab.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "theluxe.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-28",
+      "registered": "2026-01-28",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 82,
+      "redirect": "no",
+      "hops": [
+        "301 http://theluxe.fr/",
+        "307 https://theluxe.fr/",
+        "200 https://theluxe.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "novamusic.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-28",
+      "registered": "2026-01-28",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 82,
+      "redirect": "no",
+      "hops": [
+        "301 http://novamusic.fr/",
+        "307 https://novamusic.fr/",
+        "200 https://novamusic.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "meetus.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-28",
+      "registered": "2026-01-28",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 82,
+      "redirect": "no",
+      "hops": [
+        "301 http://meetus.fr/",
+        "307 https://meetus.fr/",
+        "200 https://meetus.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "ecocube.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-29",
+      "registered": "2026-01-29",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 83,
+      "redirect": "no",
+      "hops": [
+        "301 http://ecocube.fr/",
+        "307 https://ecocube.fr/",
+        "200 https://ecocube.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "pizzarustica.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": false,
+      "expires": "2027-05-11",
+      "registered": "2026-05-11",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 185,
+      "redirect": "no",
+      "hops": [
+        "301 http://pizzarustica.fr/",
+        "200 https://pizzarustica.fr/"
+      ],
+      "alerts": []
+    },
+    {
+      "domain": "iceburg.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-30",
+      "registered": "2026-01-30",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 84,
+      "redirect": "no",
+      "hops": [
+        "301 http://iceburg.fr/",
+        "307 https://iceburg.fr/",
+        "200 https://iceburg.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "theburger.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-10",
+      "registered": "2026-05-10",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 184,
+      "redirect": "no",
+      "hops": [
+        "301 http://theburger.fr/",
+        "307 https://theburger.fr/",
+        "200 https://theburger.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "neoalpha.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-30",
+      "registered": "2026-01-30",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 84,
+      "redirect": "no",
+      "hops": [
+        "301 http://neoalpha.fr/",
+        "307 https://neoalpha.fr/",
+        "200 https://neoalpha.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "prestaplus.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-30",
+      "registered": "2026-01-30",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 84,
+      "redirect": "no",
+      "hops": [
+        "301 http://prestaplus.fr/",
+        "307 https://prestaplus.fr/",
+        "200 https://prestaplus.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "parkandgo.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-30",
+      "registered": "2026-01-30",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 84,
+      "redirect": "no",
+      "hops": [
+        "301 http://parkandgo.fr/",
+        "307 https://parkandgo.fr/",
+        "200 https://parkandgo.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "masterstudio.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-31",
+      "registered": "2026-01-31",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 85,
+      "redirect": "no",
+      "hops": [
+        "301 http://masterstudio.fr/",
+        "307 https://masterstudio.fr/",
+        "200 https://masterstudio.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "renohome.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-04",
+      "registered": "2026-02-04",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 89,
+      "redirect": "no",
+      "hops": [
+        "301 http://renohome.fr/",
+        "307 https://renohome.fr/",
+        "200 https://renohome.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "prolinks.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-31",
+      "registered": "2026-01-31",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 85,
+      "redirect": "no",
+      "hops": [
+        "301 http://prolinks.fr/",
+        "307 https://prolinks.fr/",
+        "200 https://prolinks.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "chocoline.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-01-31",
+      "registered": "2026-01-31",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 85,
+      "redirect": "no",
+      "hops": [
+        "301 http://chocoline.fr/",
+        "307 https://chocoline.fr/",
+        "200 https://chocoline.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "digipay.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-01",
+      "registered": "2026-02-01",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 86,
+      "redirect": "no",
+      "hops": [
+        "301 http://digipay.fr/",
+        "307 https://digipay.fr/",
+        "200 https://digipay.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "terrazen.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-01",
+      "registered": "2026-02-01",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 86,
+      "redirect": "no",
+      "hops": [
+        "301 http://terrazen.fr/",
+        "307 https://terrazen.fr/",
+        "200 https://terrazen.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "homecomfort.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-13",
+      "registered": "2026-02-13",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 98,
+      "redirect": "no",
+      "hops": [
+        "301 http://homecomfort.fr/",
+        "307 https://homecomfort.fr/",
+        "200 https://homecomfort.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "greenhub.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-01",
+      "registered": "2026-02-01",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 86,
+      "redirect": "no",
+      "hops": [
+        "301 http://greenhub.fr/",
+        "307 https://greenhub.fr/",
+        "200 https://greenhub.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "growlab.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-06",
+      "registered": "2026-02-06",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 91,
+      "redirect": "no",
+      "hops": [
+        "301 http://growlab.fr/",
+        "307 https://growlab.fr/",
+        "200 https://growlab.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "projectlab.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-06",
+      "registered": "2026-02-06",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 91,
+      "redirect": "no",
+      "hops": [
+        "301 http://projectlab.fr/",
+        "307 https://projectlab.fr/",
+        "200 https://projectlab.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "procleansolution.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-02",
+      "registered": "2026-02-02",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 87,
+      "redirect": "no",
+      "hops": [
+        "301 http://procleansolution.fr/",
+        "307 https://procleansolution.fr/",
+        "200 https://procleansolution.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "lifedesigner.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-02",
+      "registered": "2026-02-02",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 87,
+      "redirect": "no",
+      "hops": [
+        "301 http://lifedesigner.fr/",
+        "307 https://lifedesigner.fr/",
+        "200 https://lifedesigner.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "pariscom.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-02",
+      "registered": "2026-02-02",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 87,
+      "redirect": "no",
+      "hops": [
+        "301 http://pariscom.fr/",
+        "307 https://pariscom.fr/",
+        "200 https://pariscom.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "lovehotelparis.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-04",
+      "registered": "2026-02-04",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 89,
+      "redirect": "no",
+      "hops": [
+        "301 http://lovehotelparis.fr/",
+        "307 https://lovehotelparis.fr/",
+        "200 https://lovehotelparis.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "teton.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-07",
+      "registered": "2026-02-07",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 92,
+      "redirect": "no",
+      "hops": [
+        "error fetch failed"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "mymoto.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-07",
+      "registered": "2026-02-07",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 92,
+      "redirect": "no",
+      "hops": [
+        "301 http://mymoto.fr/",
+        "307 https://mymoto.fr/",
+        "200 https://mymoto.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "secretsociety.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-07",
+      "registered": "2026-02-07",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 92,
+      "redirect": "no",
+      "hops": [
+        "301 http://secretsociety.fr/",
+        "307 https://secretsociety.fr/",
+        "200 https://secretsociety.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "neuroflow.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-02-12",
+      "registered": "2026-02-12",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 97,
+      "redirect": "no",
+      "hops": [
+        "301 http://neuroflow.fr/",
+        "307 https://neuroflow.fr/",
+        "200 https://neuroflow.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "neurotech.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-20",
+      "registered": "2026-04-20",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 164,
+      "redirect": "no",
+      "hops": [
+        "301 http://neurotech.fr/",
+        "307 https://neurotech.fr/",
+        "200 https://neurotech.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "creatoracademy.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-03-05",
+      "registered": "2026-03-05",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 118,
+      "redirect": "no",
+      "hops": [
+        "301 http://creatoracademy.fr/",
+        "307 https://creatoracademy.fr/",
+        "200 https://creatoracademy.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "campuslink.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-12",
+      "registered": "2026-04-12",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 156,
+      "redirect": "no",
+      "hops": [
+        "301 http://campuslink.fr/",
+        "307 https://campuslink.fr/",
+        "200 https://campuslink.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "virtualcampus.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-12",
+      "registered": "2026-04-12",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 156,
+      "redirect": "no",
+      "hops": [
+        "301 http://virtualcampus.fr/",
+        "307 https://virtualcampus.fr/",
+        "200 https://virtualcampus.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "cloudcampus.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-12",
+      "registered": "2026-04-12",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 156,
+      "redirect": "no",
+      "hops": [
+        "301 http://cloudcampus.fr/",
+        "307 https://cloudcampus.fr/",
+        "200 https://cloudcampus.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "campuslab.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-10-06",
+      "registered": "2026-10-06",
+      "registrar": "Dynadot Inc",
+      "holder": "Franck JANKOWSKI",
+      "holder_is_franck": true,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 333,
+      "redirect": "no",
+      "hops": [
+        "301 http://campuslab.fr/",
+        "307 https://campuslab.fr/",
+        "200 https://campuslab.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "escaladeparis.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-16",
+      "registered": "2026-04-16",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 160,
+      "redirect": "no",
+      "hops": [
+        "301 http://escaladeparis.fr/",
+        "307 https://escaladeparis.fr/",
+        "200 https://escaladeparis.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "omniflow.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-16",
+      "registered": "2026-04-16",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 160,
+      "redirect": "no",
+      "hops": [
+        "301 http://omniflow.fr/",
+        "307 https://omniflow.fr/",
+        "200 https://omniflow.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "nordesign.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-17",
+      "registered": "2026-04-17",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 161,
+      "redirect": "no",
+      "hops": [
+        "301 http://nordesign.fr/",
+        "307 https://nordesign.fr/",
+        "200 https://nordesign.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "agrisolar.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-17",
+      "registered": "2026-04-17",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 161,
+      "redirect": "no",
+      "hops": [
+        "301 http://agrisolar.fr/",
+        "307 https://agrisolar.fr/",
+        "200 https://agrisolar.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "myneo.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-17",
+      "registered": "2026-04-17",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 161,
+      "redirect": "no",
+      "hops": [
+        "301 http://myneo.fr/",
+        "307 https://myneo.fr/",
+        "200 https://myneo.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "myaura.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-09",
+      "registered": "2026-05-09",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 183,
+      "redirect": "no",
+      "hops": [
+        "301 http://myaura.fr/",
+        "307 https://myaura.fr/",
+        "200 https://myaura.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "smileservices.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-18",
+      "registered": "2026-04-18",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 162,
+      "redirect": "no",
+      "hops": [
+        "301 http://smileservices.fr/",
+        "307 https://smileservices.fr/",
+        "200 https://smileservices.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "biosolutions.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-18",
+      "registered": "2026-04-18",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 162,
+      "redirect": "no",
+      "hops": [
+        "301 http://biosolutions.fr/",
+        "307 https://biosolutions.fr/",
+        "200 https://biosolutions.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "fitty.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-21",
+      "registered": "2026-04-21",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 165,
+      "redirect": "no",
+      "hops": [
+        "301 http://fitty.fr/",
+        "307 https://fitty.fr/",
+        "200 https://fitty.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "ecotrack.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-21",
+      "registered": "2026-04-21",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 165,
+      "redirect": "no",
+      "hops": [
+        "301 http://ecotrack.fr/",
+        "307 https://ecotrack.fr/",
+        "200 https://ecotrack.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "greenaudit.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-23",
+      "registered": "2026-04-23",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 167,
+      "redirect": "no",
+      "hops": [
+        "301 http://greenaudit.fr/",
+        "307 https://greenaudit.fr/",
+        "200 https://greenaudit.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "taxiplus.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-04-27",
+      "registered": "2026-04-27",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 171,
+      "redirect": "no",
+      "hops": [
+        "301 http://taxiplus.fr/",
+        "307 https://taxiplus.fr/",
+        "200 https://taxiplus.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "challengeia.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-01",
+      "registered": "2026-05-01",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 175,
+      "redirect": "no",
+      "hops": [
+        "301 http://challengeia.fr/",
+        "307 https://challengeia.fr/",
+        "200 https://challengeia.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "modeia.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": false,
+      "expires": "2027-02-23",
+      "registered": "2020-02-23",
+      "registrar": "IONOS SE",
+      "holder": "Ano Nymous",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "active"
+      ],
+      "deleted": null,
+      "days_left": 108,
+      "redirect": "no",
+      "hops": [
+        "200 http://modeia.fr/"
+      ],
+      "alerts": []
+    },
+    {
+      "domain": "campingporto.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": false,
+      "expires": "2027-05-02",
+      "registered": "2026-05-02",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 176,
+      "redirect": "no",
+      "hops": [
+        "301 http://campingporto.fr/",
+        "200 https://campingporto.fr/"
+      ],
+      "alerts": []
+    },
+    {
+      "domain": "legalexperts.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-04",
+      "registered": "2026-05-04",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 178,
+      "redirect": "no",
+      "hops": [
+        "301 http://legalexperts.fr/",
+        "307 https://legalexperts.fr/",
+        "200 https://legalexperts.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "kingparking.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-04",
+      "registered": "2026-05-04",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 178,
+      "redirect": "no",
+      "hops": [
+        "301 http://kingparking.fr/",
+        "307 https://kingparking.fr/",
+        "200 https://kingparking.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "ecoinvest.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-04",
+      "registered": "2026-05-04",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 178,
+      "redirect": "no",
+      "hops": [
+        "301 http://ecoinvest.fr/",
+        "307 https://ecoinvest.fr/",
+        "200 https://ecoinvest.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "cloudexperts.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-04",
+      "registered": "2026-05-04",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 178,
+      "redirect": "no",
+      "hops": [
+        "301 http://cloudexperts.fr/",
+        "307 https://cloudexperts.fr/",
+        "200 https://cloudexperts.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "gosmart.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-07",
+      "registered": "2025-05-07",
+      "registrar": "Dynadot Inc",
+      "holder": "Franck JANKOWSKI",
+      "holder_is_franck": true,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 181,
+      "redirect": "no",
+      "hops": [
+        "301 http://gosmart.fr/",
+        "307 https://gosmart.fr/",
+        "200 https://gosmart.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "cellulesouche.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-07",
+      "registered": "2026-05-07",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 181,
+      "redirect": "no",
+      "hops": [
+        "301 http://cellulesouche.fr/",
+        "307 https://cellulesouche.fr/",
+        "200 https://cellulesouche.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "maisonzen.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-08",
+      "registered": "2026-05-08",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 182,
+      "redirect": "no",
+      "hops": [
+        "301 http://maisonzen.fr/",
+        "307 https://maisonzen.fr/",
+        "200 https://maisonzen.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "ecopoint.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-09",
+      "registered": "2026-05-09",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 183,
+      "redirect": "no",
+      "hops": [
+        "301 http://ecopoint.fr/",
+        "307 https://ecopoint.fr/",
+        "200 https://ecopoint.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "laserclub.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-09",
+      "registered": "2026-05-09",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 183,
+      "redirect": "no",
+      "hops": [
+        "301 http://laserclub.fr/",
+        "307 https://laserclub.fr/",
+        "200 https://laserclub.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "focalpoint.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-09",
+      "registered": "2026-05-09",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 183,
+      "redirect": "no",
+      "hops": [
+        "301 http://focalpoint.fr/",
+        "307 https://focalpoint.fr/",
+        "200 https://focalpoint.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "nautical.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-09",
+      "registered": "2026-05-09",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 183,
+      "redirect": "no",
+      "hops": [
+        "301 http://nautical.fr/",
+        "307 https://nautical.fr/",
+        "200 https://nautical.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "geothermal.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-09",
+      "registered": "2026-05-09",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 183,
+      "redirect": "no",
+      "hops": [
+        "301 http://geothermal.fr/",
+        "307 https://geothermal.fr/",
+        "200 https://geothermal.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "eurocontainer.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-10",
+      "registered": "2026-05-10",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 184,
+      "redirect": "no",
+      "hops": [
+        "301 http://eurocontainer.fr/",
+        "307 https://eurocontainer.fr/",
+        "200 https://eurocontainer.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "aerovia.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-12",
+      "registered": "2025-05-12",
+      "registrar": "Dynadot Inc",
+      "holder": "Franck JANKOWSKI",
+      "holder_is_franck": true,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 186,
+      "redirect": "no",
+      "hops": [
+        "301 http://aerovia.fr/",
+        "307 https://aerovia.fr/",
+        "200 https://aerovia.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "startupcampus.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-14",
+      "registered": "2026-05-14",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 188,
+      "redirect": "no",
+      "hops": [
+        "301 http://startupcampus.fr/",
+        "307 https://startupcampus.fr/",
+        "200 https://startupcampus.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "myworkspace.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-14",
+      "registered": "2026-05-14",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 188,
+      "redirect": "no",
+      "hops": [
+        "301 http://myworkspace.fr/",
+        "307 https://myworkspace.fr/",
+        "200 https://myworkspace.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "deliveryexpress.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-14",
+      "registered": "2026-05-14",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 188,
+      "redirect": "no",
+      "hops": [
+        "301 http://deliveryexpress.fr/",
+        "307 https://deliveryexpress.fr/",
+        "200 https://deliveryexpress.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "vitalcoaching.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-14",
+      "registered": "2026-05-14",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 188,
+      "redirect": "no",
+      "hops": [
+        "301 http://vitalcoaching.fr/",
+        "307 https://vitalcoaching.fr/",
+        "200 https://vitalcoaching.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "fitnesshouse.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-15",
+      "registered": "2021-05-15",
+      "registrar": "Dynadot Inc",
+      "holder": "Franck JANKOWSKI",
+      "holder_is_franck": true,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 189,
+      "redirect": "no",
+      "hops": [
+        "301 http://fitnesshouse.fr/",
+        "307 https://fitnesshouse.fr/",
+        "200 https://fitnesshouse.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "tracksecure.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-15",
+      "registered": "2026-05-15",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 189,
+      "redirect": "no",
+      "hops": [
+        "301 http://tracksecure.fr/",
+        "307 https://tracksecure.fr/",
+        "200 https://tracksecure.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "orner.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-15",
+      "registered": "2026-05-15",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 189,
+      "redirect": "no",
+      "hops": [
+        "301 http://orner.fr/",
+        "307 https://orner.fr/",
+        "200 https://orner.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "cybercore.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-15",
+      "registered": "2026-05-15",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 189,
+      "redirect": "no",
+      "hops": [
+        "301 http://cybercore.fr/",
+        "307 https://cybercore.fr/",
+        "200 https://cybercore.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "capitalpartners.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-17",
+      "registered": "2026-05-17",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 191,
+      "redirect": "no",
+      "hops": [
+        "301 http://capitalpartners.fr/",
+        "307 https://capitalpartners.fr/",
+        "200 https://capitalpartners.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "velomarket.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-18",
+      "registered": "2026-05-18",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 192,
+      "redirect": "no",
+      "hops": [
+        "301 http://velomarket.fr/",
+        "307 https://velomarket.fr/",
+        "200 https://velomarket.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "boissonsansalcool.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-05-23",
+      "registered": "2026-05-23",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 197,
+      "redirect": "no",
+      "hops": [
+        "301 http://boissonsansalcool.fr/",
+        "307 https://boissonsansalcool.fr/",
+        "200 https://boissonsansalcool.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "printcloud.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-06-12",
+      "registered": "2026-06-12",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 217,
+      "redirect": "no",
+      "hops": [
+        "301 http://printcloud.fr/",
+        "307 https://printcloud.fr/",
+        "200 https://printcloud.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "digitalasset.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-06-16",
+      "registered": "2026-06-16",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 221,
+      "redirect": "no",
+      "hops": [
+        "301 http://digitalasset.fr/",
+        "307 https://digitalasset.fr/",
+        "200 https://digitalasset.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "scopa.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-07-18",
+      "registered": "2024-07-18",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 253,
+      "redirect": "no",
+      "hops": [
+        "301 http://scopa.fr/",
+        "307 https://scopa.fr/",
+        "200 https://scopa.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "asig.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-07-18",
+      "registered": "2025-07-18",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 253,
+      "redirect": "no",
+      "hops": [
+        "301 http://asig.fr/",
+        "307 https://asig.fr/",
+        "200 https://asig.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "vitalab.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-10-06",
+      "registered": "2026-10-06",
+      "registrar": "Dynadot Inc",
+      "holder": "Franck JANKOWSKI",
+      "holder_is_franck": true,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 333,
+      "redirect": "no",
+      "hops": [
+        "301 http://vitalab.fr/",
+        "307 https://vitalab.fr/",
+        "200 https://vitalab.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "vitaboost.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": false,
+      "expires": "2028-02-17",
+      "registered": "2026-02-17",
+      "registrar": "KEY-SYSTEMS GmbH",
+      "holder": "COMPANY 1972",
+      "holder_is_franck": true,
+      "rdap_status": [
+        "active"
+      ],
+      "deleted": null,
+      "days_left": 467,
+      "redirect": "no",
+      "hops": [
+        "301 http://vitaboost.fr/",
+        "307 https://vitaboost.fr/",
+        "200 https://vitaboost.fr/en-gb"
+      ],
+      "alerts": []
+    },
+    {
+      "domain": "opticlab.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-10-06",
+      "registered": "2026-10-06",
+      "registrar": "Dynadot Inc",
+      "holder": "Franck JANKOWSKI",
+      "holder_is_franck": true,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 333,
+      "redirect": "no",
+      "hops": [
+        "301 http://opticlab.fr/",
+        "307 https://opticlab.fr/",
+        "200 https://opticlab.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "strategylab.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-10-06",
+      "registered": "2026-10-06",
+      "registrar": "Dynadot Inc",
+      "holder": "Franck JANKOWSKI",
+      "holder_is_franck": true,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 333,
+      "redirect": "no",
+      "hops": [
+        "301 http://strategylab.fr/",
+        "307 https://strategylab.fr/",
+        "200 https://strategylab.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "clicshop.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-10-09",
+      "registered": "2026-10-09",
+      "registrar": "Dynadot Inc",
+      "holder": "Franck JANKOWSKI",
+      "holder_is_franck": true,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 336,
+      "redirect": "no",
+      "hops": [
+        "301 http://clicshop.fr/",
+        "307 https://clicshop.fr/",
+        "200 https://clicshop.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "clickandbuy.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-10-10",
+      "registered": "2026-10-10",
+      "registrar": "Dynadot Inc",
+      "holder": "Franck JANKOWSKI",
+      "holder_is_franck": true,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 337,
+      "redirect": "no",
+      "hops": [
+        "301 http://clickandbuy.fr/",
+        "307 https://clickandbuy.fr/",
+        "200 https://clickandbuy.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "paysecure.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-10-10",
+      "registered": "2026-10-10",
+      "registrar": "Dynadot Inc",
+      "holder": "Franck JANKOWSKI",
+      "holder_is_franck": true,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 337,
+      "redirect": "no",
+      "hops": [
+        "301 http://paysecure.fr/",
+        "307 https://paysecure.fr/",
+        "200 https://paysecure.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "expertsrenovation.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": false,
+      "expires": "2027-10-24",
+      "registered": "2026-10-24",
+      "registrar": "Dynadot Inc",
+      "holder": "Franck JANKOWSKI",
+      "holder_is_franck": true,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 351,
+      "redirect": "no",
+      "hops": [
+        "200 http://expertsrenovation.fr/"
+      ],
+      "alerts": []
+    },
+    {
+      "domain": "royalpalacehotel.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-10-24",
+      "registered": "2026-10-24",
+      "registrar": "Dynadot Inc",
+      "holder": "Franck JANKOWSKI",
+      "holder_is_franck": true,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 351,
+      "redirect": "no",
+      "hops": [
+        "301 http://royalpalacehotel.fr/",
+        "307 https://royalpalacehotel.fr/",
+        "200 https://royalpalacehotel.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "millimetres.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-12-20",
+      "registered": "2025-12-20",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 408,
+      "redirect": "no",
+      "hops": [
+        "301 http://millimetres.fr/",
+        "307 https://millimetres.fr/",
+        "200 https://millimetres.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "robopool.fr",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2028-01-24",
+      "registered": "2026-01-24",
+      "registrar": "Dynadot Inc",
+      "holder": "DEUP Privacy Service",
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 443,
+      "redirect": "no",
+      "hops": [
+        "301 http://robopool.fr/",
+        "307 https://robopool.fr/",
+        "200 https://robopool.fr/en-gb"
+      ],
+      "alerts": [
+        "ne redirige pas vers /r/"
+      ]
+    },
+    {
+      "domain": "creaformation.com",
+      "in_catalog": true,
+      "status": "disponible",
+      "expect_redirect": true,
+      "expires": "2027-07-23",
+      "registered": "2025-07-23",
+      "registrar": "Dynadot Inc",
+      "holder": null,
+      "holder_is_franck": null,
+      "rdap_status": [
+        "client transfer prohibited"
+      ],
+      "deleted": null,
+      "days_left": 258,
+      "redirect": "no",
+      "hops": [
+        "301 http://creaformation.com/",
+        "307 https://creaformation.com/",
+        "200 https://creaformation.com/en-gb"
+      ],
+      "alerts": [
         "ne redirige pas vers /r/"
       ]
     }
