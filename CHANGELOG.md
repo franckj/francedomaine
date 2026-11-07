@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-07 · Session closed
+
+Live: brand rebuild, copy round 1, 190 names in 10 categories (deploy 71a4a48), /r/ forwarding in the middleware, alternating home sections. ModeIA.fr ownership confirmed by Franck ("Mine, keep it"). Check first next session: `data/STATUS.md`. Waiting on Franck: Dynadot forwarding for the new names, the 9 featured picks, LinkedIn copy. Queued: nothing new.
+
 ## 2026-11-06 · 119 names from Franck's third list; France and Éducation & Formation categories
 
 - 118 names added, and AquaBar.fr moved from the sold list back to the catalogue (Franck listed it; RDAP: Dynadot, DEUP privacy, so his). 190 names listed, 20 sold.

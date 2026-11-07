@@ -1,16 +1,21 @@
 # FranceDomaine.fr
 
 Domain marketplace for Franck's .fr and .com names: catalog, one landing page per domain, every forwarded domain counted.
-Astro 7, static, Cloudflare Pages. Light theme only, official French State colours (DSFR 1.15.4: Bleu France #000091, Rouge Marianne #E1000F). Owner: COMPANY 1972 (Franck).
+Astro 7, static, Cloudflare Pages. Light theme only. Brand 2026-11-06: palette "Papier et Bleu France", logo FRANCE/DOMAINE in Passion One, Public Sans; all decisions in `design-direction.md`. Owner: COMPANY 1972 (Franck).
 
-## State (2026-11-06)
+## State (2026-11-07)
 
 - **LIVE 2026-11-06** on Cloudflare Pages, project `francedomaine` (Templatery account), production branch `main` (Franck: "deploy"). francedomaine.fr and www (301 to apex, `functions/_middleware.js`) point to `francedomaine.pages.dev`. DNS before the switch: ops `domains/francedomaine/dns-before-2026-11-06.txt`.
 - Mail DNS: the Hostinger DKIM, autodiscover and autoconfig CNAMEs were proxied (DKIM could not resolve); set to DNS only 2026-11-06. MX, SPF, DMARC, Google TXT untouched.
 - Deploys: the first ones ran locally (`cf-run.sh npx wrangler@4 pages deploy dist --project-name francedomaine --branch main`, Node >= 22.23.4). Repo secrets set 2026-11-06 (Franck ran `~/.config/claude/bin/set-francedomaine-secrets.sh`); GitHub deploys work (`gh workflow run deploy.yml` or a `[deploy]` commit).
 - The old Hostinger hosting still exists, serving nothing on this domain; cancelling it is Franck's call.
 - 190 names listed after the 2026-11-06 additions (10 categories incl. IA, France, Éducation & Formation). Tech & Business was split on 2026-11-06. 1 hidden: infracloud.fr (redemption, deleted 2026-10-18). velobox.fr was unregistered in the morning of 2026-11-06 and registered again the same day to Franck (RDAP registrant), so it is listed.
-- Sold names: the VENDU section (end of /domaines/, 8 on the home page, red rubber stamp) shows only the list Franck gives: all sold .fr except the adult name JouetSexuel.fr (Franck 2026-11-06: "all sold .fr for now, except adult"), plus LeTacos.com and Prix-Immobilier.com (Franck, same day): 21 names from DOMAINS Portfolio › SALES. Add each as `status: vendu` with `display` and `sold_on`; never a price.
+- Sold names: the VENDU section (end of /domaines/, 8 on the home page, red rubber stamp) shows only the list Franck gives: all sold .fr except the adult name JouetSexuel.fr (Franck 2026-11-06: "all sold .fr for now, except adult"), plus LeTacos.com and Prix-Immobilier.com (Franck, same day): 21 names from DOMAINS Portfolio › SALES; AquaBar.fr moved back to the catalogue 2026-11-07 (Franck listed it), so 20 shown. Add each as `status: vendu` with `display` and `sold_on`; never a price.
+- /r/<name> forwarding for listed names is done in `functions/_middleware.js` (Pages ignored `_redirects` past ~100 lines, found 2026-11-06). `_redirects` keeps only the old-category 301s and the /r/* fallback; the build fails past 90 lines.
+- Home sections alternate white / paper (2026-11-06).
+- Check first next session: `data/STATUS.md` (daily check) and the "Redirect: Arrival" events once forwarding exists.
+- Waiting on Franck: Dynadot forwarding of the names added 2026-11-06/07 to `https://francedomaine.fr/r/<name>` (no Dynadot access from here; the daily check lists them as "ne redirige pas"); his pick of the 9 `featured` names; LinkedIn post copy.
+- Queued: copy-review fixes 2-5 are "Not now" (never ask again, ops `_context/decisions.md`); a LinkedIn weekly draft job is not set up.
 - Home page rewritten 2026-11-06 as a French sales page (copy in `src/data/home.ts`): hero, problem, 8 reasons (confusion, category, .fr, short, brand, phone test, e-mail, asset), for whom, selection, how to buy, FAQ, final CTA.
 
 ## Layout
