@@ -3,7 +3,7 @@
 Domain marketplace for Franck's .fr and .com names: catalog, one landing page per domain, every forwarded domain counted.
 Astro 7, static, Cloudflare Pages. Light theme only. Brand 2026-11-06: palette "Papier et Bleu France", logo FRANCE/DOMAINE in Passion One, Public Sans; all decisions in `design-direction.md`. Owner: COMPANY 1972 (Franck).
 
-## State (2026-11-07)
+## State (2026-11-08)
 
 - **LIVE 2026-11-06** on Cloudflare Pages, project `francedomaine` (Templatery account), production branch `main` (Franck: "deploy"). francedomaine.fr and www (301 to apex, `functions/_middleware.js`) point to `francedomaine.pages.dev`. DNS before the switch: ops `domains/francedomaine/dns-before-2026-11-06.txt`.
 - Mail DNS: the Hostinger DKIM, autodiscover and autoconfig CNAMEs were proxied (DKIM could not resolve); set to DNS only 2026-11-06. MX, SPF, DMARC, Google TXT untouched.
@@ -14,7 +14,7 @@ Astro 7, static, Cloudflare Pages. Light theme only. Brand 2026-11-06: palette "
 - /r/<name> forwarding for listed names is done in `functions/_middleware.js` (Pages ignored `_redirects` past ~100 lines, found 2026-11-06). `_redirects` keeps only the old-category 301s and the /r/* fallback; the build fails past 90 lines.
 - Home sections alternate white / paper (2026-11-06).
 - Check first next session: `data/STATUS.md` (daily check) and the "Redirect: Arrival" events once forwarding exists.
-- Waiting on Franck: Dynadot forwarding of the names added 2026-11-06/07 to `https://francedomaine.fr/r/<name>` (no Dynadot access from here; the daily check lists them as "ne redirige pas"); his pick of the 9 `featured` names; LinkedIn post copy.
+- Waiting on Franck: Dynadot forwarding of the 181 Dynadot names to `https://francedomaine.fr/r/$domain$` (Manage Domains → Action → DNS Settings → Dynadot Forwarding, Domain Variable; skip the 4 live-site names). The Dynadot MCP sign-in failed on Dynadot's side 2026-11-08 and Franck said "stop": don't retry unless he asks; his pick of the 9 `featured` names; LinkedIn post copy.
 - Queued: copy-review fixes 2-5 are "Not now" (never ask again, ops `_context/decisions.md`); a LinkedIn weekly draft job is not set up.
 - Home page rewritten 2026-11-06 as a French sales page (copy in `src/data/home.ts`): hero, problem, 8 reasons (confusion, category, .fr, short, brand, phone test, e-mail, asset), for whom, selection, how to buy, FAQ, final CTA.
 

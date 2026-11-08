@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-08 · Session closed (Dynadot forwarding attempt)
+
+No site change. Tried to automate the Dynadot forwarding to /r/<name> through Dynadot's official MCP (mcp.dynadot.com, OAuth). Added to Claude Code user config as `dynadot`; Franck's sign-in failed on Dynadot's login page ("missing or unresolvable redirect_uri", then /auth/login?error=verification_failed). Franck said "stop". The entry stays, marked "Needs authentication". Forwarding of the 181 Dynadot names is still to do (manual steps: Manage Domains → Action → DNS Settings → Dynadot Forwarding, target `https://francedomaine.fr/r/$domain$`, leave out PizzaRustica.fr, CampingPorto.fr, ExpertsRenovation.fr, CabaretParis.fr).
+
 ## 2026-11-07 · Session closed
 
 Live: brand rebuild, copy round 1, 190 names in 10 categories (deploy 71a4a48), /r/ forwarding in the middleware, alternating home sections. ModeIA.fr ownership confirmed by Franck ("Mine, keep it"). Check first next session: `data/STATUS.md`. Waiting on Franck: Dynadot forwarding for the new names, the 9 featured picks, LinkedIn copy. Queued: nothing new.
